@@ -2,7 +2,18 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "160px";
+  var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+  var sideNavWidth;
+
+  if (viewportWidth > 432){
+    sideNavWidth = 20;
+  }
+  else{
+    sideNavWidth = 40;
+  }
+
+
+  document.getElementById("mySidenav").style.width = (sideNavWidth +"vw");
 }
 
 function closeNav() {

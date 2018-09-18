@@ -110,6 +110,7 @@
 		<div id= "lookAtMeStamping"></div>
 		<div id = "equipmentInfo">
 			<div id = "equipSideNav">
+				<button class="btn btn-primary" id = "backToTop"><a href = "#lookAtMeStamping">Back To Top</a></button>
 				<h3><a onclick= "call('stampList')">Stamp Presses</a></h3>
 					<ul id = "stampList">
 						<li><a href="#lookAtMeStamping">Aida - 1110 Ton</a></li>
@@ -135,20 +136,21 @@
 						<li><a href="#LookAtMeAmadaBrake">Amada HDS 1303NT - 143 Ton</a></li>
 						<li><a href="#LookAtMePacific110">Pacific Hydraulic - 110 Ton</a></li>
 						<li><a href="#LookAtMePacific55">Pacific Hydraulic - 55 Ton</a></li>
-						<li><a href="#LookAtMeBigPacific">Big Pacific</a></li>
+						<!-- <li><a href="#LookAtMeBigPacific">Big Pacific</a></li> -->
 					</ul>
 				<h3><a href = "#lookAtMeLaserCutting">Laser Cutting</a></h3>
 			</div>
+
 			<div id = "stampingPressContainer">
 				<div id="LookAtMeNinja" class = "LookAtMe">
-					<a onclick= "call('ninja')">Aida - 1100 Ton</a>
+					<a onclick= "call('ninja')">&#9658; Aida - 1100 Ton</a>
 				</div>
 				<div id = "ninja">
 				<h2>Aida - 1100 Ton</h2>
 				<div class = "row">
 					<!-- Main Image -->
 					<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-						<img  id = ninjaMainImage class = "mainImage" src = "images/equip/ninja/ninja.jpg" height ="450" alt ="The Ninja">
+						<img  id = ninjaMainImage class = "pressMainImage" src = "images/equip/ninja/ninja.jpg" height ="450" alt ="The Ninja">
 					</div>
 					<!-- Technical Information -->
 					<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -159,21 +161,21 @@
 				</div>
 					<!-- Thumbnails -->
 					<div class = "thumbnails">
-						<img onclick= "swapPhotoNinja(0)"src = "images/equip/ninja/IMG_0663.jpg" height ="150" alt ="The Ninja">
-						<img onclick= "swapPhotoNinja(1)"src = "images/equip/ninja/IMG_0664.jpg" height ="150" alt ="The Ninja">
-						<img onclick= "swapPhotoNinja(2)"src = "images/equip/ninja/ninja.jpg" height ="150" alt ="The Ninja">
+						<img onclick= "swapPhotoNinja(0)" src = "images/equip/ninja/IMG_0663.jpg" height ="150" alt ="The Ninja">
+						<img onclick= "swapPhotoNinja(1)" src = "images/equip/ninja/IMG_0664.jpg" height ="150" alt ="The Ninja">
+						<img onclick= "swapPhotoNinja(2)" src = "images/equip/ninja/ninja.jpg" height ="150" alt ="The Ninja">
 					</div>
 				</div>
 
 				<div id="LookAtMeTheBoss" class = "LookAtMe">
-					<a onclick= "call('theBoss')">Danley Straight Side - 1200 Ton</a>
+					<a onclick= "call('theBoss')">&#9658; Danley Straight Side - 1200 Ton</a>
 				</div>
 				<h2>Danley Straight Side - 1200 Ton</h2>
 				<div id = "theBoss">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 						<!-- Main Image -->
-							<img id= "bossMainImage" class = "mainImage" src = "images/equip/boss/_DSC2892.jpg" height ="450" alt ="The Boss">
+							<img id= "bossMainImage" class = "pressMainImage" src = "images/equip/boss/_DSC2892.jpg" height ="450" alt ="The Boss">
 						</div>
 						<!-- Technical Information -->
 						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -192,13 +194,13 @@
 				</div>
 
 				<div id="LookAtMeNiagara400Ton" class = "LookAtMe">
-					<a onclick= "call('Niagara400Ton')">Clearing Niagara Straight Side - 400 Ton</a>
+					<a onclick= "call('Niagara400Ton')">&#9658; Clearing Niagara Straight Side - 400 Ton</a>
 				</div>
 				<h2>Clearing Niagara Straight Side - 400 Ton</h2>
 				<div id = "Niagara400Ton">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<img id= "Niagara400TonMainImage" class = "mainImage" src = "images/equip/Niagara400/IMG_0704.jpg" height ="450" alt ="The Boss">
+							<img id= "Niagara400TonMainImage" class = "pressMainImage" src = "images/equip/Niagara400/IMG_0704.jpg" height ="450" alt ="The Boss">
 						</div>
 						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
 							<li>- 60" x 50" Bed Capacity</li>
@@ -215,14 +217,14 @@
 				</div>
 
 				<div id="LookAtMeChief" class = "LookAtMe">
-					<a onclick= "call('chief')">Clearing Niagara Straight Side - 330 Tons</a>
+					<a onclick= "call('chief')">&#9658; Clearing Niagara Straight Side - 330 Ton</a>
 				</div>
-				<h2>Clearing Niagara Straight Side - 330 Tons</h2>
+				<h2>Clearing Niagara Straight Side - 330 Ton</h2>
 				<div id = "chief">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 							<!-- Main Image -->
-							<img id = "chiefMainImage" class = "mainImage" src = "images/equip/chief/IMG_0630.jpg" height ="450" alt ="The Chief">
+							<img id = "chiefMainImage" class = "pressMainImage" src = "images/equip/chief/IMG_0630.jpg" height ="450" alt ="The Chief">
 						</div>
 						<!-- Technical Information -->
 						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -241,14 +243,14 @@
 				</div>
 
 				<div id="LookAtMeBrave" class = "LookAtMe">
-					<a onclick= "call('brave')">Clearing Niagara Straight Side - 220 Tons</a>
+					<a onclick= "call('brave')">&#9658; Clearing Niagara Straight Side - 220 Ton</a>
 				</div>
-				<h2>Clearing Niagara Straight Side - 220 Tons</h2>
+				<h2>Clearing Niagara Straight Side - 220 Ton</h2>
 				<div id = "brave">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 							<!-- Main Image -->
-							<img id = "braveMainImage" class = "mainImage" src = "images/equip/brave/IMG_0644.jpg" height ="450" alt ="The Brave">
+							<img id = "braveMainImage" class = "pressMainImage" src = "images/equip/brave/IMG_0644.jpg" height ="450" alt ="The Brave">
 						</div>
 					<!-- Technical Information -->
 					<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -266,14 +268,14 @@
 				</div>
 
 				<div id="LookAtMeVerson300Ton" class = "LookAtMe">
-					<a onclick= "call('verson300Ton')">Verson OBG - 300 Ton</a>
+					<a onclick= "call('verson300Ton')">&#9658; Verson OBG - 300 Ton</a>
 				</div>
 				<h2>Verson OBG - 300 Ton</h2>
 				<div id = "verson300Ton">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 							<!-- Main Image -->
-							<img id = "verson300MainImage" class = "mainImage" src= "images/equip/verson300/IMG_0710.jpg" height ="450" alt ="Verson 300">
+							<img id = "verson300MainImage" class = "pressMainImage" src= "images/equip/verson300/IMG_0710.jpg" height ="450" alt ="Verson 300">
 						</div>
 					<!-- Technical Information -->
 					<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -290,14 +292,14 @@
 				</div>
 
 				<div id="LookAtMeBliss" class = "LookAtMe">
-					<a onclick= "call('bliss')">Bliss Hydro Dynamic Press - 300 Ton</a>
+					<a onclick= "call('bliss')">&#9658; Bliss Hydro Dynamic Press - 300 Ton</a>
 				</div>
 				<h2>Bliss Hydro Dynamic Press - 300 Ton</h2>
 				<div id = "bliss">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 							<!-- Main Image -->
-							<img id = "blissMainImage" class = "mainImage" src= "images/equip/bliss/IMG_0667.jpg" height ="450" alt ="The Bliss">
+							<img id = "blissMainImage" class = "pressMainImage" src= "images/equip/bliss/IMG_0667.jpg" height ="450" alt ="The Bliss">
 						</div>
 						<!-- Technical Information -->
 						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -314,14 +316,14 @@
 				</div>
 
 				<div id="LookAtMeVerson200Ton" class = "LookAtMe">
-					<a onclick= "call('verson200Ton')">Verson OBG - 200 Ton</a>
+					<a onclick= "call('verson200Ton')">&#9658; Verson OBG - 200 Ton</a>
 				</div>
 				<h2>Verson OBG - 200 Ton</h2>
 				<div id = "verson200Ton">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 							<!-- Main Image -->
-							<img id = "verson200MainImage" class = "mainImage" src= "images/equip/Verson200/IMG_0668.jpg" height ="450" alt ="Verson 200">
+							<img id = "verson200MainImage" class = "pressMainImage" src= "images/equip/Verson200/IMG_0668.jpg" height ="450" alt ="Verson 200">
 						</div>
 						<!-- Technical Information -->
 						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -340,14 +342,14 @@
 				</div>
 
 				<div id="LookAtMeAida176er" class = "LookAtMe">
-					<a onclick= "call('aida176er')">Aida - 176 Ton</a>
+					<a onclick= "call('aida176er')">&#9658; Aida - 176 Ton</a>
 				</div>
 				<h2>Aida - 176 Ton</h2>
 				<div id = "aida176er">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 							<!-- Main Image -->
-							<img id=adia160MainImage "" class = "mainImage" src = "images/equip/aida160/IMG_0503.jpg" height ="450" alt ="Aida 160">
+							<img id=adia160MainImage "" class = "pressMainImage" src = "images/equip/aida160/IMG_0503.jpg" height ="450" alt ="Aida 160">
 						</div>
 						<!-- Technical Information -->
 						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -365,14 +367,14 @@
 				</div>
 
 				<div id="LookAtMeA150" class = "LookAtMe">
-					<a onclick= "call('a150')">Aida - 150 Ton</a>
+					<a onclick= "call('a150')">&#9658; Aida - 150 Ton</a>
 				</div>
 				<h2>Aida - 150 Ton</h2>
 				<div id = "a150">
 					<div class ="row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 							<!-- Main Image -->
-							<img id= "adia150MainImage" class = "mainImage" src = "images/equip/aida150/150CloseUp.jpg" height ="450" alt ="Aida 150">
+							<img id= "adia150MainImage" class = "pressMainImage" src = "images/equip/aida150/150CloseUp.jpg" height ="450" alt ="Aida 150">
 						</div>
 						<!-- Technical Information -->
 						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -390,14 +392,14 @@
 				</div>
 
 				<div id="LookAtMeE5Half" class = "LookAtMe">
-					<a onclick= "call('E5Half')">Niagara E 5 1/2 - 110 Ton</a>
+					<a onclick= "call('E5Half')">&#9658; Niagara E 5 1/2 - 110 Ton</a>
 				</div>
 				<h2>Niagara E 5 1/2 - 110 Ton</h2>
 				<div id = "E5Half">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 						<!-- Main Image -->
-						<img id="E5HalfMainImage" class = "mainImage" src = "images/equip/E5Half/IMG_0658.jpg" height ="450" alt ="Aida 160">
+						<img id="E5HalfMainImage" class = "pressMainImage" src = "images/equip/E5Half/IMG_0658.jpg" height ="450" alt ="Aida 160">
 						</div>
 						<!-- Technical Information -->
 						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -415,14 +417,14 @@
 				</div>
 
 				<div id="LookAtMeMinster5" class = "LookAtMe">
-					<a onclick= "call('minster5')">Minster No. 5 - 45 Ton</a>
+					<a onclick= "call('minster5')">&#9658; Minster No. 5 - 45 Ton</a>
 				</div>
 				<h2>Minster No. 5 - 45 Ton</h2>
 				<div id = "minster5">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 						<!-- Main Image -->
-						<img id = "minster5MainImage" class = "mainImage" src = "images/equip/minster5/IMG_0738.jpg" height ="450" alt ="Minster No.5 45 Ton">
+						<img id = "minster5MainImage" class = "pressMainImage" src = "images/equip/minster5/IMG_0738.jpg" height ="450" alt ="Minster No.5 45 Ton">
 						</div>
 						<!-- Technical Information -->
 						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -440,14 +442,14 @@
 				</div>
 
 				<div id="LookAtMeMinster" class = "LookAtMe">
-					<a onclick= "call('minster')">Minster No. 4 - 30 Ton</a>
+					<a onclick= "call('minster')">&#9658; Minster No. 4 - 30 Ton</a>
 				</div>
 				<h2>Minster No. 4 - 30 Ton</h2>
 				<div id = "minster">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 							<!-- Main Image -->
-							<img id = "minsterMainImage" class = "mainImage" src = "images/equip/minster/IMG_0699.jpg" height ="450" alt ="Minster No.4 30 Ton">
+							<img id = "minsterMainImage" class = "pressMainImage" src = "images/equip/minster/IMG_0699.jpg" height ="450" alt ="Minster No.4 30 Ton">
 						</div>
 						<!-- Technical Information -->
 						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -465,14 +467,14 @@
 				</div>
 
 				<div id="LookAtMeOBIWan" class = "LookAtMe">
-					<a onclick= "call('OBIWan')">Niagara OBI - 150 Ton</a>
+					<a onclick= "call('OBIWan')">&#9658; Niagara OBI - 150 Ton</a>
 				</div>
 				<h2>Niagara OBI - 150 Ton</h2>
 				<div id = "OBIWan">
 					<div class = row>
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 						<!-- Main Image -->
-							<img id = "OBIWanMainImage" class = "mainImage" src = "images/equip/OBIWan/IMG_0632.jpg" height ="450" alt ="Niagra OBI 150">
+							<img id = "OBIWanMainImage" class = "pressMainImage" src = "images/equip/OBIWan/IMG_0632.jpg" height ="450" alt ="Niagra OBI 150">
 						</div>
 
 						<!-- Technical Information -->
@@ -491,14 +493,14 @@
 				</div>
 
 				<div id="LookAtMeE110" class = "LookAtMe">
-					<a onclick= "call('E110')">Niagara E110 - 110 Ton</a>
+					<a onclick= "call('E110')">&#9658; Niagara E110 - 110 Ton</a>
 				</div>
 				<h2>Niagara E110 - 110 Ton</h2>
 				<div id = "E110">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 							<!-- Main Image -->
-							<img id ="E110MainImage" class = "mainImage" src = "images/equip/niagaraE110/IMG_0649.jpg" height ="450" alt ="Niagra E110">
+							<img id ="E110MainImage" class = "pressMainImage" src = "images/equip/niagaraE110/IMG_0649.jpg" height ="450" alt ="Niagra E110">
 						</div>
 						<!-- Technical Information -->
 						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
@@ -516,14 +518,14 @@
 				</div>
 
 				<div id="LookAtMeSpirit" class = "LookAtMe">
-					<a onclick= "call('spirit')">Niagara Spirit - 110 Ton</a>
+					<a onclick= "call('spirit')">&#9658; Niagara Spirit - 110 Ton</a>
 				</div>
 				<h2>Niagara Spirit - 110 Ton</h2>
 				<div id = "spirit">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 							<!-- Main Image -->
-							<img id= "spiritMainImage" class = "mainImage" src = "images/equip/spirit/IMG_0680.jpg" height ="450" alt ="Niagra E110">
+							<img id= "spiritMainImage" class = "pressMainImage" src = "images/equip/spirit/IMG_0680.jpg" height ="450" alt ="Niagra E110">
 						</div>
 
 						<!-- Technical Information -->
@@ -542,14 +544,14 @@
 				</div>
 
 				<div id="LookAtMeBliss45" class = "LookAtMe">
-					<a onclick= "call('bliss45')">Bliss C-45 - 45 Ton</a>
+					<a onclick= "call('bliss45')">&#9658; Bliss C-45 - 45 Ton</a>
 				</div>
 				<h2>Bliss C-45 - 45 Ton</h2>
 				<div id = "bliss45">
 					<div class = "row">
 						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 							<!-- Main Image -->
-							<img id = "bliss45MainImage" class = "mainImage" src= "images/equip/bliss45/IMG_0741.jpg" height ="450" alt ="The Bliss C-45">
+							<img id = "bliss45MainImage" class = "pressMainImage" src= "images/equip/bliss45/IMG_0741.jpg" height ="450" alt ="The Bliss C-45">
 						</div>
 
 						<!-- Technical Information -->
@@ -569,18 +571,18 @@
 
 			<div id= "lookAtMeBrakePress"><a>Brake Presses</a></div>
 			<div id="brakePressExpand">
-				<div id="LookAtMeAmadaBrake">
-					<a onclick= "call('AmadaBrake')">Amada HDS 1303NT - 143 Ton</a>
+				<div id="LookAtMeAmadaBrake" class = "LookAtMe">
+					<a onclick= "call('AmadaBrake')">&#9658; Amada HDS 1303NT - 143 Ton</a>
 				</div>
 				<h2 id = "amadaH2">Amada HDS 1303NT - 143 Ton</h2>
 				<div id = "AmadaBrake">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+					<div>
+						<div>
 							<!-- Main Image -->
-							<img id = "amadaMainImage" class = "mainImage" src = "images/equip/amada/IMG_0625.jpg" height ="300" alt ="Amada Brake Press">
+							<img id = "amadaMainImage" class = "brakeMainImage" src = "images/equip/amada/IMG_0625.jpg" height ="300" alt ="Amada Brake Press">
 						</div>
 						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+						<ul>
 							<li>- Bending Capacity Of .25" x 10'</li>
 							<li>- IR Sensors That Automatically Adjust Programmed Parts To Fit Your Specifications</li>
 							<li></li>
@@ -595,18 +597,18 @@
 				</div>
 
 				<div id="LookAtMePacific110" class = "LookAtMe">
-					<a onclick= "call('pacific110')">Pacific Hydraulic Brake Press - 110 Ton</a>
+					<a onclick= "call('pacific110')">&#9658; Pacific Hydraulic Brake Press - 110 Ton</a>
 				</div>
 				<h2 id= "pacificH2">Pacific Hydraulic Brake Press - 110 Ton</h2>
 				<div id = "pacific110">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+					<div>
+						<div>
 							<!-- Main Image -->
-							<img id = "pacific110MainImage" class = "mainImage" src = "images/equip/pacific110/IMG_0619.jpg" height ="300" alt ="Pacific 110 Ton Press Brake">
+							<img id = "pacific110MainImage" class = "brakeMainImage" src = "images/equip/pacific110/IMG_0619.jpg" height ="300" alt ="Pacific 110 Ton Press Brake">
 						</div>
 
 						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+						<ul>
 							<li>- Bending Capacity Of .1875" x 9'</li>
 							<li>- Hurco Autobend IV 2 Axis Gauging System.</li>
 							<li></li>
@@ -622,30 +624,30 @@
 				</div>
 
 				<div id="LookAtMePacific55" class = "LookAtMe">
-					<a onclick= "call('pacific55')">Pacific Hydraulic Brake Press - 55 Ton</a>
+					<a onclick= "call('pacific55')">&#9658; Pacific Hydraulic Brake Press - 55 Ton</a>
 				</div>
 				<h2>Pacific Hydraulic Brake Press - 55 Ton</h2>
 				<div id="pacific55">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+					<div>
+						<div>
 							<!-- Main Image -->
-							<img id = "pacific55MainImage" class = "mainImage" src = "images/equip/pacific55/IMG_0597.jpg" height ="300" alt ="Pacific 55 Ton Press Brake">
+							<img id = "pacific55MainImage" class = "brakeMainImage" src = "images/equip/pacific55/IMG_0597.jpg" height ="300" alt ="Pacific 55 Ton Press Brake">
 						</div>
 
 						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+						<ul>
 							<li>- Bending Capacity Of .1875" x 4'6"</li>
 							<li>- Hurco Autobend 2 Axis Gauging System</li>
 							<li></li>
 						</ul>
 					</div>
-
+				</div>
 					<!-- Slide Show -->
-					<div class = "thumbnails">
-						<img onclick = "swapPhotoPacific55(0)" src = "images/equip/pacific55/IMG_0597.jpg" height ="150" alt ="Pacific 55 Ton Press Brake">
+					<!-- <div class = "thumbnails">
+						<img onclick = "swapPhotoPacific55(0)" src = "images/equip/pacific55/IMG_0597.jpg" height ="150" alt ="Pacific 55 Ton Press Brake"> -->
 						<!-- <img onclick = "swapPhotoPacific55(1)" src = "images/equip/pacific55/IMG_0597.jpg" height ="150" alt = "Pacific 55 Ton Press Brake">
 						<img onclick = "swapPhotoPacific55(2)" src = "images/equip/pacific55/IMG_0597.jpg" height ="150" alt ="Pacific 55 Ton Press Brake"> -->
-					</div>
+					<!-- </div>
 				</div>
 
 				<div id="LookAtMeBigPacific" class = "LookAtMe">
@@ -653,42 +655,42 @@
 				</div>
 				<h2>Big Pacific Hydraulic Brake Press</h2>
 				<div id = "bigPacific">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+					<div>
+						<div> -->
 							<!-- Main Image -->
-							<img id = "bigPacificMainImage" class = "mainImage" src = "images/equip/bigPacific/IMG_0624.jpg" height ="300" alt ="Big Pacific Press Brake">
-						</div>
+							<!-- <img id = "bigPacificMainImage" class = "mainImage" src = "images/equip/bigPacific/IMG_0624.jpg" height ="300" alt ="Big Pacific Press Brake">
+						</div> -->
 						<!-- Technical Information -->
 						<!-- GET TECHNICAL INFORMATION!!!!!!  -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+						<!-- <ul>
 							<li>- </li>
 							<li>- </li>
 							<li></li>
 						</ul>
-					</div>
+					</div> -->
 
 					<!-- Slide Show -->
-					<div class = "thumbnails">
+					<!-- <div class = "thumbnails">
 						<img onclick = "swapPhotoBigPacific(0)" src = "images/equip/bigPacific/IMG_0622.jpg" height ="150" alt ="Big Pacific Press Brake">
 						<img onclick = "swapPhotoBigPacific(1)" src = "images/equip/bigPacific/IMG_0623.jpg" height ="150" alt = "Big Pacific Press Brake">
 						<img onclick = "swapPhotoBigPacific(2)" src = "images/equip/bigPacific/IMG_0624.jpg" height ="150" alt ="Big Pacific Press Brake">
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 			<div id ="lookAtMeLaserCutting" class = "LookAtMe">
-				<a onclick= "call('laserCuttingContainer')">Laser Cutting</a>
+				<a onclick= "call('laserCuttingContainer')">&#9658; Laser Cutting</a>
 			</div>
 			<div id = "laserCuttingContainer">
 				<h2>Prima Power Patino 1530 CV5000</h2>
-				<div class ="row">
-					<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+				<div>
+					<div>
 						<!-- Main Image -->
-						<img id = "laserMainImage" src = "images/equip/laser/IMG_0603.jpg" height ="300" alt ="Prima Power Patino 1530 CV5000">
+						<img id = "laserMainImage" class = "brakeMainImage" src = "images/equip/laser/IMG_0603.jpg" height ="50" alt ="Prima Power Patino 1530 CV5000">
 					</div>
 					<!-- Technical Information -->
 					<!-- GET TECHNICAL INFORMATION!!!!!!  -->
-					<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+					<ul>
 						<li>- 60" (1524mm) x 120" (3048 Table) </li>
 						<li>- Cut Mild Steel Up To 1" (25mm)</li>
 						<li>- Stainless Steel Up To 0.500" (12mm)</li>

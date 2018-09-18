@@ -133,13 +133,15 @@ var laserPictures = [
 // This function takes in an elements ID and toggles the visability
 var call = function toggleTheDiv(id){
   var x = document.getElementById(id);
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
+    if (x.style.display === "block") {
         x.style.display = "none";
+    } else {
+        x.style.display = "block";
     }
 }
 
+
+// THESE ARE THE FUNCTIONS THAT CONTROL THE IMAGE GALLERY
 function swapPhotoNinja(i) {
   document.getElementById("ninjaMainImage").src=ninjaPictures[i];
 }
