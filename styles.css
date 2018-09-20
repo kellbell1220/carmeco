@@ -1244,7 +1244,7 @@ footer p{
 #stampPress{
   line-height: 25vw;
   position: relative;
-  opacity: .4;
+  opacity: .5;
   height: 49.5vw;
   padding: 0;
   margin: 0;
@@ -1324,7 +1324,7 @@ footer p{
 
 #laserEquip{
   height:49.5vw;
-  opacity: .4;
+  opacity: .7;
   padding: 0;
   margin: 0;
   transition: transform 1s; /* Animation */
@@ -1532,6 +1532,11 @@ on-click javascript will display list */
 #stampList{
   position: sticky;
   display: none;
+}
+
+#equipSideNav li{
+  clear:both;
+  display: block;
 }
 
 #brakeList{
@@ -1765,6 +1770,22 @@ on-click javascript will display list */
   }
 }
 
+@media only screen and (max-width: 1366px){
+  /* Capabilities Page */
+  #weldingBox::after{
+    margin-top: -24.5vw;
+  }
+
+  #formingBox::after{
+    margin-top: -24.5vw;
+  }
+
+  /* Contact Page */
+  .contactList li{
+    line-height: 1vw;
+  }
+}
+
 @media only screen and (max-width: 1286px){
   #logo{
     width: 25vw;
@@ -1945,6 +1966,11 @@ on-click javascript will display list */
 
   #stampingPressContainer{
     margin-top: -60vw;
+  }
+
+  /* Contact Page */
+  .contactList li{
+    line-height: .5vw;
   }
 }
 
@@ -2495,6 +2521,14 @@ on-click javascript will display list */
     text-align: center;
   }
 
+  #stampList li{
+    margin-left: 1vw;
+  }
+
+  #brakeList li{
+    margin-left: 1vw;
+  }
+
   #stampingPressContainer{
     margin-top: -65vw;
   }
@@ -2589,6 +2623,52 @@ on-click javascript will display list */
     padding-right: 4vw;
   }
 
+  /* Contact Page */
+  #contactSlide{
+    float:none;
+    width: 75vw;
+    margin-left: 10vw;
+    margin-top: 2vw;
+    padding-top: 0;
+    margin-bottom: 2vw;
+    position: static;
+  }
+
+  #greeting{
+    font-size: 3vw;
+    width:auto;
+    margin-right: 0;
+  }
+
+  .contactList {
+    width: 95%;
+    overflow-y: initial;
+    overflow-x: visible;
+    height: 195vw;
+    margin-top: -10vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding-bottom: 2vw;
+    position: relative;
+  }
+
+  .contactList ul{
+    padding-bottom: 2vw;
+  }
+
+  .contactList .name{
+    font-size: 4vw;
+  }
+
+  .contactList li{
+    font-size: 3vw;
+    line-height: 2vw;
+    float:none;
+  }
+
+  .contactList a{
+    font-size: 3vw;
+  }
 }
 
 @media only screen and (max-width: 645px){
@@ -3104,6 +3184,12 @@ on-click javascript will display list */
     font-size: 6vw;
   }
 
+  #greeting{
+    font-size: 4vw;
+    width:auto;
+    margin-right: 0;
+  }
+
   #contactSlide{
     float:none;
     width: 75vw;
@@ -3144,11 +3230,6 @@ on-click javascript will display list */
     font-size: 4vw;
   }
 
-  #greeting{
-    font-size: 4vw;
-    width:auto;
-    margin-right: 0;
-  }
 
   /* GreenInit Page */
   #intro{
@@ -3928,7 +4009,6 @@ on-click javascript will display list */
   }
 }
 
-
 @media only screen and (max-width: 377px){
   #qualityBox::after{
     margin-top: -41vw;
@@ -4136,7 +4216,6 @@ on-click javascript will display list */
     height: 96vw;
     margin-top: -42vw;
   }
-
 }
 
 @media only screen and (max-width: 340px){
