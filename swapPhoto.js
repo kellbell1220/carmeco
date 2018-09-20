@@ -107,6 +107,8 @@ var pacific110Pictures = [
 ];
 
 var pacific55Pictures = [
+  "images/equip/pacific55/IMG_0777.jpg",
+  "images/equip/pacific55/IMG_0776.jpg",
   "images/equip/pacific55/IMG_0597.jpg"
 ];
 
@@ -127,7 +129,8 @@ var laserPictures = [
   "images/equip/laser/IMG_0620.jpg",
   "images/equip/laser/IMG_0621.jpg",
   "images/equip/laser/laser.jpg",
-  "images/equip/laser/IMG_0603.jpg"
+  "images/equip/laser/IMG_0764.jpg",
+  "images/equip/laser/IMG_0759.jpg"
 ];
 
 // This function takes in an elements ID and toggles the visability
