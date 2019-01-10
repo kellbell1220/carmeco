@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Metal Stamping And Fabrication At Its Finest | Carmeco Inc</title>
+		<title>Contact Us | Carmeco Inc</title>
 			<!--
 			Carmeco Inc
 			Filename: index.html
@@ -16,7 +16,7 @@
 
 			<meta name = "description" content = "Carmeco Description goes here">
 
-			<meta name="keywords" content="Metal Fabrication, Metal Stamping, Metal Laser Cutting, Industrial,">
+			<meta name="keywords" content="Metal Fabrication, Metal Stamping, Metal Laser Cutting, Industrial, Contact Us, Missouri, Lebanon Missouri">
 
 			<meta name="robots" content="index, follow">
 
@@ -51,7 +51,7 @@
   <body>
 		<header id = "headerContact">
 			<div id="headerContainer" class ="container-fluid">
-				<p><a id="phone" href="tel:14175887272">Call Us Today: (417) 532-6133</a></p>
+				<p><a id="phone" href="tel:14175326133">Call Us Today: (417) 532-6133</a></p>
 				<div class = "row">
 					<div id="logoDiv">
 						<a href="index.html"><img id= "logo" src= "images/logo.png" width="300" alt= "Carmeco Inc Logo" /></a>
@@ -60,22 +60,27 @@
 
 					<!--Navigation button for smaller viewports  -->
 					<div class = "navigation-menu-button">
-						<p onclick="openNav()" class = "dropbtn">&#9776;</p>
-					</div>
+		        <p onclick="toggleSideBar('.sidenav')" class = "dropbtn">&#9776;</p>
+		      </div>
 
-					<!-- Navigation Menu  -->
+		      <!-- Navigation Menu  -->
 					<nav>
-						<div id="mySidenav" class="sidenav">
-							<ul>
-								<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></li>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="capabilities.html">Capabilities</a></li>
-								<li><a href="equipment.html">Equipment & Systems</a></li>
-								 <li><a href="greenInit.html">Green Initiatives</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
-							</ul>
-						</div>
-					</nav>
+					 <div id="mySidenav" class="sidenav">
+						 <ul>
+							 <li><a href="index.html">Home</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="capabilities.html">Capabilities</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="equipment.html">Equipment</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="greenInit.html">Green Initiatives</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="about.html">About</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="contact.html">Contact</a></li>
+						 </ul>
+					 </div>
+				 </nav>
 				</div>
 			</div>
 		</header>
@@ -84,53 +89,62 @@
 
 		<img id="contactSlide" src = "images/ariel.jpg" width="600" alt="Carmeco">
 
-		<div class="contactList">
+		<div id="contactList" class ="scrollbarclass">
 			<p id = "greeting">Call or e-mail us today to see how we can help you with your metal fabrication needs! <br><i style = "color:#e3eeaa;">Thank you for visiting Carmeco.com!</i></p>
-			<ul>
-				<li class ="name">Jeff Carr</li>
-				<li class ="position">President / Chief Executive Officer</li>
-				<li class = "email"><a href="mailto:jeff@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Jeff@carmeco.com </a></li>
-			</ul>
-			<ul>
-				<li class ="name">John Carr</li>
-				<li class ="position">Chief Visionary Officer</li>
-				<li class = "email"><a href="mailto:john@carmeco.com?subject=Mail%20From%20Carmeco%20Website">John@carmeco.com</a></li>
-			</ul>
-			<ul>
-				<li class ="name">Jared Carr</li>
-				<li class ="position">Chief Financial Officer</li>
-				<li class = "email"><a href="mailto:jared@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Jared@carmeco.com</a></li>
-			</ul>
-			<ul>
-				<li class ="name">Joe Carr</li>
-				<li class ="position">Vice President of Production</li>
-				<li class = "email"><a href="mailto:joe@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Joe@carmeco.com</a></li>
-			</ul>
-			<ul>
-				<li class ="name">Donti Hawkins</li>
-				<li class ="position">Vice President of Operations</li>
-				<li class = "email"><a href="mailto:donti@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Donti@carmeco.com</a></li>
-			</ul>
-			<ul>
-				<li class ="name">Becky Bollig</li>
-				<li class ="position">Accounting Manager</li>
-				<li class = "email"><a href="mailto:becky@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Becky@carmeco.com</a></li>
-			</ul>
-			<ul>
-				<li class ="name">Kris Deitz</li>
-				<li class ="position">Purchasing Manager</li>
-				<li class = "email"><a href="mailto:kris@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Kris@carmeco.com</a></li>
-			</ul>
-			<ul>
-				<li class ="name">Tracy Bledsoe</li>
-				<li class ="position">Logistics Manager</li>
-				<li class = "email"><a href="mailto:tracy@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Tracy@carmeco.com</a></li>
-			</ul>
-			<ul>
-				<li class ="name">Heath McBride</li>
-				<li class ="position">Specialist</li>
-				<li class = "email"><a href="mailto:heath@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Heath@carmeco.com</a></li>
-			</ul>
+			<div id = "printCol1">
+				<ul>
+					<li class ="name">Jeff Carr</li>
+					<li class ="position">President / Chief Executive Officer</li>
+					<li class = "email"><a href="mailto:jeff@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Jeff@carmeco.com </a></li>
+				</ul>
+				<ul>
+					<li class ="name">John Carr</li>
+					<li class ="position">Vice President of Manufacturing</li>
+					<li class = "email"><a href="mailto:john@carmeco.com?subject=Mail%20From%20Carmeco%20Website">John@carmeco.com</a></li>
+				</ul>
+				<ul>
+					<li class ="name">Jared Carr</li>
+					<li class ="position">Chief Financial Officer</li>
+					<li class = "email"><a href="mailto:jared@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Jared@carmeco.com</a></li>
+				</ul>
+				<ul>
+					<li class ="name">Joe Carr</li>
+					<li class ="position">Vice President</li>
+					<li class = "email"><a href="mailto:joe@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Joe@carmeco.com</a></li>
+				</ul>
+				<ul>
+					<li class ="name">Donti Hawkins</li>
+					<li class ="position">Vice President of Operations</li>
+					<li class = "email"><a href="mailto:donti@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Donti@carmeco.com</a></li>
+				</ul>
+			</div>
+			<div id="printCol2">
+				<ul>
+					<li class ="name">Becky Bollig</li>
+					<li class ="position">Accounting Manager</li>
+					<li class = "email"><a href="mailto:becky@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Becky@carmeco.com</a></li>
+				</ul>
+				<ul>
+					<li class ="name">Kris Deitz</li>
+					<li class ="position">Purchasing Manager</li>
+					<li class = "email"><a href="mailto:kris@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Kris@carmeco.com</a></li>
+				</ul>
+				<ul>
+					<li class ="name">Tracy Bledsoe</li>
+					<li class ="position">Logistics Manager</li>
+					<li class = "email"><a href="mailto:tracy@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Tracy@carmeco.com</a></li>
+				</ul>
+				<ul>
+					<li class ="name">Heath McBride</li>
+					<li class ="position">Specialist</li>
+					<li class = "email"><a href="mailto:heath@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Heath@carmeco.com</a></li>
+				</ul>
+				<ul>
+					<li class ="name">Josh Hay</li>
+					<li class ="position">Customer Relations</li>
+					<li class = "email"><a href="mailto:josh@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Josh@carmeco.com</a></li>
+				</ul>
+			</div>
 		</div>
 
     <footer>
@@ -139,18 +153,19 @@
 			<div id="info" class="col-md-5 col-sm-6 col-xs-12 fbox">
 				<p style = "text-decoration: underline; color: #e3eeaa;">Headquarters</p>
 				<p>301 Carmeco Road | Lebanon, Missouri 65536</p>
-				<p><a href="tel:14175887272">Phone: (417) 532-6133</a> | FAX: (417) 532-3565</p>
+				<p><a href="tel:14175326133">Phone: (417) 532-6133</a> | FAX: (417) 532-3565</p>
+				<p><a href="mailto:info@carmeco.com?subject=Mail%20From%20Carmeco%20Website">E-mail: info@Carmeco.com</a></p>
 				<p style = "text-decoration: underline; color: #e3eeaa;">Office Hours</p>
-				<p>Monday - Friday 8 A.M. - 5 P.M.</p>
+				<p>Monday - Friday 8 A.M. - 5 P.M. - Central Time</p>
 				<p style = "text-decoration: underline; color: #e3eeaa;">Shipping And Receiving Hours</p>
-				<p>Monday - Friday 6:30 A.M. - 4:30 P.M.</p>
+				<p>Monday - Friday 6:30 A.M. - 4:30 P.M. - Central Time</p>
 			</div>
 
 			<div id= "promise" class="col-md-7 col-sm-6 col-xs-12 fbox">
 				<h3 style ="color: #e3eeaa;">The Carmeco Promise</h3>
 				<p>
-					To produce quality goods at a profit. We know our customers must have quality components at competitive prices. To keep both our own and our customers’ business healthy, we must provide superior service to every order we receive, from the largest to the smallest and from the newest to the oldest customer. Your own business experience will tell you that this is not always easy. On behalf of Carmeco Incorporated, I want to assure you that our endeavors for superior quality service will never stop.
-  				<span style="color: #e3eeaa;">—   Jeff Carr, President</span>
+					We seek to manufacture the most creative, innovative and profitable services in the world. This is not just a slogan this is how Carmeco Inc. strives to support its customers, associates and community. To keep both our own and our customers’ business healthy, we must provide superior service to every order we receive, from the largest to the smallest and from the newest to the oldest. On behalf of Carmeco Incorporated, I want to assure you that our endeavors for creative, innovative and proficient service will never stop.
+  				<br><span style="color: #e3eeaa;">—   Jeff Carr, President</span>
 				</p>
 			</div>
 
@@ -159,7 +174,7 @@
 			</div>
     </footer>
 		<!-- Side Show -->
-		<script src = "contactSlideShow.js"></script>
-    <script src = "script.js"></script>
+		<script src = "js/contactSlideShow.js"></script>
+    <script src = "js/script.js"></script>
   </body>
 </html>

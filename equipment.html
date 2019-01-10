@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Metal Stamping And Fabrication At Its Finest | Carmeco Inc</title>
+		<title>Equipment | Carmeco Inc</title>
 			<!--
 			Carmeco Inc
 			Filename: equipment.html
@@ -16,7 +16,7 @@
 
 			<meta name = "description" content = "Carmeco Description goes here">
 
-			<meta name="keywords" content="Metal Fabrication, Metal Stamping, Metal Laser Cutting, Industrial,">
+			<meta name="keywords" content="Metal Fabrication, Metal Stamping, Metal Laser Cutting, Industrial, Aida, Amada, Niagra, Danely, verson, bliss, Minster, pacific, Prima Power">
 
 			<meta name="robots" content="index, follow">
 
@@ -39,19 +39,20 @@
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 			<!-- Latest compiled and minified JavaScript -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
       <!-- Google Fonts -->
 			<link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
 
 			<!-- CSS Links  -->
 			<link rel="stylesheet" href="styles.css">
-
 	</head>
-  <body>
+  <body id= "equipPage">
     <header id = headerEquip>
       <div id="headerContainer" class ="container-fluid">
-				<p><a id="phone" href="tel:14175887272">Call Us Today: (417) 532-6133</a></p>
+				<p><a id="phone" href="tel:14175326133">Call Us Today: (417) 532-6133</a></p>
 				<div class = "row">
 					<div id="logoDiv">
 						<a href="index.html"><img id= "logo" src= "images/logo.png" width="300" alt= "Carmeco Inc Logo" /></a>
@@ -60,22 +61,27 @@
 
 					<!--Navigation button for smaller viewports  -->
 					<div class = "navigation-menu-button">
-		        <p onclick="openNav()" class = "dropbtn">&#9776;</p>
+		        <p onclick="toggleSideBar('.sidenav')" class = "dropbtn">&#9776;</p>
 		      </div>
 
 		      <!-- Navigation Menu  -->
-		      <nav>
-		        <div id="mySidenav" class="sidenav">
-		          <ul>
-		            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></li>
-		            <li><a href="index.html">Home</a></li>
-		            <li><a href="capabilities.html">Capabilities</a></li>
-		            <li><a href="equipment.html">Equipment & Systems</a></li>
-		             <li><a href="greenInit.html">Green Initiatives</a></li>
-		            <li><a href="contact.html">Contact Us</a></li>
-		          </ul>
-		        </div>
-		      </nav>
+					<nav>
+					 <div id="mySidenav" class="sidenav">
+						 <ul>
+							 <li><a href="index.html">Home</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="capabilities.html">Capabilities</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="equipment.html">Equipment</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="greenInit.html">Green Initiatives</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="about.html">About</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="contact.html">Contact</a></li>
+						 </ul>
+					 </div>
+				 </nav>
       	</div>
       </div>
     </header>
@@ -85,652 +91,770 @@
 					<div id = stampBlackBox></div>
 					<img id="stampPress" src = "images/equip/ninja/ninja.jpg" height ="50" alt ="The Ninja">
 					<div  id="stampPressWord" >
-						<a href ="#lookAtMeStamping">Stamp Presses</a>
+						<a href ="#arrowDiv" onclick= "call('#theBoss', '#LookAtMeTheBoss a:first'); toggleSideBar('#stampList .LookAtMe');">Stamp Presses</a>
 					</div>
 				</div>
 				<div  id ="brakePressContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<div id = brakePressBlackBox></div>
 					<img id= "brakePress" src ="images/equip/amada/IMG_0757.jpg" height ="50" alt ="Brake Press" >
 					<div id="brakePressWord" >
-						<a href ="#lookAtMeBrakePress">Brake Presses</a>
+						<a href ="#arrowDiv" onclick= "call('#bigPacific', '#LookAtMeBigPacific a:first'); toggleSideBar('#brakelist .LookAtMe');">Brake Presses</a>
 					</div>
 				</div>
 				<div  id = "laserEquipContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<div id ="laserEquipBlackBox"></div>
 					<img id ="laserEquip" src="images/equip/laser/IMG_0772.jpg"  height ="50" alt ="Prima Power Laser">
 					<div id="laserEquipWord" >
-						<a href ="#lookAtMeLaserCutting">Laser Cutting</a>
+						<a href ="#arrowDiv" onclick= "call('#laserCuttingContainer', '#lookAtMeLaserCutting p:first')">Laser Cutting</a>
 					</div>
 				</div>
 			</div>
 			<div id = "arrowDiv">
-				<a href = "#lookAtMeStamping"><img id= "arrow"  src ="images/arrow6.png" width="50" alt ="arrow" ></a>
+				<!-- <a href = "#stampList"><img id= "arrow"  src ="images/arrow6.png" width="50" alt ="arrow" ></a> -->
 			</div>
 		</div>
-		<div id= "lookAtMeStamping"></div>
-		<div id = "equipmentInfo">
-			<div id = "equipSideNav">
-				<button class="btn btn-primary" id = "backToTop"><a href = "#lookAtMeStamping">Back To Top</a></button>
-				<h3><a onclick= "call('stampList')">Stamp Presses</a></h3>
-					<ul id = "stampList">
-						<li><a href="#lookAtMeStamping">Aida - 1110 Ton</a></li>
-						<li><a href="#LookAtMeTheBoss">Danley Straight Side - 1200 Ton</a></li>
-						<li><a href="#LookAtMeNiagara400Ton">Clearing Niagara Straight Side - 400 Ton</a></li>
-						<li><a href="#LookAtMeChief">Clearing Niagara Straight Side - 330 Ton</a></li>
-						<li><a href="#LookAtMeBrave">Clearing Niagara Straignt Side - 200 Ton</a></li>
-						<li><a href="#LookAtMeVerson300Ton">Verson OBG - 300 Ton</a></li>
-						<li><a href="#LookAtMeBliss">Bliss Hydro Dynamic Press - 300 Ton</a></li>
-						<li><a href="#LookAtMeVerson200Ton">Verson OBG - 200 Ton</a></li>
-						<li><a href="#LookAtMeAida176er">Aida - 176 Ton</a></li>
-						<li><a href="#LookAtMeA150">Aida - 150 Ton</a></li>
-						<li><a href="#LookAtMeE5Half">Niagara E 5 1/2 - 110 Ton</a></li>
-						<li><a href="#LookAtMeMinster5">Minster No. 5 - 45 Ton</a></li>
-						<li><a href="#LookAtMeMinster">Minster No. 4  - 30 Ton</a></li>
-						<li><a href="#LookAtMeOBIWan">Niagara OBI - 150 Ton</a></li>
-						<li><a href="#LookAtMeE110">Niagara E110- 110 Ton</a></li>
-						<li><a href="#LookAtMeSpirit">Niagara Spirit - 110 Ton</a></li>
-						<li><a href="#LookAtMeBliss45">Bliss C-45 - 45 Ton</a></li>
-					</ul>
-				<h3><a onclick= "call('brakeList')">Brake Presses</a></h3>
-					<ul id="brakeList">
-						<li><a href="#lookAtMeBrakePress">Amada HDS 1303NT - 143 Ton</a></li>
-						<li><a href="#LookAtMePacific110">Pacific Hydraulic - 110 Ton</a></li>
-						<li><a href="#LookAtMePacific55">Pacific Hydraulic - 55 Ton</a></li>
-						<!-- <li><a href="#LookAtMeBigPacific">Big Pacific</a></li> -->
-					</ul>
-				<h3><a href = "#lookAtMeLaserCutting">Laser Cutting</a></h3>
-			</div>
 
-			<div id = "stampingPressContainer">
-				<div id="LookAtMeNinja" class = "LookAtMe">
-					<a onclick= "call('ninja')">&#9658; Aida - 1100 Ton</a>
-				</div>
-				<div id = "ninja">
-				<h2>Aida - 1100 Ton</h2>
-				<div class = "row">
-					<!-- Main Image -->
-					<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-						<img  id = ninjaMainImage class = "pressMainImage" src = "images/equip/ninja/ninja.jpg" height ="450" alt ="The Ninja">
+		<div id = "equipmentInfo" >
+			<div id = LookAtMeContainer>
+				<div id ="stampList">
+					<p onclick= "call('#theBoss', '#LookAtMeTheBoss a:first'); toggleSideBar('#stampList .LookAtMe');">Stamp Presses</p>
+					<div id="LookAtMeTheBoss" class = "LookAtMe">
+						<a onclick= "call('#theBoss', '#LookAtMeTheBoss a:first')" style = "color:#e3eeaa;">&#9658; Danly Straight Side - 1200 Ton / 1089 Metric Tons </a>
 					</div>
-					<!-- Technical Information -->
-					<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-						<li>- Our Newest Addition</li>
-						<li>- 157" x 63" Bed Capacity</li>
-						<li>- 36" Dallas Servo Feeder / Straightner / Decoiler</li>
-					</ul>
-				</div>
-					<!-- Thumbnails -->
-					<div class = "thumbnails">
-						<img onclick= "swapPhotoNinja(0)" src = "images/equip/ninja/IMG_0663.jpg" height ="150" alt ="The Ninja">
-						<img onclick= "swapPhotoNinja(1)" src = "images/equip/ninja/IMG_0664.jpg" height ="150" alt ="The Ninja">
-						<img onclick= "swapPhotoNinja(2)" src = "images/equip/ninja/ninja.jpg" height ="150" alt ="The Ninja">
+					<div id="LookAtMeNinja" class = "LookAtMe">
+						<a onclick= "call('#ninja', '#LookAtMeNinja a:first')">&#9658; Aida - 1100 Ton / 998 Metric Tons</a>
+					</div>
+					<div id="LookAtMeNiagara400Ton" class = "LookAtMe">
+						<a onclick= "call('#Niagara400Ton', '#LookAtMeNiagara400Ton a:first')">&#9658; Clearing Niagara Straight Side - 400 Ton / 363 Metric Tons</a>
+					</div>
+					<div id="LookAtMeChief" class = "LookAtMe">
+						<a onclick= "call('#chief', '#LookAtMeChief a:first')">&#9658; Clearing Niagara Straight Side - 330 Ton / 300 Metric Tons</a>
+					</div>
+					<div id="LookAtMeVerson300Ton" class = "LookAtMe">
+						<a onclick= "call('#verson300Ton', '#LookAtMeVerson300Ton a:first')">&#9658; Verson OBG - 300 Ton / 272 Metric Tons</a>
+					</div>
+					<div id="LookAtMeBliss" class = "LookAtMe">
+						<a onclick= "call('#bliss', '#LookAtMeBliss a:first')">&#9658; Bliss Hydro Dynamic Press - 300 Ton / 272 Metric Tons</a>
+					</div>
+					<div id="LookAtMeBrave" class = "LookAtMe">
+						<a onclick= "call('#brave', '#LookAtMeBrave a:first')">&#9658; Clearing Niagara Straight Side - 220 Ton / 200 Metric Tons</a>
+					</div>
+					<div id="LookAtMeVerson200Ton" class = "LookAtMe">
+						<a onclick= "call('#verson200Ton', '#LookAtMeVerson200Ton a:first')">&#9658; Verson OBG - 200 Ton / 182 Metric Tons</a>
+					</div>
+					<div id="LookAtMeAida176er" class = "LookAtMe">
+						<a onclick= "call('#aida176er', '#LookAtMeAida176er a:first')">&#9658; Aida - 176 Ton / 160 Metric Tons</a>
+					</div>
+					<div id="LookAtMeA150" class = "LookAtMe">
+						<a onclick= "call('#a150', '#LookAtMeA150 a:first')">&#9658; Aida - 150 Ton / 136 Metric Tons</a>
+					</div>
+					<div id="LookAtMeOBIWan" class = "LookAtMe">
+						<a onclick= "call('#OBIWan', '#LookAtMeOBIWan a:first')">&#9658; Niagara OBI - 150 Ton / 136 Metric Tons</a>
+					</div>
+					<div id="LookAtMeE5Half" class = "LookAtMe">
+						<a onclick= "call('#E5Half', '#LookAtMeE5Half a:first')">&#9658; Niagara E 5 1/2 - 110 Ton / 99.7 Metric Tons</a>
+					</div>
+					<div id="LookAtMeE110" class = "LookAtMe">
+						<a onclick= "call('#E110', '#LookAtMeE110 a:first')">&#9658; Niagara E110 - 110 Ton / 100 Metric Tons</a>
+					</div>
+					<div id="LookAtMeSpirit" class = "LookAtMe">
+						<a onclick= "call('#spirit', '#LookAtMeSpirit a:first')">&#9658; Niagara Spirit Hydraulic- 110 Ton / 100 Metric Tons</a>
+					</div>
+					<div id="LookAtMeBliss45" class = "LookAtMe">
+						<a onclick= "call('#bliss45', '#LookAtMeBliss45 a:first')">&#9658; Bliss C-45 - 45 Ton / 41 Metric Tons</a>
+					</div>
+					<div id="LookAtMeMinster5" class = "LookAtMe">
+						<a onclick= "call('#minster5', '#LookAtMeMinster5 a:first')">&#9658; Minster No. 5 - 45 Ton / 41 Metric Tons</a>
+					</div>
+					<div id="LookAtMeMinster" class = "LookAtMe">
+						<a onclick= "call('#minster', '#LookAtMeMinster a:first')">&#9658; Minster No. 4 - 30 Ton / 27 Metric Tons</a>
 					</div>
 				</div>
-
-				<div id="LookAtMeTheBoss" class = "LookAtMe">
-					<a onclick= "call('theBoss')">&#9658; Danley Straight Side - 1200 Ton</a>
-				</div>
-				<h2>Danley Straight Side - 1200 Ton</h2>
-				<div id = "theBoss">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-						<!-- Main Image -->
-							<img id= "bossMainImage" class = "pressMainImage" src = "images/equip/boss/_DSC2892.jpg" height ="450" alt ="The Boss">
-						</div>
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>- Full Bed Size of 120" x 60"</li>
-							<li>- COE Servo Feeder / Straightner / Decoiler</li>
-							<li>- Accomodates A 220 Ton Cushion</li>
-							<li>- Great For Large & Small Jobs!</li>
-						</ul>
+				<div id= "brakelist">
+					<p onclick= "call('#bigPacific', '#LookAtMeBigPacific a:first'); toggleSideBar('#brakelist .LookAtMe');">Brake Presses</p>
+					<div id="LookAtMeBigPacific" class = "LookAtMe">
+						<a onclick= "call('#bigPacific', '#LookAtMeBigPacific a:first')">&#9658; Pacific Hydraulic Brake Press - 400 Ton / 363 Metric Tons</a>
 					</div>
-					<!-- Slide Show -->
-					<div class ="thumbnails">
-						<img onclick= "swapPhotoBoss(0)" src = "images/equip/boss/IMG_0690.jpg" height ="75" alt ="The Boss">
-						<img onclick= "swapPhotoBoss(1)" src = "images/equip/boss/IMG_0687.jpg" height ="150" alt ="The Boss">
-						<img onclick= "swapPhotoBoss(2)" src = "images/equip/boss/_DSC2892.jpg" height ="150" alt ="The Boss">
+					<div id="LookAtMeAmadaBrake" class = "LookAtMe">
+						<a onclick= "call('#AmadaBrake', '#LookAtMeAmadaBrake a:first')">&#9658; Amada HDS 1303NT - 143 Ton / 130 Metric Tons</a>
+					</div>
+					<div id="LookAtMePacific110" class = "LookAtMe">
+						<a onclick= "call('#pacific110', '#LookAtMePacific110 a:first')">&#9658; Pacific Hydraulic Brake Press - 110 Ton / 100 Metric Tons</a>
+					</div>
+					<div id="LookAtMePacific55" class = "LookAtMe">
+						<a onclick= "call('#pacific55', '#LookAtMePacific55 a:first')">&#9658; Pacific Hydraulic Brake Press - 55 Ton / 50 Metric Tons</a>
 					</div>
 				</div>
 
-				<div id="LookAtMeNiagara400Ton" class = "LookAtMe">
-					<a onclick= "call('Niagara400Ton')">&#9658; Clearing Niagara Straight Side - 400 Ton</a>
-				</div>
-				<h2>Clearing Niagara Straight Side - 400 Ton</h2>
-				<div id = "Niagara400Ton">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<img id= "Niagara400TonMainImage" class = "pressMainImage" src = "images/equip/Niagara400/IMG_0704.jpg" height ="450" alt ="The Boss">
-						</div>
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>- 60" x 50" Bed Capacity</li>
-							<li>- Cushioned</li>
-							<li>- One Of Our Most Versatile Presses!</li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class ="thumbnails">
-						<img onclick= "swapPhotoNiagara400Ton(0)" src = "images/equip/Niagara400/IMG_0703.jpg" height ="75" alt ="The Boss">
-						<img onclick= "swapPhotoNiagara400Ton(1)" src = "images/equip/Niagara400/IMG_0692.jpg" height ="150" alt ="The Boss">
-						<img onclick= "swapPhotoNiagara400Ton(2)" src = "images/equip/Niagara400/IMG_0704.jpg" height ="150" alt ="The Boss">
-					</div>
+				<div id ="lookAtMeLaserCutting">
+					<p onclick= "call('#laserCuttingContainer', '#lookAtMeLaserCutting p:first')">Laser Cutting</p>
 				</div>
 
-				<div id="LookAtMeChief" class = "LookAtMe">
-					<a onclick= "call('chief')">&#9658; Clearing Niagara Straight Side - 330 Ton</a>
-				</div>
-				<h2>Clearing Niagara Straight Side - 330 Ton</h2>
-				<div id = "chief">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<!-- Main Image -->
-							<img id = "chiefMainImage" class = "pressMainImage" src = "images/equip/chief/IMG_0630.jpg" height ="450" alt ="The Chief">
-						</div>
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>- 84" x 48" Bed Capacity</li>
-							<li>- Variable Speed Control Up To 70 SPM</li>
-							<li>- 36" Dallas Servo Feeder / Straightner / Decoiler</li>
-							<li>- Cushioned</li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class = "thumbnails">
-						<img onclick= "swapPhotoChief(0)" src = "images/equip/chief/IMG_0627.jpg" height ="150" alt ="The Chief">
-						<img onclick= "swapPhotoChief(1)" src = "images/equip/chief/IMG_0631.jpg" height ="150" alt ="The Chief">
-						<img onclick= "swapPhotoChief(2)" src = "images/equip/chief/IMG_0630.jpg" height ="150" alt ="The Chief">
-					</div>
-				</div>
-
-				<div id="LookAtMeBrave" class = "LookAtMe">
-					<a onclick= "call('brave')">&#9658; Clearing Niagara Straight Side - 220 Ton</a>
-				</div>
-				<h2>Clearing Niagara Straight Side - 220 Ton</h2>
-				<div id = "brave">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<!-- Main Image -->
-							<img id = "braveMainImage" class = "pressMainImage" src = "images/equip/brave/IMG_0644.jpg" height ="450" alt ="The Brave">
-						</div>
-					<!-- Technical Information -->
-					<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-						<li>- 72" x 42" Bed Capacity</li>
-						<li>- Variable Speed Up To 100 SPM</li>
-						<li>- 24" Dallas Servo Feeder / Straightner / Decoiler</li>
-					</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class ="thumbnails">
-						<img onclick= "swapPhotoBrave(0)" src = "images/equip/brave/IMG_0646.jpg" height ="150" alt ="The Brave">
-						<img onclick= "swapPhotoBrave(1)" src = "images/equip/brave/IMG_0647.jpg" height ="150" alt ="The Brave">
-						<img onclick= "swapPhotoBrave(2)" src = "images/equip/brave/IMG_0644.jpg" height ="150" alt ="The Brave">
-					</div>
-				</div>
-
-				<div id="LookAtMeVerson300Ton" class = "LookAtMe">
-					<a onclick= "call('verson300Ton')">&#9658; Verson OBG - 300 Ton</a>
-				</div>
-				<h2>Verson OBG - 300 Ton</h2>
-				<div id = "verson300Ton">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<!-- Main Image -->
-							<img id = "verson300MainImage" class = "pressMainImage" src= "images/equip/verson300/IMG_0710.jpg" height ="450" alt ="Verson 300">
-						</div>
-					<!-- Technical Information -->
-					<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-						<li>- 62" x 36" Bed Capacity</li>
-						<li>- 36" Dallas Servo Feeder / Straightner / Decoiler</li>
-					</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class ="thumbnails">
-						<img onclick= "swapPhotoVerson300(0)" src = "images/equip/verson300/IMG_0693.jpg" height ="150" alt ="Verson 300">
-						<img onclick= "swapPhotoVerson300(1)" src = "images/equip/verson300/IMG_0694.jpg" height ="150" alt ="Verson 300">
-						<img onclick = "swapPhotoVerson300(2)" src= "images/equip/verson300/IMG_0710.jpg" height ="150" alt ="Verson 300">
-					</div>
-				</div>
-
-				<div id="LookAtMeBliss" class = "LookAtMe">
-					<a onclick= "call('bliss')">&#9658; Bliss Hydro Dynamic Press - 300 Ton</a>
-				</div>
-				<h2>Bliss Hydro Dynamic Press - 300 Ton</h2>
-				<div id = "bliss">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<!-- Main Image -->
-							<img id = "blissMainImage" class = "pressMainImage" src= "images/equip/bliss/IMG_0667.jpg" height ="450" alt ="The Bliss">
-						</div>
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>- 48" x 48" Bed Capacity</li>
-							<li>- 40 Ton Cushion</li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class ="thumbnails">
-						<img onclick= "swapPhotoBliss(0)" src = "images/equip/bliss/IMG_0665.jpg" height ="150" alt ="The Bliss">
-						<img onclick= "swapPhotoBliss(1)"src = "images/equip/bliss/IMG_Bliss.jpg" height ="150" alt ="The Bliss">
-						<img onclick= "swapPhotoBliss(2)"src = "images/equip/bliss/IMG_0667.jpg" height ="150" alt ="The Bliss">
-					</div>
-				</div>
-
-				<div id="LookAtMeVerson200Ton" class = "LookAtMe">
-					<a onclick= "call('verson200Ton')">&#9658; Verson OBG - 200 Ton</a>
-				</div>
-				<h2>Verson OBG - 200 Ton</h2>
-				<div id = "verson200Ton">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<!-- Main Image -->
-							<img id = "verson200MainImage" class = "pressMainImage" src= "images/equip/Verson200/IMG_0668.jpg" height ="450" alt ="Verson 200">
-						</div>
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>- 58" x 34" Bed Capacity</li>
-							<li>- 36" Air-Feed & Decoiler</li>
-							<li></li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class ="thumbnails">
-						<img onclick= "swapPhotoVerson200(0)" src = "images/equip/Verson200/IMG_0700.jpg" height ="150" alt ="Verson 200">
-						<img onclick= "swapPhotoVerson200(1)"src = "images/equip/Verson200/IMG_0702.jpg" height ="150" alt ="The Verson 200">
-						<img onclick= "swapPhotoVerson200(2)"src = "images/equip/Verson200/IMG_0668.jpg" height ="150" alt ="The Verson 200">
-					</div>
-
-				</div>
-
-				<div id="LookAtMeAida176er" class = "LookAtMe">
-					<a onclick= "call('aida176er')">&#9658; Aida - 176 Ton</a>
-				</div>
-				<h2>Aida - 176 Ton</h2>
-				<div id = "aida176er">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<!-- Main Image -->
-							<img id=adia160MainImage "" class = "pressMainImage" src = "images/equip/aida160/IMG_0503.jpg" height ="450" alt ="Aida 160">
-						</div>
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>- 80"x 30" Bed Capacity</li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class = "thumbnails">
-						<img onclick= "swapPhotoAida160(0)" src = "images/equip/aida160/IMG_0679.jpg" height ="150" alt ="Aida 160">
-						<img onclick= "swapPhotoAida160(1)"src = "images/equip/aida160/IMG_0686.jpg" height ="150" alt ="Aida 160">
-						<img onclick= "swapPhotoAida160(2)"src = "images/equip/aida160/IMG_0503.jpg" height ="150" alt ="Aida 160">
-					</div>
-				</div>
-
-				<div id="LookAtMeA150" class = "LookAtMe">
-					<a onclick= "call('a150')">&#9658; Aida - 150 Ton</a>
-				</div>
-				<h2>Aida - 150 Ton</h2>
-				<div id = "a150">
-					<div class ="row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<!-- Main Image -->
-							<img id= "adia150MainImage" class = "pressMainImage" src = "images/equip/aida150/IMG_0674.jpg" height ="450" alt ="Aida 150">
-						</div>
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>- 50" x 38" Bed Capacity</li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<!-- Thumbnails -->
-					<div class = "thumbnails">
-						<img onclick= "swapPhotoAida150(0)" src = "images/equip/aida150/IMG_0650.jpg" height ="150" alt ="Aida 150">
-						<img onclick= "swapPhotoAida150(1)" src = "images/equip/aida150/IMG_0673.jpg" height ="150" alt ="Aida 150">
-						<img onclick= "swapPhotoAida150(2)" src = "images/equip/aida150/IMG_0674.jpg" height ="150" alt ="Aida 150">
-					</div>
-				</div>
-
-				<div id="LookAtMeE5Half" class = "LookAtMe">
-					<a onclick= "call('E5Half')">&#9658; Niagara E 5 1/2 - 110 Ton</a>
-				</div>
-				<h2>Niagara E 5 1/2 - 110 Ton</h2>
-				<div id = "E5Half">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-						<!-- Main Image -->
-						<img id="E5HalfMainImage" class = "pressMainImage" src = "images/equip/E5Half/IMG_0658.jpg" height ="450" alt ="Aida 160">
-						</div>
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>- 42" x 27" Bed Capacity</li>
-							<li>- 19 Ton Cushion</li>
-							<li></li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class = "thumbnails">
-						<img onclick= "swapPhotoE5Half(0)" src = "images/equip/E5Half/IMG_0683.jpg" height ="150" alt ="Aida 160">
-						<img onclick= "swapPhotoE5Half(1)" src = "images/equip/E5Half/IMG_0658.jpg" height ="150" alt ="Aida 160">
-						<img onclick= "swapPhotoE5Half(2)" src = "images/equip/E5Half/IMG_0685.jpg" height ="150" alt ="Aida 160">
-					</div>
-				</div>
-
-				<div id="LookAtMeMinster5" class = "LookAtMe">
-					<a onclick= "call('minster5')">&#9658; Minster No. 5 - 45 Ton</a>
-				</div>
-				<h2>Minster No. 5 - 45 Ton</h2>
-				<div id = "minster5">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-						<!-- Main Image -->
-						<img id = "minster5MainImage" class = "pressMainImage" src = "images/equip/minster5/IMG_0738.jpg" height ="450" alt ="Minster No.5 45 Ton">
-						</div>
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>28" x 18" Bed Capacity</li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class = "thumbnails">
-						<img onclick = "swapPhotoMinster5(0)" src = "images/equip/minster5/IMG_0737.jpg" height ="150" alt ="Minster No.5">
-						<img onclick = "swapPhotoMinster5(1)" src = "images/equip/minster5/IMG_0739.jpg" height ="150" alt ="Minster No.5">
-						<img onclick = "swapPhotoMinster5(2)" src = "images/equip/minster5/IMG_0738.jpg" height ="150" alt ="Minster No.5">
-					</div>
-				</div>
-
-				<div id="LookAtMeMinster" class = "LookAtMe">
-					<a onclick= "call('minster')">&#9658; Minster No. 4 - 30 Ton</a>
-				</div>
-				<h2>Minster No. 4 - 30 Ton</h2>
-				<div id = "minster">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<!-- Main Image -->
-							<img id = "minsterMainImage" class = "pressMainImage" src = "images/equip/minster/IMG_0699.jpg" height ="450" alt ="Minster No.4 30 Ton">
-						</div>
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>28" x 18" Bed Capacity</li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class = "thumbnails">
-						<img onclick = "swapPhotoMinster(0)" src = "images/equip/minster/IMG_0642.jpg" height ="150" alt ="Minster No.4">
-						<img onclick = "swapPhotoMinster(1)" src = "images/equip/minster/IMG_0698.jpg" height ="150" alt ="Minster No.4">
-						<img onclick = "swapPhotoMinster(2)" src = "images/equip/minster/IMG_0699.jpg" height ="150" alt ="Minster No.4">
-					</div>
-				</div>
-
-				<div id="LookAtMeOBIWan" class = "LookAtMe">
-					<a onclick= "call('OBIWan')">&#9658; Niagara OBI - 150 Ton</a>
-				</div>
-				<h2>Niagara OBI - 150 Ton</h2>
-				<div id = "OBIWan">
-					<div class = row>
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-						<!-- Main Image -->
-							<img id = "OBIWanMainImage" class = "pressMainImage" src = "images/equip/OBIWan/IMG_0632.jpg" height ="450" alt ="Niagra OBI 150">
-						</div>
-
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>- 55" x 30" Bed Capacity</li>
-							<li>- 25 Ton Cushion</li>
-							<li></li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class = "thumbnails">
-						<img onclick= "swapPhotoOBIWan(0)" src = "images/equip/OBIWan/IMG_0705.jpg" height ="150" alt ="Niagra OBI 150">
-						<img onclick= "swapPhotoOBIWan(1)"src = "images/equip/OBIWan/IMG_0706.jpg" height ="150" alt ="Niagra OBI 150">
-						<img onclick= "swapPhotoOBIWan(2)"src = "images/equip/OBIWan/IMG_0632.jpg" height ="150" alt ="Niagra OBI 150">
-					</div>
-				</div>
-
-				<div id="LookAtMeE110" class = "LookAtMe">
-					<a onclick= "call('E110')">&#9658; Niagara E110 - 110 Ton</a>
-				</div>
-				<h2>Niagara E110 - 110 Ton</h2>
-				<div id = "E110">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<!-- Main Image -->
-							<img id ="E110MainImage" class = "pressMainImage" src = "images/equip/niagaraE110/IMG_0649.jpg" height ="450" alt ="Niagra E110">
-						</div>
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>- 30" x 42" Bed Capacity</li>
-							<li>- 19 Ton Cushion</li>
-							<li></li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class = "thumbnails">
-						<img onclick= "swapPhotoE110(0)" src = "images/equip/niagaraE110/IMG_0678.jpg" height ="150" alt ="Niagra E110">
-						<img onclick= "swapPhotoE110(1)"src = "images/equip/niagaraE110/IMG_0675.jpg" height ="150" alt ="Niagra E110">
-						<img onclick= "swapPhotoE110(2)"src = "images/equip/niagaraE110/IMG_0649.jpg" height ="150" alt ="Niagra E110">
-					</div>
-				</div>
-
-				<div id="LookAtMeSpirit" class = "LookAtMe">
-					<a onclick= "call('spirit')">&#9658; Niagara Spirit - 110 Ton</a>
-				</div>
-				<h2>Niagara Spirit - 110 Ton</h2>
-				<div id = "spirit">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<!-- Main Image -->
-							<img id= "spiritMainImage" class = "pressMainImage" src = "images/equip/spirit/IMG_0680.jpg" height ="450" alt ="Niagra E110">
-						</div>
-
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>- 42" x 27" Bed Capacity</li>
-							<li>- Cushioned</li>
-							<li></li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class = thumbnails>
-						<img onclick= "swapPhotoSpirit(0)" src = "images/equip/spirit/IMG_0682.jpg" height ="150" alt ="Niagra E110">
-						<img onclick= "swapPhotoSpirit(1)" src = "images/equip/spirit/IMG_0652.jpg" height ="150" alt ="Niagra E110">
-						<img onclick= "swapPhotoSpirit(2)" src = "images/equip/spirit/IMG_0680.jpg" height ="150" alt ="Niagra E110">
-					</div>
-				</div>
-
-				<div id="LookAtMeBliss45" class = "LookAtMe">
-					<a onclick= "call('bliss45')">&#9658; Bliss C-45 - 45 Ton</a>
-				</div>
-				<h2>Bliss C-45 - 45 Ton</h2>
-				<div id = "bliss45">
-					<div class = "row">
-						<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
-							<!-- Main Image -->
-							<img id = "bliss45MainImage" class = "pressMainImage" src= "images/equip/bliss45/IMG_0741.jpg" height ="450" alt ="The Bliss C-45">
-						</div>
-
-						<!-- Technical Information -->
-						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-							<li>- 29.5" x 18" Bed Capacity</li>
-							<li></li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class ="thumbnails">
-						<img onclick= "swapPhotoBliss45(0)" src = "images/equip/bliss45/IMG_0740.jpg" height ="150" alt ="The Bliss C-45">
-						<img onclick= "swapPhotoBliss45(1)"src = "images/equip/bliss45/IMG_0742.jpg" height ="150" alt ="The Bliss C-45">
-						<img onclick= "swapPhotoBliss45(2)"src = "images/equip/bliss45/IMG_0741.jpg" height ="150" alt ="The Bliss C-45">
-					</div>
+				<div id = "lookAtMeMisc">
+					<p onclick= "call('#miscEquip', '#lookAtMeMisc p:first')">Miscellaneous Equipment</p>
 				</div>
 			</div>
 
-			<div id= "lookAtMeBrakePress"><a>Brake Presses</a></div>
-			<div id="brakePressExpand">
-				<div id="LookAtMeAmadaBrake" class = "LookAtMe">
-					<a onclick= "call('AmadaBrake')">&#9658; Amada HDS 1303NT - 143 Ton</a>
+			<div id ="equipmentContainer">
+				<div id = "stampingPressContainer" >
+
+					<!-- Used on smaller viewport -->
+
+					<p onclick= "toggleEquipList('#stampingPressContainer .LookAtMeHeading')">&#9658; Stamp Presses</p>
+
+
+
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#theBoss')">&#9658; Danly Straight Side - 1200 Ton / 1089 Metric Tons</a>
+					</div>
+
+					<div id = "theBoss" class = "equip">
+						<h2>Danly Straight Side - 1200 Ton / 1089 Metric Tons </h2>
+						<div class = "row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+							<!-- Main Image -->
+								<img id= "bossMainImage" class = "pressMainImage" src = "images/equip/boss/_DSC2892.jpg" height ="450" alt ="The Boss">
+							</div>
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 60" (1524mm) x 120" (3048mm) Bed Size</li>
+								<li>- 30" (762mm) COE Servo Feeder / Straightner / Decoiler</li>
+								<li>- Variable Speed Up To 35 SPM</li>
+								<li>- 15,000 LBS Coil Cradle Capacity</li>
+								<li>- 220 Ton Air Cushion</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div id = "bossThumb" class ="thumbnails">
+							<img onclick= "swapPhotos(0, 'bossMainImage', bossPictures)" src = "images/equip/boss/IMG_0690.jpg" height ="75" alt ="The Boss">
+							<img onclick= "swapPhotos(1, 'bossMainImage', bossPictures)" src = "images/equip/boss/IMG_0687.jpg" height ="150" alt ="The Boss">
+							<img onclick= "swapPhotos(2, 'bossMainImage', bossPictures)" src = "images/equip/boss/_DSC2892.jpg" height ="150" alt ="The Boss">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#ninja')">&#9658; Aida - 1100 Ton / 998 Metric Tons</a>
+					</div>
+
+					<div id = "ninja" class = "equip">
+						<h2>Aida - 1100 Ton / 998 Metric Tons</h2>
+						<div class = "row" >
+							<!-- Main Image -->
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<img  id = ninjaMainImage class = "pressMainImage" src = "images/equip/ninja/ninja.jpg" height ="450" alt ="The Ninja">
+							</div>
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 63" (1600.2mm) x 157" (3987.8mm) Bed Size</li>
+								<li>- 36" (914.4mm) Dallas Servo Feeder / Straightner / Decoiler</li>
+								<li>- Variable Speed Up To 55 SPM</li>
+								<li>- 30,000 LBS Coil Cradle Capacity</li>
+							</ul>
+						</div>
+						<!-- Thumbnails -->
+						<div class = "thumbnails">
+							<img onclick= "swapPhotos(0, 'ninjaMainImage', ninjaPictures)" src = "images/equip/ninja/IMG_0663.jpg" height ="150" alt ="The Ninja">
+							<img onclick= "swapPhotos(1, 'ninjaMainImage', ninjaPictures)"  src = "images/equip/ninja/IMG_0664.jpg" height ="150" alt ="The Ninja">
+							<img onclick= "swapPhotos(2, 'ninjaMainImage', ninjaPictures)"  src = "images/equip/ninja/ninja.jpg" height ="150" alt ="The Ninja">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#Niagara400Ton')">&#9658; Clearing Niagara Straight Side - 400 Ton / 363 Metric Tons</a>
+					</div>
+
+					<div id = "Niagara400Ton" class = "equip">
+						<h2>Clearing Niagara Straight Side - 400 Ton / 363 Metric Tons</h2>
+						<div class = "row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<img id= "Niagara400TonMainImage" class = "pressMainImage" src = "images/equip/Niagara400/IMG_0704.jpg" height ="450" alt ="The Boss">
+							</div>
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 50" (1270mm) x 60" (1524mm) Bed Size</li>
+								<li>- 80 Ton Air Cushioned</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class ="thumbnails">
+							<img onclick= "swapPhotos(0, 'Niagara400TonMainImage', niagara400Pictures)" src = "images/equip/Niagara400/IMG_0703.jpg" height ="75" alt ="The Boss">
+							<img onclick= "swapPhotos(1, 'Niagara400TonMainImage', niagara400Pictures)" src = "images/equip/Niagara400/IMG_0692.jpg" height ="150" alt ="The Boss">
+							<img onclick= "swapPhotos(2, 'Niagara400TonMainImage', niagara400Pictures)" src = "images/equip/Niagara400/IMG_0704.jpg" height ="150" alt ="The Boss">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#chief')">&#9658; Clearing Niagara Straight Side - 330 Ton / 300 Metric Tons</a>
+					</div>
+
+					<div id = "chief" class = "equip">
+						<h2>Clearing Niagara Straight Side - 330 Ton / 300 Metric Tons</h2>
+						<div class = "row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<!-- Main Image -->
+								<img id = "chiefMainImage" class = "pressMainImage" src = "images/equip/chief/IMG_0630.jpg" height ="450" alt ="The Chief">
+							</div>
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 48" (1219.2mm) x 84" (2133.6mm) Bed Capacity</li>
+								<li>- Variable Speed Up To 70 SPM</li>
+								<li>- 36" (914.4mm) Dallas Servo Feeder / Straightner / Decoiler</li>
+								<li>- 15,000 LBS Coil Cradle Capacity</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class = "thumbnails">
+							<img onclick= "swapPhotos(0, 'chiefMainImage', chiefPictures)" src = "images/equip/chief/IMG_0627.jpg" height ="150" alt ="The Chief">
+							<img onclick= "swapPhotos(1, 'chiefMainImage', chiefPictures)" src = "images/equip/chief/IMG_0631.jpg" height ="150" alt ="The Chief">
+							<img onclick= "swapPhotos(2, 'chiefMainImage', chiefPictures)" src = "images/equip/chief/IMG_0630.jpg" height ="150" alt ="The Chief">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#verson300Ton')">&#9658; Verson OBG - 300 Ton / 272.1 Metric Tons</a>
+					</div>
+
+					<div id = "verson300Ton" class = "equip">
+						<h2>Verson OBG - 300 Ton / 272 Metric Tons</h2>
+						<div class = "row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<!-- Main Image -->
+								<img id = "verson300MainImage" class = "pressMainImage" src= "images/equip/verson300/IMG_0710.jpg" height ="450" alt ="Verson 300">
+							</div>
+						<!-- Technical Information -->
+						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+							<li>- 36" (914.4mm) x 62" (1574.8mm) Bed Size</li>
+							<li>- 36" (914.4mm) Dallas Servo Feeder / Straightner / Decoiler</li>
+							<li>- 15,000 LBS Coil Cradle Capacity</li>
+						</ul>
+					</div>
+						<!-- Slide Show -->
+						<div class ="thumbnails">
+							<img onclick= "swapPhotos(0, 'verson300MainImage', verson300Pictures)" src = "images/equip/verson300/IMG_0693.jpg" height ="150" alt ="Verson 300">
+							<img onclick= "swapPhotos(1, 'verson300MainImage', verson300Pictures)" src = "images/equip/verson300/IMG_0694.jpg" height ="150" alt ="Verson 300">
+							<img onclick = "swapPhotos(2, 'verson300MainImage', verson300Pictures)" src= "images/equip/verson300/IMG_0710.jpg" height ="150" alt ="Verson 300">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#bliss')">&#9658; Bliss Hydro Dynamic Press - 300 Ton / 272.1 Metric Tons</a>
+					</div>
+
+					<div id = "bliss" class = "equip">
+						<h2>Bliss Hydro Dynamic Press - 300 Ton / 272 Metric Tons</h2>
+						<h3>The Press That Started It All</h3>
+						<div class = "row" >
+
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<!-- Main Image -->
+								<img id = "blissMainImage" class = "pressMainImage" src= "images/equip/bliss/IMG_0667.jpg" height ="450" alt ="The Bliss">
+							</div>
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 48" (1219mm) x 48" (1219mm) Bed Size</li>
+								<li>- 40 Ton Hydraulic Cushion</li>
+								<li><a onclick = "GoToBliss()">Find Out The History Of The Bliss</a></li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class ="thumbnails">
+							<img onclick= "swapPhotos(0, 'blissMainImage', blissPictures)" src = "images/equip/bliss/IMG_0665.jpg" height ="150" alt ="The Bliss">
+							<img onclick= "swapPhotos(1, 'blissMainImage', blissPictures)" src = "images/equip/bliss/IMG_Bliss.jpg" height ="150" alt ="The Bliss">
+							<img onclick= "swapPhotos(2, 'blissMainImage', blissPictures)" src = "images/equip/bliss/IMG_0667.jpg" height ="150" alt ="The Bliss">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#brave')">&#9658; Clearing Niagara Straight Side - 220 Ton / 199.5 Metric Tons</a>
+					</div>
+
+					<div id = "brave" class = "equip">
+						<h2>Clearing Niagara Straight Side - 220 Ton / 200 Metric Tons</h2>
+						<div class = "row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<!-- Main Image -->
+								<img id = "braveMainImage" class = "pressMainImage" src = "images/equip/brave/IMG_0644.jpg" height ="450" alt ="The Brave">
+							</div>
+						<!-- Technical Information -->
+						<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+							<li>- 42" (1066.8mm) x 72" (1828.8mm) Bed Capacity</li>
+							<li>- Variable Speed Up To 100 SPM</li>
+							<li>- 24" (609.6mm) Dallas Servo Feeder / Straightner / Decoiler</li>
+							<li>- 15,000 LBS Coil Cradle Capacity</li>
+						</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class ="thumbnails">
+							<img onclick= "swapPhotos(0, 'braveMainImage', bravePictures)" src = "images/equip/brave/IMG_0646.jpg" height ="150" alt ="The Brave">
+							<img onclick= "swapPhotos(1, 'braveMainImage', bravePictures)" src = "images/equip/brave/IMG_0647.jpg" height ="150" alt ="The Brave">
+							<img onclick= "swapPhotos(2, 'braveMainImage', bravePictures)" src = "images/equip/brave/IMG_0644.jpg" height ="150" alt ="The Brave">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#verson200Ton')">&#9658; Verson OBG - 200 Ton / 181.4 Metric Tons</a>
+					</div>
+
+					<div id = "verson200Ton" class = "equip">
+						<h2>Verson OBG - 200 Ton / 182 Metric Tons</h2>
+						<div class = "row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<!-- Main Image -->
+								<img id = "verson200MainImage" class = "pressMainImage" src= "images/equip/Verson200/IMG_0668.jpg" height ="450" alt ="Verson 200">
+							</div>
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 34" (863.6mm) x 58" (1473.2mm)Bed Size</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class ="thumbnails">
+							<img onclick= "swapPhotos(0, 'verson200MainImage', verson200Pictures)" src = "images/equip/Verson200/IMG_0700.jpg" height ="150" alt ="Verson 200">
+							<img onclick= "swapPhotos(1, 'verson200MainImage', verson200Pictures)" src = "images/equip/Verson200/IMG_0702.jpg" height ="150" alt ="The Verson 200">
+							<img onclick= "swapPhotos(2, 'verson200MainImage', verson200Pictures)" src = "images/equip/Verson200/IMG_0668.jpg" height ="150" alt ="The Verson 200">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#aida176er')">&#9658; Aida - 176 Ton / 159.6 Metric Tons</a>
+					</div>
+
+					<div id = "aida176er" class = "equip">
+						<h2>Aida - 176 Ton / 160 Metric Tons</h2>
+						<div class = "row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<!-- Main Image -->
+								<img id="adia160MainImage" class = "pressMainImage" src = "images/equip/aida160/IMG_0503.jpg" height ="450" alt ="Aida 160">
+							</div>
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 30" (762mm) x 80" (2032mm) Bed Size</li>
+								<li>- Variable Speed Up To 55 SPM</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class = "thumbnails">
+							<img onclick= "swapPhotos(0, 'adia160MainImage', aida160Pictures)" src = "images/equip/aida160/IMG_0679.jpg" height ="150" alt ="Aida 160">
+							<img onclick= "swapPhotos(1, 'adia160MainImage', aida160Pictures)" src = "images/equip/aida160/IMG_0686.jpg" height ="150" alt ="Aida 160">
+							<img onclick= "swapPhotos(2, 'adia160MainImage', aida160Pictures)" src = "images/equip/aida160/IMG_0503.jpg" height ="150" alt ="Aida 160">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#a150')">&#9658; Aida - 150 Ton / 136 Metric Tons</a>
+					</div>
+
+					<div id = "a150" class = "equip">
+						<h2>Aida - 150 Ton / 136 Metric Tons</h2>
+						<div class ="row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<!-- Main Image -->
+								<img id= "adia150MainImage" class = "pressMainImage" src = "images/equip/aida150/IMG_0674.jpg" height ="450" alt ="Aida 150">
+							</div>
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 38" (965mm) x 50" (1270mm) Bed Size</li>
+								<li>- Variable Speed Up To 55 SPM</li>
+							</ul>
+						</div>
+						<!-- Thumbnails -->
+						<div class = "thumbnails">
+							<img onclick= "swapPhotos(0, 'adia150MainImage', aida150Pictures)" src = "images/equip/aida150/IMG_0650.jpg" height ="150" alt ="Aida 150">
+							<img onclick= "swapPhotos(1, 'adia150MainImage', aida150Pictures)" src = "images/equip/aida150/IMG_0673.jpg" height ="150" alt ="Aida 150">
+							<img onclick= "swapPhotos(2, 'adia150MainImage', aida150Pictures)" src = "images/equip/aida150/IMG_0674.jpg" height ="150" alt ="Aida 150">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#OBIWan')">&#9658; Niagara OBI - 150 Ton / 136 Metric Tons</a>
+					</div>
+
+					<div id = "OBIWan" class = "equip">
+						<h2>Niagara OBI - 150 Ton  / 136 Metric Tons</h2>
+						<div class = row>
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+							<!-- Main Image -->
+								<img id = "OBIWanMainImage" class = "pressMainImage" src = "images/equip/OBIWan/IMG_0632.jpg" height ="450" alt ="Niagra OBI 150">
+							</div>
+
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 30" (762mm) x 55" (1397mm) Bed Capacity</li>
+								<li>- 25 Ton Air Cushion</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class = "thumbnails">
+							<img onclick= "swapPhotos(0, 'OBIWanMainImage', OBIWanPictures)" src = "images/equip/OBIWan/IMG_0705.jpg" height ="150" alt ="Niagra OBI 150">
+							<img onclick= "swapPhotos(1, 'OBIWanMainImage', OBIWanPictures)" src = "images/equip/OBIWan/IMG_0706.jpg" height ="150" alt ="Niagra OBI 150">
+							<img onclick= "swapPhotos(2, 'OBIWanMainImage', OBIWanPictures)" src = "images/equip/OBIWan/IMG_0632.jpg" height ="150" alt ="Niagra OBI 150">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#E5Half')">&#9658; Niagara E 5 1/2 - 110 Ton / 99.7 Metric Tons</a>
+					</div>
+
+					<div id = "E5Half" class = "equip">
+						<h2>Niagara E 5 1/2 - 110 Ton / 100 Metric Tons</h2>
+						<div class = "row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+							<!-- Main Image -->
+							<img id="E5HalfMainImage" class = "pressMainImage" src = "images/equip/E5Half/IMG_0658.jpg" height ="450" alt ="Aida 160">
+							</div>
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 27" (685.8mm) x 42" (1066.8mm) Bed Size</li>
+								<li>- 19 Ton Air Cushion</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class = "thumbnails">
+							<img onclick= "swapPhotos(0, 'E5HalfMainImage', E5HalfPictures)" src = "images/equip/E5Half/IMG_0683.jpg" height ="150" alt ="Aida 160">
+							<img onclick= "swapPhotos(1, 'E5HalfMainImage', E5HalfPictures)" src = "images/equip/E5Half/IMG_0658.jpg" height ="150" alt ="Aida 160">
+							<img onclick= "swapPhotos(2, 'E5HalfMainImage', E5HalfPictures)" src = "images/equip/E5Half/IMG_0685.jpg" height ="150" alt ="Aida 160">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#E110')">&#9658; Niagara E110 - 110 Ton / 99.7 Metric Tons</a>
+					</div>
+
+					<div id = "E110" class = "equip">
+						<h2>Niagara E110 - 110 Ton / 100 Metric Tons</h2>
+						<div class = "row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<!-- Main Image -->
+								<img id ="E110MainImage" class = "pressMainImage" src = "images/equip/niagaraE110/IMG_0649.jpg" height ="450" alt ="Niagra E110">
+							</div>
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 30" (762mm) x 42" (1066.8mm)  Bed Size</li>
+								<li>- 19 Ton Air Cushion</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class = "thumbnails">
+							<img onclick= "swapPhotos(0, 'E110MainImage', E110Pictures)" src = "images/equip/niagaraE110/IMG_0678.jpg" height ="150" alt ="Niagra E110">
+							<img onclick= "swapPhotos(1, 'E110MainImage', E110Pictures)" src = "images/equip/niagaraE110/IMG_0675.jpg" height ="150" alt ="Niagra E110">
+							<img onclick= "swapPhotos(2, 'E110MainImage', E110Pictures)" src = "images/equip/niagaraE110/IMG_0649.jpg" height ="150" alt ="Niagra E110">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#spirit')">&#9658; Niagara Spirit Hydraulic- 110 Ton / 99.7 Metric Tons</a>
+					</div>
+
+					<div id = "spirit" class = "equip">
+						<h2>Niagara Spirit - 110 Ton / 100 Metric Tons</h2>
+						<div class = "row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<!-- Main Image -->
+								<img id= "spiritMainImage" class = "pressMainImage" src = "images/equip/spirit/IMG_0680.jpg" height ="450" alt ="Niagra E110">
+							</div>
+
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 27" (685.8mm) x 42" (1066.8mm) Bed Size</li>
+								<li>- 25 Ton Air Cushion</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class = thumbnails>
+							<img onclick= "swapPhotos(0, 'spiritMainImage', spiritPictures)" src = "images/equip/spirit/IMG_0682.jpg" height ="150" alt ="Niagra E110">
+							<img onclick= "swapPhotos(1, 'spiritMainImage', spiritPictures)" src = "images/equip/spirit/IMG_0652.jpg" height ="150" alt ="Niagra E110">
+							<img onclick= "swapPhotos(2, 'spiritMainImage', spiritPictures)" src = "images/equip/spirit/IMG_0680.jpg" height ="150" alt ="Niagra E110">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#bliss45')">&#9658; Bliss C-45 - 45 Ton / 40.8 Metric Tons</a>
+					</div>
+
+					<div id = "bliss45" class = "equip">
+						<h2>Bliss C-45 - 45 Ton / 41 Metric Tons</h2>
+						<div class = "row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<!-- Main Image -->
+								<img id = "bliss45MainImage" class = "pressMainImage" src= "images/equip/bliss45/IMG_0741.jpg" height ="450" alt ="The Bliss C-45">
+							</div>
+
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 18" (457mm) x 29.5" (749.3mm) Bed Size</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class ="thumbnails">
+							<img onclick= "swapPhotos(0, 'bliss45MainImage', bliss45Pictures)" src = "images/equip/bliss45/IMG_0740.jpg" height ="150" alt ="The Bliss C-45">
+							<img onclick= "swapPhotos(1, 'bliss45MainImage', bliss45Pictures)" src = "images/equip/bliss45/IMG_0742.jpg" height ="150" alt ="The Bliss C-45">
+							<img onclick= "swapPhotos(2, 'bliss45MainImage', bliss45Pictures)" src = "images/equip/bliss45/IMG_0741.jpg" height ="150" alt ="The Bliss C-45">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#minster5')">&#9658; Minster No. 5 - 45 Ton / 40.8 Metric Tons</a>
+					</div>
+
+					<div id = "minster5" class = "equip">
+						<h2>Minster No. 5 - 45 Ton / 41 Metric Tons</h2>
+						<div class = "row">
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+							<!-- Main Image -->
+							<img id = "minster5MainImage" class = "pressMainImage" src = "images/equip/minster5/IMG_0738.jpg" height ="450" alt ="Minster No.5 45 Ton">
+							</div>
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 18" (457.2mm) x 28" (711.2mm) Bed Size</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class = "thumbnails">
+							<img onclick = "swapPhotos(0, 'minster5MainImage', minster5Pictures)" src = "images/equip/minster5/IMG_0737.jpg" height ="150" alt ="Minster No.5">
+							<img onclick = "swapPhotos(1, 'minster5MainImage', minster5Pictures)" src = "images/equip/minster5/IMG_0739.jpg" height ="150" alt ="Minster No.5">
+							<img onclick = "swapPhotos(2, 'minster5MainImage', minster5Pictures)" src = "images/equip/minster5/IMG_0738.jpg" height ="150" alt ="Minster No.5">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#minster')">&#9658; Minster No. 4 - 30 Ton / 27.2 Metric Tons</a>
+					</div>
+
+					<div id = "minster" class = "equip">
+						<h2>Minster No. 4 - 30 Ton / 27 Metric Tons</h2>
+						<div class = "row" >
+							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+								<!-- Main Image -->
+								<img id = "minsterMainImage" class = "pressMainImage" src = "images/equip/minster/IMG_0699.jpg" height ="450" alt ="Minster No.4 30 Ton">
+							</div>
+							<!-- Technical Information -->
+							<ul class ="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+								<li>- 18" (457.2mm) x 28" (711.2mm) Bed Size</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class = "thumbnails">
+							<img onclick = "swapPhotos(0, 'minsterMainImage', minsterPictures)" src = "images/equip/minster/IMG_0642.jpg" height ="150" alt ="Minster No.4">
+							<img onclick = "swapPhotos(1, 'minsterMainImage', minsterPictures)" src = "images/equip/minster/IMG_0698.jpg" height ="150" alt ="Minster No.4">
+							<img onclick = "swapPhotos(2, 'minsterMainImage', minsterPictures)" src = "images/equip/minster/IMG_0699.jpg" height ="150" alt ="Minster No.4">
+						</div>
+					</div>
 				</div>
-				<h2 id = "amadaH2">Amada HDS 1303NT - 143 Ton</h2>
-				<div id = "AmadaBrake">
+
+				<div id="brakePressExpand">
+					<!-- Used on smaller viewport -->
+
+					<p onclick= "toggleEquipList('#brakePressExpand .LookAtMeHeading')">&#9658; Brake Presses</p>
+
+
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#bigPacific')">&#9658; Pacific Hydraulic Brake Press - 400 Ton / 362.8 Metric Tons</a>
+					</div>
+
+					<div id = "bigPacific" class = "equip">
+						<h2>Pacific Hydraulic Brake Press - 400 Ton / 363 Metric Tons</h2>
+						<div>
+							<div>
+								<!-- Main Image -->
+								<img id = "bigPacificMainImage" class = "brakeMainImage" src = "images/equip/bigPacific/bigpacific.jpg" height ="300" alt ="Big Pacific Press Brake">
+							</div>
+							<ul>
+								<li>- 7 Gauging System</li>
+								<li>- 5 Axis Back Gauge</li>
+							</ul>
+						</div>
+
+						<!-- Slide Show -->
+					 	<div class = "thumbnails">
+							<img onclick = "swapPhotos(0, 'bigPacificMainImage', bigPacificPictures)" src = "images/equip/bigPacific/IMG_0622.jpg" height ="150" alt ="Big Pacific Press Brake">
+							<img onclick = "swapPhotos(1, 'bigPacificMainImage', bigPacificPictures)" src = "images/equip/bigPacific/IMG_0623.jpg" height ="150" alt = "Big Pacific Press Brake">
+							<img onclick = "swapPhotos(2, 'bigPacificMainImage', bigPacificPictures)" src = "images/equip/bigPacific/bigpacific.jpg" height ="150" alt ="Big Pacific Press Brake">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#AmadaBrake')">&#9658; Amada HDS 1303NT - 143 Ton / 129.7 Metric Tons</a>
+					</div>
+
+					<div id = "AmadaBrake" class = "equip">
+						<h2 id = "amadaH2">Amada HDS 1303NT - 143 Ton / 130 Metric Tons</h2>
+						<div>
+							<div>
+								<!-- Main Image -->
+								<img id = "amadaMainImage" class = "brakeMainImage" src = "images/equip/amada/IMG_0625.jpg" height ="300" alt ="Amada Brake Press">
+							</div>
+							<!-- Technical Information -->
+							<ul>
+								<li>- Bending Capacity Of .25" (6.35mm) x 10' (3048mm)</li>
+								<li>- IR Sensors That Hydraulic Servo Parts Adjust Parts To Your Specifications</li>
+								<li>- 5 Axis Back Gauge</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class = "thumbnails">
+							<img onclick = "swapPhotos(0, 'amadaMainImage', amadaPictures)" src = "images/equip/amada/IMG_0600.jpg" height ="150" alt = "Amada Brake Press">
+							<img onclick = "swapPhotos(1, 'amadaMainImage', amadaPictures)" src = "images/equip/amada/IMG_0616.jpg" height ="150" alt ="Amada Brake Press">
+							<img onclick = "swapPhotos(2, 'amadaMainImage', amadaPictures)" src = "images/equip/amada/IMG_0625.jpg" height ="150" alt ="Amada Brake Press">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#pacific110')">&#9658; Pacific Hydraulic Brake Press - 110 Ton / 99.7 Metric Tons</a>
+					</div>
+
+					<div id = "pacific110" class = "equip">
+						<h2 id= "pacificH2">Pacific Hydraulic Brake Press - 110 Ton / 100 Metric Tons</h2>
+						<div>
+							<div>
+								<!-- Main Image -->
+								<img id = "pacific110MainImage" class = "brakeMainImage" src = "images/equip/pacific110/IMG_0619.jpg" height ="300" alt ="Pacific 110 Ton Press Brake">
+							</div>
+
+							<!-- Technical Information -->
+							<ul>
+								<li>- Bending Capacity Of .1875" (4.76mm) x 9'(2743.2mm)</li>
+								<li>- Hurco Autobend IV 2 Axis Gauging System.</li>
+							</ul>
+						</div>
+
+						<!-- Slide Show -->
+						<div class = "thumbnails">
+							<img onclick = "swapPhotos(0, 'pacific110MainImage', pacific110Pictures)" src = "images/equip/pacific110/IMG_0770.jpg" height ="150" alt ="Pacific 110 Ton Press Brake">
+							<img onclick = "swapPhotos(1, 'pacific110MainImage', pacific110Pictures)" src = "images/equip/pacific110/IMG_0598.jpg" height ="150" alt = "Pacific 110 Ton Press Brake">
+							<img onclick = "swapPhotos(2, 'pacific110MainImage', pacific110Pictures)" src = "images/equip/pacific110/IMG_0619.jpg" height ="150" alt ="Pacific 110 Ton Press Brake">
+						</div>
+					</div>
+
+					<!-- Used on smaller viewport -->
+					<div class = "LookAtMeHeading">
+						<a onclick= "toggleTheDiv('#pacific55')">&#9658; Pacific Hydraulic Brake Press - 55 Ton / 49.8 Metric Tons</a>
+					</div>
+
+					<div id="pacific55" class = "equip">
+						<h2>Pacific Hydraulic Brake Press - 55 Ton / 50 Metric Tons</h2>
+						<div>
+							<div>
+								<!-- Main Image -->
+								<img id = "pacific55MainImage" class = "brakeMainImage" src = "images/equip/pacific55/IMG_0597.jpg" height ="300" alt ="Pacific 55 Ton Press Brake">
+							</div>
+
+							<!-- Technical Information -->
+							<ul>
+								<li>- Bending Capacity Of .1875" (4.76mm) x 4'6" (1371.6mm) </li>
+								<li>- Hurco Autobend 2 Axis Gauging System</li>
+							</ul>
+						</div>
+						<!-- Slide Show -->
+						<div class = "thumbnails">
+							<img onclick = "swapPhotos(0, 'pacific55MainImage', pacific55Pictures)" src = "images/equip/pacific55/IMG_0777.jpg" height ="150" alt ="Pacific 55 Ton Press Brake">
+							<img onclick = "swapPhotos(1, 'pacific55MainImage', pacific55Pictures)" src = "images/equip/pacific55/IMG_0776.jpg" height ="150" alt = "Pacific 55 Ton Press Brake">
+							<img onclick = "swapPhotos(2, 'pacific55MainImage', pacific55Pictures)" src = "images/equip/pacific55/IMG_0597.jpg" height ="150" alt ="Pacific 55 Ton Press Brake">
+						</div>
+					</div>
+				</div><!--End Brakelist-->
+
+				<!-- Used on smaller viewport -->
+
+					<!--Possibly need to do the toggleDropDown function here instead of call function  -->
+				<p onclick= "toggleTheDiv('#laserCuttingContainer')">&#9658; Laser Cutting</p>
+
+
+				<div id = "laserCuttingContainer" class = "equip">
+					<h2>Prima Power Patino 1530 CV5000</h2>
 					<div>
 						<div>
 							<!-- Main Image -->
-							<img id = "amadaMainImage" class = "brakeMainImage" src = "images/equip/amada/IMG_0625.jpg" height ="300" alt ="Amada Brake Press">
+							<img id = "laserMainImage" class = "brakeMainImage" src = "images/equip/laser/IMG_0759.jpg" height ="50" alt ="Prima Power Patino 1530 CV5000">
 						</div>
-						<!-- Technical Information -->
-						<ul>
-							<li>- Bending Capacity Of .25" x 10'</li>
-							<li>- IR Sensors That Automatically Adjust Programmed Parts To Fit Your Specifications</li>
-							<li></li>
-						</ul>
-					</div>
-					<!-- Slide Show -->
-					<div class = "thumbnails">
-						<img onclick = "swapPhotoAmada(0)" src = "images/equip/amada/IMG_0600.jpg" height ="150" alt = "Amada Brake Press">
-						<img onclick = "swapPhotoAmada(1)" src = "images/equip/amada/IMG_0616.jpg" height ="150" alt ="Amada Brake Press">
-						<img onclick = "swapPhotoAmada(2)" src = "images/equip/amada/IMG_0625.jpg" height ="150" alt ="Amada Brake Press">
-					</div>
-				</div>
-
-				<div id="LookAtMePacific110" class = "LookAtMe">
-					<a onclick= "call('pacific110')">&#9658; Pacific Hydraulic Brake Press - 110 Ton</a>
-				</div>
-				<h2 id= "pacificH2">Pacific Hydraulic Brake Press - 110 Ton</h2>
-				<div id = "pacific110">
-					<div>
-						<div>
-							<!-- Main Image -->
-							<img id = "pacific110MainImage" class = "brakeMainImage" src = "images/equip/pacific110/IMG_0619.jpg" height ="300" alt ="Pacific 110 Ton Press Brake">
-						</div>
-
-						<!-- Technical Information -->
-						<ul>
-							<li>- Bending Capacity Of .1875" x 9'</li>
-							<li>- Hurco Autobend IV 2 Axis Gauging System.</li>
-							<li></li>
-						</ul>
-					</div>
-
-					<!-- Slide Show -->
-					<div class = "thumbnails">
-						<img onclick = "swapPhotoPacific110(0)" src = "images/equip/pacific110/IMG_0770.jpg" height ="150" alt ="Pacific 110 Ton Press Brake">
-						<img onclick = "swapPhotoPacific110(1)" src = "images/equip/pacific110/IMG_0598.jpg" height ="150" alt = "Pacific 110 Ton Press Brake">
-						<img onclick = "swapPhotoPacific110(2)" src = "images/equip/pacific110/IMG_0619.jpg" height ="150" alt ="Pacific 110 Ton Press Brake">
-					</div>
-				</div>
-
-				<div id="LookAtMePacific55" class = "LookAtMe">
-					<a onclick= "call('pacific55')">&#9658; Pacific Hydraulic Brake Press - 55 Ton</a>
-				</div>
-				<h2>Pacific Hydraulic Brake Press - 55 Ton</h2>
-				<div id="pacific55">
-					<div>
-						<div>
-							<!-- Main Image -->
-							<img id = "pacific55MainImage" class = "brakeMainImage" src = "images/equip/pacific55/IMG_0597.jpg" height ="300" alt ="Pacific 55 Ton Press Brake">
-						</div>
-
-						<!-- Technical Information -->
-						<ul>
-							<li>- Bending Capacity Of .1875" x 4'6"</li>
-							<li>- Hurco Autobend 2 Axis Gauging System</li>
-							<li></li>
-						</ul>
-					</div>
-
-					<!-- Slide Show -->
-					<div class = "thumbnails">
-						<img onclick = "swapPhotoPacific55(0)" src = "images/equip/pacific55/IMG_0777.jpg" height ="150" alt ="Pacific 55 Ton Press Brake">
-						<img onclick = "swapPhotoPacific55(1)" src = "images/equip/pacific55/IMG_0776.jpg" height ="150" alt = "Pacific 55 Ton Press Brake">
-						<img onclick = "swapPhotoPacific55(2)" src = "images/equip/pacific55/IMG_0597.jpg" height ="150" alt ="Pacific 55 Ton Press Brake">
-					</div>
-				</div>
-
-				<!-- <div id="LookAtMeBigPacific" class = "LookAtMe">
-					<a onclick= "call('bigPacific')">Big Pacific Hydraulic Brake Press</a>
-				</div>
-				<h2>Big Pacific Hydraulic Brake Press</h2>
-				<div id = "bigPacific">
-					<div>
-						<div> -->
-							<!-- Main Image -->
-							<!-- <img id = "bigPacificMainImage" class = "mainImage" src = "images/equip/bigPacific/IMG_0624.jpg" height ="300" alt ="Big Pacific Press Brake">
-						</div> -->
 						<!-- Technical Information -->
 						<!-- GET TECHNICAL INFORMATION!!!!!!  -->
-						<!-- <ul>
-							<li>- </li>
-							<li>- </li>
-							<li></li>
+						<ul>
+							<li>- 60" (1524mm) x 120" (3048mm Table) </li>
+							<li>- Cut Mild Steel Up To 1" (25mm)</li>
+							<li>- Stainless Steel Up To 0.500" (12mm)</li>
+							<li>- Aluminum Up To 0.312" (8mm)</li>
+							<li>- 5000 Watts Of Cutting Power</li>
+							<li>- Nitrogen or Oxygen Cut Edges</li>
+							<li>- Prototyping, Low-Volume, Or High-Volume Production Available</li>
 						</ul>
-					</div> -->
-
+					</div>
 					<!-- Slide Show -->
-					<!-- <div class = "thumbnails">
-						<img onclick = "swapPhotoBigPacific(0)" src = "images/equip/bigPacific/IMG_0622.jpg" height ="150" alt ="Big Pacific Press Brake">
-						<img onclick = "swapPhotoBigPacific(1)" src = "images/equip/bigPacific/IMG_0623.jpg" height ="150" alt = "Big Pacific Press Brake">
-						<img onclick = "swapPhotoBigPacific(2)" src = "images/equip/bigPacific/IMG_0624.jpg" height ="150" alt ="Big Pacific Press Brake">
-					</div>
-				</div> -->
-			</div>
+					<div class = "thumbnails">
+						<img onclick = "swapPhotos(0, 'laserMainImage', laserPictures)" src = "images/equip/laser/IMG_0604.jpg" height ="150" alt ="Prima Power Patino 1530 CV5000">
+						<img onclick = "swapPhotos(1, 'laserMainImage', laserPictures)" src = "images/equip/laser/IMG_0620.jpg" height ="150" alt = "Prima Power Patino 1530 CV5000">
+						<img onclick = "swapPhotos(2, 'laserMainImage', laserPictures)" src = "images/equip/laser/IMG_0621.jpg" height ="150" alt = "Prima Power Patino 1530 CV5000">
+						<img onclick = "swapPhotos(3, 'laserMainImage', laserPictures)" src = "images/equip/laser/laser.jpg" height ="150" alt ="Prima Power Patino 1530 CV5000">
+						<img onclick = "swapPhotos(4, 'laserMainImage', laserPictures)" src = "images/equip/laser/IMG_0764.jpg" height ="150" alt ="Prima Power Patino 1530 CV5000">
+						<img onclick = "swapPhotos(5, 'laserMainImage', laserPictures)" src = "images/equip/laser/IMG_0759.jpg" height ="150" alt ="Prima Power Patino 1530 CV5000">
+					</div><!--End thumbnails-->
+				</div><!--End laserCutting-->
 
-			<div id ="lookAtMeLaserCutting" class = "LookAtMe">
-				<a onclick= "call('laserCuttingContainer')">&#9658; Laser Cutting</a>
-			</div>
-			<div id = "laserCuttingContainer">
-				<h2>Prima Power Patino 1530 CV5000</h2>
-				<div>
+				<!-- Used on smaller viewport -->
+
+					<!--Possibly need to do the toggleDropDown function here instead of call function  -->
+				<p onclick= "toggleTheDiv('#miscEquip')">&#9658; Miscellaneous Equipment</p>
+
+
+				<div id= "miscEquip" class = "equip">
+					<h2>Miscellaneous Equipment</h2>
 					<div>
-						<!-- Main Image -->
-						<img id = "laserMainImage" class = "brakeMainImage" src = "images/equip/laser/IMG_0759.jpg" height ="50" alt ="Prima Power Patino 1530 CV5000">
+						<div>
+							<!-- Main Image -->
+							<img id = "MiscMainImage" class = "brakeMainImage" src = "images/equip/miscEquip/IMG_0654.jpg" height ="50" alt ="Prima Power Patino 1530 CV5000">
+						</div>
+						<!-- Technical Information -->
+						<!-- GET TECHNICAL INFORMATION!!!!!!  -->
+						<ul>
+							<li>- Power Feeders</li>
+							<li>- Air Feeders</li>
+							<li>- Reel Decoilers</li>
+							<li>- Cradle Decoilers</li>
+						</ul>
 					</div>
-					<!-- Technical Information -->
-					<!-- GET TECHNICAL INFORMATION!!!!!!  -->
-					<ul>
-						<li>- 60" (1524mm) x 120" (3048 Table) </li>
-						<li>- Cut Mild Steel Up To 1" (25mm)</li>
-						<li>- Stainless Steel Up To 0.500" (12mm)</li>
-						<li>- Aluminum Up To 0.312" (8mm)</li>
-						<li>- 5000 Watts Of Cutting Power</li>
-						<li>- Nitrogen or Oxygen Cut Edges</li>
-						<li>- Prototyping, Low-Volume, Or High-Volume Production Available</li>
-					</ul>
+					<!-- Slide Show -->
+					<div class = "thumbnails">
+						<img onclick = "swapPhotos(0, 'MiscMainImage', miscEquipPictures)" src = "images/equip/miscEquip/IMG_0654.jpg" height ="150" alt ="Prima Power Patino 1530 CV5000">
+						<img onclick = "swapPhotos(1, 'MiscMainImage', miscEquipPictures)" src = "images/equip/miscEquip/IMG_0643.jpg" height ="150" alt = "Prima Power Patino 1530 CV5000">
+					</div><!--End thumbnails-->
+				</div><!--End Miscellaneous Equip-->
+
 				</div>
-				<!-- Slide Show -->
-				<div class = "thumbnails">
-					<img onclick = "swapPhotoLaser(0)" src = "images/equip/laser/IMG_0604.jpg" height ="150" alt ="Prima Power Patino 1530 CV5000">
-					<img onclick = "swapPhotoLaser(1)" src = "images/equip/laser/IMG_0620.jpg" height ="150" alt = "Prima Power Patino 1530 CV5000">
-					<img onclick = "swapPhotoLaser(2)" src = "images/equip/laser/IMG_0621.jpg" height ="150" alt = "Prima Power Patino 1530 CV5000">
-					<img onclick = "swapPhotoLaser(3)" src = "images/equip/laser/laser.jpg" height ="150" alt ="Prima Power Patino 1530 CV5000">
-					<img onclick = "swapPhotoLaser(4)" src = "images/equip/laser/IMG_0764.jpg" height ="150" alt ="Prima Power Patino 1530 CV5000">
-					<img onclick = "swapPhotoLaser(5)" src = "images/equip/laser/IMG_0759.jpg" height ="150" alt ="Prima Power Patino 1530 CV5000">
-				</div>
-			</div>
-		</div>
+			</div> <!--End equipmentContainer-->
+		</div>	<!--End equipmentInf-->
 
     <footer>
 			<h4>We Seek To Manufacture The Most Creative, Innovative And Profitable Services In The World.</h4>
 
-			<div id="info" class="col-md-5 col-sm-6 col-xs-12 fbox">
+			<div class="contactInfo">
 				<p style = "text-decoration: underline; color: #e3eeaa;">Headquarters</p>
 				<p>301 Carmeco Road | Lebanon, Missouri 65536</p>
-				<p><a href="tel:14175887272">Phone: (417) 532-6133</a> | FAX: (417) 532-3565</p>
-				<p style = "text-decoration: underline; color: #e3eeaa;">Office Hours</p>
-				<p>Monday - Friday 8 A.M. - 5 P.M.</p>
-				<p style = "text-decoration: underline; color: #e3eeaa;">Shipping And Receiving Hours</p>
-				<p>Monday - Friday 6:30 A.M. - 4:30 P.M.</p>
+				<p><a href="tel:14175326133">Phone: (417) 532-6133</a> | FAX: (417) 532-3565</p>
+				<p><a href="mailto:info@carmeco.com?subject=Mail%20From%20Carmeco%20Website">E-mail: info@Carmeco.com</a></p>
+
 			</div>
 
-			<div id= "promise" class="col-md-7 col-sm-6 col-xs-12 fbox">
-				<h3 style ="color: #e3eeaa;">The Carmeco Promise</h3>
-				<p>
-					To produce quality goods at a profit. We know our customers must have quality components at competitive prices. To keep both our own and our customers’ business healthy, we must provide superior service to every order we receive, from the largest to the smallest and from the newest to the oldest customer. Your own business experience will tell you that this is not always easy. On behalf of Carmeco Incorporated, I want to assure you that our endeavors for superior quality service will never stop.
-  				<span style="color: #e3eeaa;">—   Jeff Carr, President</span>
-				</p>
+			<div class= "hours" >
+				<p style = "text-decoration: underline; color: #e3eeaa;">Office Hours</p>
+				<p>Monday - Friday 8 A.M. - 5 P.M. - Central Time</p>
+				<p style = "text-decoration: underline; color: #e3eeaa;">Shipping And Receiving Hours</p>
+				<p>Monday - Friday 6:30 A.M. - 4:30 P.M. - Central Time</p>
 			</div>
 
 			<div id ="bottom">
@@ -739,7 +863,7 @@
 
     </footer>
 		<!-- Swapping Photos -->
-		<script src="swapPhoto.js"></script>
-    <script src = "script.js"></script>
-  </body>
+		<script src="js/swapPhoto.js"></script>
+    <script src = "js/script.js"></script>
+	</body>
 </html>

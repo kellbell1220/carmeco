@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Metal Stamping, Laser, And Fabrication At Its Finest | Carmeco Inc</title>
+		<title>Capabilities | Carmeco Inc</title>
 			<!--
 			Carmeco Inc
 			Filename: capabilities.html
@@ -16,7 +16,7 @@
 
 			<meta name = "description" content = "Carmeco Description goes here">
 
-			<meta name="keywords" content="Metal Fabrication, Metal Stamping, Metal Laser Cutting, Industrial,">
+			<meta name="keywords" content="Metal Fabrication, Metal Stamping, Metal Laser Cutting, Industrial, welding, metal forming, quality, fabrication, tooling, paint">
 
 			<meta name="robots" content="index, follow">
 
@@ -51,7 +51,7 @@
   <body>
     <header>
       <div id="headerContainer" class ="container-fluid">
-				<p><a id="phone" href="tel:14175887272">Call Us Today: (417) 532-6133</a></p>
+				<p><a id="phone" href="tel:14175326133">Call Us Today: (417) 532-6133</a></p>
 				<div class = "row">
 					<div id="logoDiv">
 						<a href="index.html"><img id= "logo" src= "images/logo.png" width="300" alt= "Carmeco Inc Logo" /></a>
@@ -60,30 +60,34 @@
 
 					<!--Navigation button for smaller viewports  -->
 					<div class = "navigation-menu-button">
-		        <p onclick="openNav()" class = "dropbtn">&#9776;</p>
+		        <p onclick="toggleSideBar('.sidenav')" class = "dropbtn">&#9776;</p>
 		      </div>
 
 		      <!-- Navigation Menu  -->
-		      <nav>
-		        <div id="mySidenav" class="sidenav">
-		          <ul>
-		            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></li>
-		            <li><a href="index.html">Home</a></li>
-		            <li><a href="capabilities.html">Capabilities</a></li>
-		            <li><a href="equipment.html">Equipment & Systems</a></li>
-		            <li><a href="greenInit.html">Green Initiatives</a></li>
-		            <li><a href="contact.html">Contact Us</a></li>
-		          </ul>
-		        </div>
-		      </nav>
+					<nav>
+					 <div id="mySidenav" class="sidenav">
+						 <ul>
+							 <li><a href="index.html">Home</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="capabilities.html">Capabilities</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="equipment.html">Equipment</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="greenInit.html">Green Initiatives</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="about.html">About</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="contact.html">Contact</a></li>
+						 </ul>
+					 </div>
+				 </nav>
       	</div>
       </div>
     </header>
 
     <div id="ourTeam">
       <div>
-				<img src = "images/team3.jpg" width="400" alt= "Carmeco Family"/>
-        <h1>Our Greatest Capability Lies Within Our Biggest Strength.<br>Our Team!</h1>
+        <h1>Our Greatest Strength<br>Is Our Team!</h1>
       </div>
     </div>
 
@@ -92,12 +96,18 @@
 			<div id= "metalStamping">
 				<div id= "stampingBox">
 		      <div id ="metalStampingSection" class="container-fluid">
-		        <h2>Precision Metal Stamping</h2>
-		        <p>Since 1970 we have been producing high quality stampings. We are able to work with all manner of dies from large progressive tooling with high-quantity runs to small single-quantity runs. Carmeco can manufacture your parts on time and efficiently.</p>
+		        <h2>Metal Stamping</h2>
+						<img  class = "printPics" src = "images/parts.jpg" width="400" alt= "Carmeco Family"/>
+		        <p>
+							Since 1970 we have been producing quality stamping and metal fabrications
+							 for original equipment manufacturers from every industry. As you browse our
+							 website you will see that we have the capability to meet your needs. Carmeco Inc.
+							 will manufacture your parts to your quality requirements and as your schedule demands.
+						 </p>
 		        <ul>
-		          <li>- 24 Presses</li>
-		          <li>- Up To 1200 Tons Of Stamping Power</li>
-		          <li>- 60,000 sq.ft Dedicated To Stamping</li>
+		          <li>- 17 Presses</li>
+		          <li>- Up To 1200 Tons</li>
+		          <li>- 44,000 sq.ft Dedicated To Stamping</li>
 		          <li>- Bed Sizes Up To 63″x 157″</li>
 		          <li>- High-Speed Dallas & COE Servo Feeders As Well As Spindle & Air Feeders</li>
 		        </ul>
@@ -111,7 +121,10 @@
         <div id = "laserBox">
         	<div id ="laserSection">
 						<h2>Laser Cutting</h2>
-		        <p>Our laser enables Carmeco to provide its customers with high-quality, economical, and time-sensitive sheet metal production requests for OEM market.</p>
+		        <p>
+							Our laser enables Carmeco to provide its customers with high-quality, economical,
+							and time-sensitive sheet metal production requests for OEM market.
+						</p>
 		        <ul>
 		          <li>- 60″ (1524mm) x 120″ (3048mm) Table</li>
 		          <li>- Cut Mild Steel Up To 1″ (25mm)</li>
@@ -120,6 +133,7 @@
 		          <li>- 5000 Watts Of Cutting Power</li>
 		          <li>- Nitrogen Or Oxygen Cut Edges</li>
 		        </ul>
+						<img  class = "printPics" src = "images/equip/laser/IMG_0759.jpg" width="400" alt= "Carmeco Family"/>
         	</div>
         </div>
       </div>
@@ -128,16 +142,19 @@
       <div id ="customWelding">
         <div id = "weldingBox">
         	<div id = weldingSection>
-						<h2>Custom Welding</h2>
-		        <p>We can accommodate any welding job, ensuring your part is on time and to specifications. We offer all types of welding and have experience in many different weld applications. We can address your welding needs if you need one part welded or and entire assembly.
-		        Carmeco has a full line of secondary operations. Our welding procedures are patterned to AWS standards and Carmeco can offer certified welding should you require it.</p>
+						<h2>Production Welding</h2>
+						<img  class = "printPics" src = "images/welder1.jpg" width="400" alt= "Carmeco Family"/>
+		        <p>
+							We can accommodate any welding requirements. We offer many types of welding and have the experience
+							 you require. We will address your welding needs whether you need one part or an entire assembly.
+							 Our welding procedures are patterned to AWS standards and Carmeco can offer certified welding
+							 should it be required.
+						</p>
 		        <ul>
-		          <li>- 20,000 sq ft. facility Dedicated To Welding</li>
+		          <li>- 24,000 sq ft. facility Dedicated To Welding</li>
 							<li>- Experienced Workmanship To Get The Job Done Right!</li>
 		          <li>- MIG Welding</li>
 		          <li>- TIG Welding</li>
-		          <li>- Plasma Cutter</li>
-		          <li>- Weld Fixtures</li>
 		        </ul>
         	</div>
         </div>
@@ -148,30 +165,40 @@
         <div id = "toolingBox">
         	<div id = "toolingSection">
 						<h2>Tooling</h2>
-		        <p>Carmeco offers complete tooling capabilities. From simple blanks to complex progressive dies. We can keep your project on time and on budget. All tooling maintenance is done in-house which allows control over getting your tool back on-line and on-time. With our years of experience, you can expect savings and quality at every turn.</p>
+		        <p>
+							Carmeco offers complete tooling capabilities. From simple blanks dies to complex progressive dies.
+							We can keep your project on time and on budget. All tooling maintenance is done in-house which allows
+							control over getting your tool back on-line and on-time. With our years of tooling experience,
+							you will receive expert tooling support.
+						</p>
 		        <ul>
-		          <li>- In-House Tooling</li>
-							<li>- Precision Tooling Capabilities</li>
-							<li>- Quality Tooling Every Time</li>
-		          <li>- Progressive Dies</li>
+		          <li>- In-House Tooling Maintenance</li>
+							<li>- Precision Quality Tooling Capabilities Available</li>
+		          <li>- Progressive Dies / Blank Dies</li>
+							<li>- Welding Fixtures</li>
 							<li>- Over 80 Years Of Combined Experience!</li>
 		        </ul>
+						<img  class = "printPics" src = "images/IMG_0729.jpg" width="400" alt= "Carmeco Family"/>
         	</div>
         </div>
       </div>
 
-			<span id="lookAtMeForming"></span>
-      <div id = "metalForming">
-        <div id="formingBox">
-        	<div id="formingSection">
-						<h2>Metal Forming</h2>
-		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		        <ul>
-		          <li>- Press capabilities</li>
-		          <li>- Press capabilities</li>
-		          <li>- Press capabilities</li>
-		          <li>- Press capabilities</li>
-		        </ul>
+			<span id ="lookAtMeQuality"></span>
+      <div id ="quality">
+        <div id="qualityBox">
+        	<div id= "qualitySection">
+						<h2>Quality Control</h2>
+						<img  class = "printPics" src = "images/IMG_0744.jpg" width="400" alt= "Carmeco Family"/>
+		        <p>Carmeco Quality equals Customer Satisfaction.
+							Our commitment to our customers is to achieve quality as a result of
+							our operations, processes, and continuous improvement.</p>
+
+						<a href = "https://www.iso.org/home.html" target="_blank" ><img id ="isoLogo" src="images/isoLogo.png" width="250" alt="ISO Logo"/></a>
+
+						<p>Over the years Carmeco's quality has evolved to meet customer
+							requirements. From replicating a sketch on a napkin, to achieving
+							tight tolerance dimensions, to controlling an output with statistical
+							process control, we will always be glad to meet your needs.</p>
         	</div>
         </div>
       </div>
@@ -180,86 +207,77 @@
 			<div id ="fabShop">
 				<div id= fabBox>
 					<div id = fabSection>
-						<h2>Fabrication Shop</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<ul>
-							<li>- Fab Information</li>
-							<li>- Fab Information</li>
-							<li>- Fab Information</li>
-							<li>- Fab Information</li>
-						</ul>
+						<h2>Fabrication</h2>
+						<p>
+							Carmeco's Fabrication Department can meet your requirements for prototyping,
+							small volume or large volume Laser and Press Braking needs.</br></br>
+							With four press brakes ranging in size from 55 Ton 4' 6" bed to
+							400 Ton 10' bed. all Brakes are equipped with gauging systems to assist
+							in quick changeovers and set-ups.</br></br> <span style="font-style: italic;"> Check out our equipment listings or
+							contact us for information.
+						</p>
+						<img  class = "printPics" src = "images/weld2.jpg" width="400" alt= "Carmeco Family"/>
 					</div>
 				</div>
 			</div>
-
-			<span id ="lookAtMeQuality"></span>
-      <div id ="quality">
-        <div id="qualityBox">
-        	<div id= "qualitySection">
-						<h2>Quality Control</h2>
-		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-		        <ul>
-		          <li>- Quality Information</li>
-		          <li>- Quality Information</li>
-		          <li>- Quality Information</li>
-		          <li>- Quality Information</li>
-		        </ul>
-        	</div>
-        </div>
-      </div>
-
-			<span id = "lookAtMePaint"></span>
-      <div id = "paintService">
-        <div id ="paintBox">
-        	<div id = "paintSection">
-						<h2>Paint Service</h2>
-		        <p>Carmeco’s painting facilities can match your product requirements. With over 15,000 sq. ft. of room this department can also handle any assembly requirements.
-		        We are able to spray nearly any type of coating your product may require! </p>
-						<ul>
-							<li>- JRI MCCS 1500 - Wash Line</li>
-							<li>- Electrostatic And Conventional Guns</li>
-							<li>- Our conveyor and online spray booth can handle parts up to 48″x 84″x 84″</li>
-							<li>- Walk-in booth that will accommodate parts up to 14′ in length and 14′ high</li>
-						</ul>
-        	</div>
-        </div>
-      </div>
 
 			<span id =lookAtMeDelivery></span>
       <div id ="delivery">
         <div id ="deliveryBox">
         	<div id = "deliverySection">
 						<h2>Logistics</h2>
-		        <p>Carmeco can take care of any of your deliveries needs in order to </br>ensure fast, on-time, and economically sound delivery of your product. </br>It will be like we are right next door. </p>
+						<img  class = "printPics" src = "images/truck.jpg" width="400" alt= "Carmeco Family"/>
+		        <p>
+							Carmeco will take care of any of your delivery needs in order to ensure fast,
+							on-time, and economical sound delivery of your product. It will be like we are right next door.
+						</p>
 		        <ul>
-		          <li>- Two semi-trucks (One with sleeper if two-day delivery is required)</li>
-		          <li>- Four trailers that can be side, overhead, or back loaded</li>
-		          <li>- 1-Ton Flatbed Pickup for those emergency deliveries</li>
+		          <li>- Three semi-trucks (With sleepers if two-day delivery is required)</li>
+		          <li>- Three trailers flatbed and Dry Van</li>
+		          <li>- Two, 1-Ton Flatbed Pickup for emergency deliveries</li>
 		          <li>- With our trucks you can be assured that your product will be delivered on-time and safely.</li>
 		        </ul>
         	</div>
         </div>
+
+	      </div>
+				<span id = "lookAtMePaint"></span>
+	      <div id = "paintService">
+	        <div id ="paintBox">
+	        	<div id = "paintSection">
+							<h2>Paint Service</h2>
+			        <p>
+								Carmeco’s painting facilities can match your product requirements.
+								In-house wet coat painting, powder coat painting available with our outside partners.
+								This department can handle all your assembly requirements.
+							</p>
+							<ul>
+								<li>- JRI MCCS 1500 - Wash Line</li>
+								<li>- Electrostatic And Conventional Guns</li>
+								<li>- Our conveyor and online spray booth can handle parts up to 48″x 84″x 84″</li>
+								<li>- Walk-in booth that will accommodate parts up to 14′ in length and 14′ high</li>
+							</ul>
+							<img  class = "printPics" src = "images/IMG_0454.jpg" width="400" alt= "Carmeco Family"/>
+	        	</div>
+        </div>
       </div>
+
     </div>
     <footer>
 			<h4>We Seek To Manufacture The Most Creative, Innovative And Profitable Services In The World.</h4>
 
-			<div id="info" class="col-md-5 col-sm-6 col-xs-12 fbox">
+			<div class = "contactInfo">
 				<p style = "text-decoration: underline; color: #e3eeaa;">Headquarters</p>
 				<p>301 Carmeco Road | Lebanon, Missouri 65536</p>
-				<p><a href="tel:14175887272">Phone: (417) 532-6133</a> | FAX: (417) 532-3565</p>
-				<p style = "text-decoration: underline; color: #e3eeaa;">Office Hours</p>
-				<p>Monday - Friday 8 A.M. - 5 P.M.</p>
-				<p style = "text-decoration: underline; color: #e3eeaa;">Shipping And Receiving Hours</p>
-				<p>Monday - Friday 6:30 A.M. - 4:30 P.M.</p>
+				<p><a href="tel:14175326133">Phone: (417) 532-6133</a> | FAX: (417) 532-3565</p>
+				<p><a href="mailto:info@carmeco.com?subject=Mail%20From%20Carmeco%20Website">E-mail: info@Carmeco.com</a></p>
 			</div>
 
-			<div id= "promise" class="col-md-7 col-sm-6 col-xs-12 fbox">
-				<h3 style ="color: #e3eeaa;">The Carmeco Promise</h3>
-				<p>
-					To produce quality goods at a profit. We know our customers must have quality components at competitive prices. To keep both our own and our customers’ business healthy, we must provide superior service to every order we receive, from the largest to the smallest and from the newest to the oldest customer. Your own business experience will tell you that this is not always easy. On behalf of Carmeco Incorporated, I want to assure you that our endeavors for superior quality service will never stop.
-  				<span style="color: #e3eeaa;">—   Jeff Carr, President</span>
-				</p>
+			<div class = "hours" >
+				<p style = "text-decoration: underline; color: #e3eeaa;">Office Hours</p>
+				<p>Monday - Friday 8 A.M. - 5 P.M. - Central Time</p>
+				<p style = "text-decoration: underline; color: #e3eeaa;">Shipping And Receiving Hours</p>
+				<p>Monday - Friday 6:30 A.M. - 4:30 P.M. - Central Time</p>
 			</div>
 
 			<div id ="bottom">
@@ -267,6 +285,6 @@
 			</div>
 
     </footer>
-    <script src = "script.js"></script>
+    <script src = "js/script.js"></script>
   </body>
 </html>

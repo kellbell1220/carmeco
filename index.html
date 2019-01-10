@@ -16,7 +16,7 @@
 
 			<meta name = "description" content = "Carmeco Description goes here">
 
-			<meta name="keywords" content="Metal Fabrication, Metal Stamping, Metal Laser Cutting, Industrial,">
+			<meta name="keywords" content="Metal Fabrication, Metal Stamping, Metal Laser Cutting, Industrial, welding, metal forming, quality, fabrication, tooling, paint, Missouri, Lebanon Missouri">
 
 			<meta name="robots" content="index, follow">
 
@@ -51,7 +51,7 @@
   <body>
     <header>
       <div id="headerContainer" class ="container-fluid">
-				<p><a id="phone" href="tel:14175887272">Call Us Today: (417) 532-6133</a></p>
+				<p><a id="phone" href="tel:14175326133">Call Us Today: (417) 532-6133</a></p>
 				<div class = "row">
 					<div id="logoDiv">
 						<a href="index.html"><img id= "logo" src= "images/logo.png" width="300" alt= "Carmeco Inc Logo" /></a>
@@ -60,22 +60,27 @@
 
 					<!--Navigation button for smaller viewports  -->
 					<div class = "navigation-menu-button">
-		        <p onclick="openNav()" class = "dropbtn">&#9776;</p>
+		        <p onclick="toggleSideBar('.sidenav')" class = "dropbtn">&#9776;</p>
 		      </div>
 
 		      <!-- Navigation Menu  -->
-		      <nav>
-		        <div id="mySidenav" class="sidenav">
-		          <ul>
-		            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></li>
-		            <li><a href="index.html">Home</a></li>
-		            <li><a href="capabilities.html">Capabilities</a></li>
-		            <li><a href="equipment.html">Equipment & Systems</a></li>
-		            <li><a href="greenInit.html">Green Initiatives</a></li>
-		            <li><a href="contact.html">Contact Us</a></li>
-		          </ul>
-		        </div>
-		      </nav>
+					<nav>
+					 <div id="mySidenav" class="sidenav">
+						 <ul>
+							 <li><a href="index.html">Home</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="capabilities.html">Capabilities</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="equipment.html">Equipment</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="greenInit.html">Green Initiatives</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="about.html">About</a></li>
+							 <li class = "separators">|</li>
+							 <li><a href="contact.html">Contact</a></li>
+						 </ul>
+					 </div>
+				 </nav>
       	</div>
       </div>
     </header>
@@ -86,7 +91,6 @@
 					<div id ="mission">
 						<h1>Metal Fabrication At Its Finest</h1>
 						<h2>Our Goal Is To Be The Leading Producer & Provider Of Service</h2>
-						<h2>Quality Equals Customer Satisfaction</h2>
 					</div>
 				</div>
 	    </div>
@@ -110,7 +114,7 @@
 					<div  id = "weldingContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 						<img id="welding" src="images/welder1.jpg" height="22" alt ="welder">
 						<div id="weldingWord">
-							<a href ="capabilities.html#lookAtMeWelding">Custom Welding</a>
+							<a href ="capabilities.html#lookAtMeWelding">Production Welding</a>
 						</div>
 					</div>
 	      </div>
@@ -119,20 +123,20 @@
 			<div class = "container-fluid">
 	      <div  id ="indexRow2" class= "row">
 					<div id ="toolingContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-						<img id="tooling" src ="images/IMG_0729.jpg" height="22" alt = "tooling guy">
+						<img id="tooling" src ="images/Die.jpg" height="22" alt = "Tooling Room">
 						<div id="toolingWord" >
 							<a href ="capabilities.html#lookAtMeTooling">Tooling</a>
 						</div>
 					</div>
-					<div id = "formingContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-						<img id="forming" src ="images/form3.jpg" height="22" alt = "tooling guy">
-						<div id = "formingWord">
-							<a href ="capabilities.html#lookAtMeForming">Metal Forming</a>
+					<div id = "facilityContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<img id="facility" src ="images/ariel.jpg" height="22" alt = "Carmeco">
+						<div id = "facilityWord">
+							<a href ="about.html">Our Facility</a>
 						</div>
 					</div>
-					<div id = "designContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-						<img id="design" src= "images/IMG_0744.jpg" height="22" alt ="CAD">
-						<div id="designWord" >
+					<div id = "qualityIndexContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<img id="qualityIndex" src= "images/IMG_0744.jpg" height="22" alt ="CAD">
+						<div id="qualityIndexWord">
 							<a href ="capabilities.html#lookAtMeQuality">Quality Control</a>
 						</div>
 					</div>
@@ -144,7 +148,7 @@
 					<div id="fabContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 						<img id="fab" src = "images/weld2.jpg" height ="22" alt ="fabricator">
 						<div  id="fabWord" >
-							<a href ="capabilities.html#lookAtMeFab">Fabrication Shop</a>
+							<a href ="capabilities.html#lookAtMeFab">Fabrication</a>
 						</div>
 					</div>
 					<div id = "paintContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -154,7 +158,7 @@
 						</div>
 					</div>
 					<div id = "logisticsContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-						<img id ="logistics" src="images/semi.jpg"  height ="22" alt ="Logistics">
+						<img id ="logistics" src="images/truckLandscape.jpg"  height ="22" alt ="Logistics">
 						<div id="logisticsWord" >
 							<a href ="capabilities.html#lookAtMeDelivery">Logistics</a>
 						</div>
@@ -166,14 +170,15 @@
 		<div id="about" class ="container-fluid">
 			<div id= "certificates" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 fbox">
 				<h2>Certifications & Associations</h2>
-				<img src="images/isoLogo.png" width="250" alt="ISO Logo"/>
-				<img src="images/PMA.png" width="225" alt="PMA Logo"/>
+				<a href = "https://www.iso.org/home.html" target="_blank" ><img src="images/isoLogo.png" width="250" alt="ISO Logo"/></a>
+				<a href = "https://www.pma.org/home/" target="_blank" ><img src="images/PMA.png" width="225" alt="PMA Logo"/></a>
 			</div>
 
 			<div id="membership" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 fbox">
 				<h2>Memberships</h2>
-				<img src="images/lebanon.png" width="225" alt="Lebanon Chamber of Commerce"/>
-				<img src="images/NIFB.png" width="250" alt="NFIB Logo"/>
+				<img id = "Lebanon" src="images/lebanon.png" width="225" alt="Lebanon Chamber of Commerce"/>
+				<!-- <img id = "NIFB" src="images/NIFB.png" width="250" alt="NFIB Logo"/> -->
+				<!-- <img id="NIFBlack" src="images/NIFBlack.png" width ="250" alt="NFIB Logo for printing"/> -->
 			</div>
 
 			<div id="sponsers" class="container col-md-12 col-sm-12 col-xs-12 fbox">
@@ -192,18 +197,19 @@
 			<div id="info" class="col-md-5 col-sm-6 col-xs-12 fbox">
 				<p style = "text-decoration: underline; color: #e3eeaa;">Headquarters</p>
 				<p>301 Carmeco Road | Lebanon, Missouri 65536</p>
-				<p><a href="tel:14175887272">Phone: (417) 532-6133</a> | FAX: (417) 532-3565</p>
+				<p><a href="tel:14175326133">Phone: (417) 532-6133</a> | FAX: (417) 532-3565</p>
+				<p><a href="mailto:info@carmeco.com?subject=Mail%20From%20Carmeco%20Website">E-mail: info@Carmeco.com</a></p>
 				<p style = "text-decoration: underline; color: #e3eeaa;">Office Hours</p>
-				<p>Monday - Friday 8 A.M. - 5 P.M.</p>
+				<p>Monday - Friday 8 A.M. - 5 P.M. - Central Time</p>
 				<p style = "text-decoration: underline; color: #e3eeaa;">Shipping And Receiving Hours</p>
-				<p>Monday - Friday 6:30 A.M. - 4:30 P.M.</p>
+				<p>Monday - Friday 6:30 A.M. - 4:30 P.M. - Central Time</p>
 			</div>
 
 			<div id= "promise" class="col-md-7 col-sm-6 col-xs-12 fbox">
 				<h3 style ="color: #e3eeaa;">The Carmeco Promise</h3>
 				<p>
-					To produce quality goods at a profit. We know our customers must have quality components at competitive prices. To keep both our own and our customers’ business healthy, we must provide superior service to every order we receive, from the largest to the smallest and from the newest to the oldest customer. Your own business experience will tell you that this is not always easy. On behalf of Carmeco Incorporated, I want to assure you that our endeavors for superior quality service will never stop.
-  				<span style="color: #e3eeaa;">—   Jeff Carr, President</span>
+					We seek to manufacture the most creative, innovative and profitable services in the world. This is not just a slogan this is how Carmeco Inc. strives to support its customers, associates and community. To keep both our own and our customers’ business healthy, we must provide superior service to every order we receive, from the largest to the smallest and from the newest to the oldest. On behalf of Carmeco Incorporated, I want to assure you that our endeavors for creative, innovative and proficient service will never stop.
+  				<br><span style="color: #e3eeaa;">—   Jeff Carr, President</span>
 				</p>
 			</div>
 
@@ -212,6 +218,6 @@
 			</div>
 
     </footer>
-    <script src = "script.js"></script>
+    <script src = "js/script.js"></script>
   </body>
 </html>
