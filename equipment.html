@@ -49,7 +49,7 @@
 			<!-- CSS Links  -->
 			<link rel="stylesheet" href="styles.css">
 	</head>
-  <body id= "equipPage">
+  <body id= "equipPage" onload = "if (window.location.hash === '#LocationDivStamp') {call('#theBoss', '#LookAtMeTheBoss a:first', '#stampingPressContainer .LookAtMeHeading'); toggleSideBar('#stampList .LookAtMe')}">
     <header id = headerEquip>
       <div id="headerContainer" class ="container-fluid">
 				<p><a id="phone" href="tel:14175326133">Call Us Today: (417) 532-6133</a></p>
@@ -89,31 +89,30 @@
 			<div  id ="equipmentSelection" class= "row" >
 				<div id="stampContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<div id = stampBlackBox></div>
-					<img id="stampPress" src = "images/equip/ninja/ninja.jpg" height ="50" alt ="The Ninja">
+					<a href ="#LocationDivStamp" onclick= "call('#theBoss', '#LookAtMeTheBoss a:first', '#stampingPressContainer .LookAtMeHeading'); toggleSideBar('#stampList .LookAtMe');"><img id="stampPress" src = "images/equip/ninja/ninja.jpg" height ="50" alt ="The Ninja"></a>
 					<div  id="stampPressWord" >
-						<a href ="#arrowDiv" onclick= "call('#theBoss', '#LookAtMeTheBoss a:first'); toggleSideBar('#stampList .LookAtMe');">Stamp Presses</a>
+						<a href ="#LocationDivStamp" onclick= "call('#theBoss', '#LookAtMeTheBoss a:first', '#stampingPressContainer .LookAtMeHeading'); toggleSideBar('#stampList .LookAtMe');">Stamp Presses</a>
 					</div>
 				</div>
 				<div  id ="brakePressContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<div id = brakePressBlackBox></div>
-					<img id= "brakePress" src ="images/equip/amada/IMG_0757.jpg" height ="50" alt ="Brake Press" >
+					<a href ="#LocationDivStamp" onclick= "call('#bigPacific', '#LookAtMeBigPacific a:first', '#brakePressExpand .LookAtMeHeading'); toggleSideBar('#brakelist .LookAtMe');"><img id= "brakePress" src ="images/equip/amada/IMG_0815.jpg" height ="50" alt ="Brake Press" ></a>
 					<div id="brakePressWord" >
-						<a href ="#arrowDiv" onclick= "call('#bigPacific', '#LookAtMeBigPacific a:first'); toggleSideBar('#brakelist .LookAtMe');">Brake Presses</a>
+						<a href ="#LocationDivStamp" onclick= "call('#bigPacific', '#LookAtMeBigPacific a:first', '#brakePressExpand .LookAtMeHeading'); toggleSideBar('#brakelist .LookAtMe');">Brake Presses</a>
 					</div>
 				</div>
-				<div  id = "laserEquipContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div id = "laserEquipContainer" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<div id ="laserEquipBlackBox"></div>
-					<img id ="laserEquip" src="images/equip/laser/IMG_0772.jpg"  height ="50" alt ="Prima Power Laser">
+					<a href ="#LocationDivStamp" onclick= "call('#laserCuttingContainer', '#lookAtMeLaserCutting p:first')"><img id ="laserEquip" src="images/equip/laser/IMG_0772.jpg"  height ="50" alt ="Prima Power Laser"></a>
 					<div id="laserEquipWord" >
-						<a href ="#arrowDiv" onclick= "call('#laserCuttingContainer', '#lookAtMeLaserCutting p:first')">Laser Cutting</a>
+						<a href ="#LocationDivStamp" onclick= "call('#laserCuttingContainer', '#lookAtMeLaserCutting p:first')">Laser Cutting</a>
 					</div>
 				</div>
-			</div>
-			<div id = "arrowDiv">
-				<!-- <a href = "#stampList"><img id= "arrow"  src ="images/arrow6.png" width="50" alt ="arrow" ></a> -->
 			</div>
 		</div>
-
+		<div id="LocationDivStamp"></div>
+		<!-- <div id="LocationDivBrake"></div>
+		<div id="LocationDivLaser"></div> -->
 		<div id = "equipmentInfo" >
 			<div id = LookAtMeContainer>
 				<div id ="stampList">
@@ -197,14 +196,10 @@
 
 			<div id ="equipmentContainer">
 				<div id = "stampingPressContainer" >
-
 					<!-- Used on smaller viewport -->
-
 					<p onclick= "toggleEquipList('#stampingPressContainer .LookAtMeHeading')">&#9658; Stamp Presses</p>
 
-
-
-					<div class = "LookAtMeHeading">
+					<div id ="DanleyLook"class = "LookAtMeHeading">
 						<a onclick= "toggleTheDiv('#theBoss')">&#9658; Danly Straight Side - 1200 Ton / 1089 Metric Tons</a>
 					</div>
 
@@ -254,8 +249,8 @@
 						</div>
 						<!-- Thumbnails -->
 						<div class = "thumbnails">
-							<img onclick= "swapPhotos(0, 'ninjaMainImage', ninjaPictures)" src = "images/equip/ninja/IMG_0663.jpg" height ="150" alt ="The Ninja">
-							<img onclick= "swapPhotos(1, 'ninjaMainImage', ninjaPictures)"  src = "images/equip/ninja/IMG_0664.jpg" height ="150" alt ="The Ninja">
+							<img onclick= "swapPhotos(0, 'ninjaMainImage', ninjaPictures)" src = "images/equip/ninja/IMG_0807.jpg" height ="150" alt ="The Ninja">
+							<img onclick= "swapPhotos(1, 'ninjaMainImage', ninjaPictures)"  src = "images/equip/ninja/IMG_0808.jpg" height ="150" alt ="The Ninja">
 							<img onclick= "swapPhotos(2, 'ninjaMainImage', ninjaPictures)"  src = "images/equip/ninja/ninja.jpg" height ="150" alt ="The Ninja">
 						</div>
 					</div>
@@ -278,8 +273,8 @@
 						</div>
 						<!-- Slide Show -->
 						<div class ="thumbnails">
-							<img onclick= "swapPhotos(0, 'Niagara400TonMainImage', niagara400Pictures)" src = "images/equip/Niagara400/IMG_0703.jpg" height ="75" alt ="The Boss">
-							<img onclick= "swapPhotos(1, 'Niagara400TonMainImage', niagara400Pictures)" src = "images/equip/Niagara400/IMG_0692.jpg" height ="150" alt ="The Boss">
+							<img onclick= "swapPhotos(0, 'Niagara400TonMainImage', niagara400Pictures)" src = "images/equip/Niagara400/IMG_0795.jpg" height ="75" alt ="The Boss">
+							<img onclick= "swapPhotos(1, 'Niagara400TonMainImage', niagara400Pictures)" src = "images/equip/Niagara400/IMG_0797.jpg" height ="150" alt ="The Boss">
 							<img onclick= "swapPhotos(2, 'Niagara400TonMainImage', niagara400Pictures)" src = "images/equip/Niagara400/IMG_0704.jpg" height ="150" alt ="The Boss">
 						</div>
 					</div>
@@ -441,7 +436,7 @@
 						</div>
 						<!-- Slide Show -->
 						<div class = "thumbnails">
-							<img onclick= "swapPhotos(0, 'adia160MainImage', aida160Pictures)" src = "images/equip/aida160/IMG_0679.jpg" height ="150" alt ="Aida 160">
+							<img onclick= "swapPhotos(0, 'adia160MainImage', aida160Pictures)" src = "images/equip/aida160/IMG_0798.jpg" height ="150" alt ="Aida 160">
 							<img onclick= "swapPhotos(1, 'adia160MainImage', aida160Pictures)" src = "images/equip/aida160/IMG_0686.jpg" height ="150" alt ="Aida 160">
 							<img onclick= "swapPhotos(2, 'adia160MainImage', aida160Pictures)" src = "images/equip/aida160/IMG_0503.jpg" height ="150" alt ="Aida 160">
 						</div>
@@ -562,7 +557,7 @@
 						<div class = "row">
 							<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-5">
 								<!-- Main Image -->
-								<img id= "spiritMainImage" class = "pressMainImage" src = "images/equip/spirit/IMG_0680.jpg" height ="450" alt ="Niagra E110">
+								<img id= "spiritMainImage" class = "pressMainImage" src = "images/equip/spirit/IMG_0801.jpg" height ="450" alt ="Niagra E110">
 							</div>
 
 							<!-- Technical Information -->
@@ -573,9 +568,9 @@
 						</div>
 						<!-- Slide Show -->
 						<div class = thumbnails>
-							<img onclick= "swapPhotos(0, 'spiritMainImage', spiritPictures)" src = "images/equip/spirit/IMG_0682.jpg" height ="150" alt ="Niagra E110">
-							<img onclick= "swapPhotos(1, 'spiritMainImage', spiritPictures)" src = "images/equip/spirit/IMG_0652.jpg" height ="150" alt ="Niagra E110">
-							<img onclick= "swapPhotos(2, 'spiritMainImage', spiritPictures)" src = "images/equip/spirit/IMG_0680.jpg" height ="150" alt ="Niagra E110">
+							<img onclick= "swapPhotos(0, 'spiritMainImage', spiritPictures)" src = "images/equip/spirit/IMG_0799.jpg" height ="150" alt ="Niagra E110">
+							<img onclick= "swapPhotos(1, 'spiritMainImage', spiritPictures)" src = "images/equip/spirit/IMG_0800.jpg" height ="150" alt ="Niagra E110">
+							<img onclick= "swapPhotos(2, 'spiritMainImage', spiritPictures)" src = "images/equip/spirit/IMG_0801.jpg" height ="150" alt ="Niagra E110">
 						</div>
 					</div>
 
@@ -599,8 +594,8 @@
 						</div>
 						<!-- Slide Show -->
 						<div class ="thumbnails">
-							<img onclick= "swapPhotos(0, 'bliss45MainImage', bliss45Pictures)" src = "images/equip/bliss45/IMG_0740.jpg" height ="150" alt ="The Bliss C-45">
-							<img onclick= "swapPhotos(1, 'bliss45MainImage', bliss45Pictures)" src = "images/equip/bliss45/IMG_0742.jpg" height ="150" alt ="The Bliss C-45">
+							<img onclick= "swapPhotos(0, 'bliss45MainImage', bliss45Pictures)" src = "images/equip/bliss45/IMG_0803.jpg" height ="150" alt ="The Bliss C-45">
+							<img onclick= "swapPhotos(1, 'bliss45MainImage', bliss45Pictures)" src = "images/equip/bliss45/IMG_0804.jpg" height ="150" alt ="The Bliss C-45">
 							<img onclick= "swapPhotos(2, 'bliss45MainImage', bliss45Pictures)" src = "images/equip/bliss45/IMG_0741.jpg" height ="150" alt ="The Bliss C-45">
 						</div>
 					</div>
@@ -624,7 +619,7 @@
 						</div>
 						<!-- Slide Show -->
 						<div class = "thumbnails">
-							<img onclick = "swapPhotos(0, 'minster5MainImage', minster5Pictures)" src = "images/equip/minster5/IMG_0737.jpg" height ="150" alt ="Minster No.5">
+							<img onclick = "swapPhotos(0, 'minster5MainImage', minster5Pictures)" src = "images/equip/minster5/IMG_0802.jpg" height ="150" alt ="Minster No.5">
 							<img onclick = "swapPhotos(1, 'minster5MainImage', minster5Pictures)" src = "images/equip/minster5/IMG_0739.jpg" height ="150" alt ="Minster No.5">
 							<img onclick = "swapPhotos(2, 'minster5MainImage', minster5Pictures)" src = "images/equip/minster5/IMG_0738.jpg" height ="150" alt ="Minster No.5">
 						</div>
@@ -681,8 +676,8 @@
 
 						<!-- Slide Show -->
 					 	<div class = "thumbnails">
-							<img onclick = "swapPhotos(0, 'bigPacificMainImage', bigPacificPictures)" src = "images/equip/bigPacific/IMG_0622.jpg" height ="150" alt ="Big Pacific Press Brake">
-							<img onclick = "swapPhotos(1, 'bigPacificMainImage', bigPacificPictures)" src = "images/equip/bigPacific/IMG_0623.jpg" height ="150" alt = "Big Pacific Press Brake">
+							<img onclick = "swapPhotos(0, 'bigPacificMainImage', bigPacificPictures)" src = "images/equip/bigPacific/IMG_0818.jpg" height ="150" alt ="Big Pacific Press Brake">
+							<img onclick = "swapPhotos(1, 'bigPacificMainImage', bigPacificPictures)" src = "images/equip/bigPacific/IMG_0819.jpg" height ="150" alt = "Big Pacific Press Brake">
 							<img onclick = "swapPhotos(2, 'bigPacificMainImage', bigPacificPictures)" src = "images/equip/bigPacific/bigpacific.jpg" height ="150" alt ="Big Pacific Press Brake">
 						</div>
 					</div>
@@ -697,7 +692,7 @@
 						<div>
 							<div>
 								<!-- Main Image -->
-								<img id = "amadaMainImage" class = "brakeMainImage" src = "images/equip/amada/IMG_0625.jpg" height ="300" alt ="Amada Brake Press">
+								<img id = "amadaMainImage" class = "brakeMainImage" src = "images/equip/amada/IMG_0817.jpg" height ="300" alt ="Amada Brake Press">
 							</div>
 							<!-- Technical Information -->
 							<ul>
@@ -708,9 +703,9 @@
 						</div>
 						<!-- Slide Show -->
 						<div class = "thumbnails">
-							<img onclick = "swapPhotos(0, 'amadaMainImage', amadaPictures)" src = "images/equip/amada/IMG_0600.jpg" height ="150" alt = "Amada Brake Press">
-							<img onclick = "swapPhotos(1, 'amadaMainImage', amadaPictures)" src = "images/equip/amada/IMG_0616.jpg" height ="150" alt ="Amada Brake Press">
-							<img onclick = "swapPhotos(2, 'amadaMainImage', amadaPictures)" src = "images/equip/amada/IMG_0625.jpg" height ="150" alt ="Amada Brake Press">
+							<img onclick = "swapPhotos(0, 'amadaMainImage', amadaPictures)" src = "images/equip/amada/IMG_0814.jpg" height ="150" alt = "Amada Brake Press">
+							<img onclick = "swapPhotos(1, 'amadaMainImage', amadaPictures)" src = "images/equip/amada/IMG_0816.jpg" height ="150" alt ="Amada Brake Press">
+							<img onclick = "swapPhotos(2, 'amadaMainImage', amadaPictures)" src = "images/equip/amada/IMG_0817.jpg" height ="150" alt ="Amada Brake Press">
 						</div>
 					</div>
 
@@ -724,7 +719,7 @@
 						<div>
 							<div>
 								<!-- Main Image -->
-								<img id = "pacific110MainImage" class = "brakeMainImage" src = "images/equip/pacific110/IMG_0619.jpg" height ="300" alt ="Pacific 110 Ton Press Brake">
+								<img id = "pacific110MainImage" class = "brakeMainImage" src = "images/equip/pacific110/IMG_0770.jpg" height ="300" alt ="Pacific 110 Ton Press Brake">
 							</div>
 
 							<!-- Technical Information -->
@@ -736,9 +731,9 @@
 
 						<!-- Slide Show -->
 						<div class = "thumbnails">
-							<img onclick = "swapPhotos(0, 'pacific110MainImage', pacific110Pictures)" src = "images/equip/pacific110/IMG_0770.jpg" height ="150" alt ="Pacific 110 Ton Press Brake">
-							<img onclick = "swapPhotos(1, 'pacific110MainImage', pacific110Pictures)" src = "images/equip/pacific110/IMG_0598.jpg" height ="150" alt = "Pacific 110 Ton Press Brake">
-							<img onclick = "swapPhotos(2, 'pacific110MainImage', pacific110Pictures)" src = "images/equip/pacific110/IMG_0619.jpg" height ="150" alt ="Pacific 110 Ton Press Brake">
+							<img onclick = "swapPhotos(0, 'pacific110MainImage', pacific110Pictures)" src = "images/equip/pacific110/IMG_0809.jpg" height ="150" alt ="Pacific 110 Ton Press Brake">
+							<img onclick = "swapPhotos(1, 'pacific110MainImage', pacific110Pictures)" src = "images/equip/pacific110/IMG_0810.jpg" height ="150" alt = "Pacific 110 Ton Press Brake">
+							<img onclick = "swapPhotos(2, 'pacific110MainImage', pacific110Pictures)" src = "images/equip/pacific110/IMG_0770.jpg" height ="150" alt ="Pacific 110 Ton Press Brake">
 						</div>
 					</div>
 
@@ -752,7 +747,7 @@
 						<div>
 							<div>
 								<!-- Main Image -->
-								<img id = "pacific55MainImage" class = "brakeMainImage" src = "images/equip/pacific55/IMG_0597.jpg" height ="300" alt ="Pacific 55 Ton Press Brake">
+								<img id = "pacific55MainImage" class = "brakeMainImage" src = "images/equip/pacific55/IMG_0812.jpg" height ="300" alt ="Pacific 55 Ton Press Brake">
 							</div>
 
 							<!-- Technical Information -->
@@ -763,9 +758,9 @@
 						</div>
 						<!-- Slide Show -->
 						<div class = "thumbnails">
-							<img onclick = "swapPhotos(0, 'pacific55MainImage', pacific55Pictures)" src = "images/equip/pacific55/IMG_0777.jpg" height ="150" alt ="Pacific 55 Ton Press Brake">
-							<img onclick = "swapPhotos(1, 'pacific55MainImage', pacific55Pictures)" src = "images/equip/pacific55/IMG_0776.jpg" height ="150" alt = "Pacific 55 Ton Press Brake">
-							<img onclick = "swapPhotos(2, 'pacific55MainImage', pacific55Pictures)" src = "images/equip/pacific55/IMG_0597.jpg" height ="150" alt ="Pacific 55 Ton Press Brake">
+							<img onclick = "swapPhotos(0, 'pacific55MainImage', pacific55Pictures)" src = "images/equip/pacific55/IMG_0811.jpg" height ="150" alt ="Pacific 55 Ton Press Brake">
+							<img onclick = "swapPhotos(1, 'pacific55MainImage', pacific55Pictures)" src = "images/equip/pacific55/IMG_0813.jpg" height ="150" alt = "Pacific 55 Ton Press Brake">
+							<img onclick = "swapPhotos(2, 'pacific55MainImage', pacific55Pictures)" src = "images/equip/pacific55/IMG_0812.jpg" height ="150" alt ="Pacific 55 Ton Press Brake">
 						</div>
 					</div>
 				</div><!--End Brakelist-->
@@ -834,10 +829,8 @@
 						<img onclick = "swapPhotos(1, 'MiscMainImage', miscEquipPictures)" src = "images/equip/miscEquip/IMG_0643.jpg" height ="150" alt = "Prima Power Patino 1530 CV5000">
 					</div><!--End thumbnails-->
 				</div><!--End Miscellaneous Equip-->
-
-				</div>
 			</div> <!--End equipmentContainer-->
-		</div>	<!--End equipmentInf-->
+		</div>	<!--End equipmentInfo-->
 
     <footer>
 			<h4>We Seek To Manufacture The Most Creative, Innovative And Profitable Services In The World.</h4>

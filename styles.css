@@ -97,13 +97,15 @@ header {
   -moz-transition: all 0.9s ease-in-out;
 }
 
-/* This helps keeps the images uniformed in size and location when the hover occurs */
+/* This helps keeps the images uniformed
+in size and location when the hover occurs */
 header img{
   float: left;
   margin-left: 2vw;
 }
 
-/* This Section Makes the Carmeco logo change to gold on hover */
+/* This Section Makes the Carmeco logo change to gold
+ on hover */
 #logoDiv{
   position:relative;
   display: inline-block;
@@ -113,14 +115,14 @@ header img{
 
 #logoDiv #logo{
   position: absolute;
-  top: 0;
+  top: 1vw;
   left: 0;
 }
 
 #logoDiv #goldLogo{
   display: none;
   position: absolute;
-  top: 0;
+  top: 1vw;
   left: 0;
   z-index: 99;
 }
@@ -671,7 +673,7 @@ footer p{
 }
 
 #membership img{
-  width:15vw;
+  width:18vw;
   margin: .5vw;
 }
 
@@ -722,13 +724,6 @@ footer p{
   background-repeat: no-repeat;
   width: 100%;
 }
-
-/* #ourTeam img{
-  width: 99vw;
-  height: auto;
-  margin-top: -25vw;
-  margin-left: -14vw;
-} */
 
 #ourTeam h1{
   margin-top: -5vw;
@@ -784,7 +779,7 @@ footer p{
   width: 100%;
   position: relative;
   margin-bottom:1vw;
-  overflow-x: none;
+  /* overflow-x: none; */
 }
 
 #stampingBox::after{
@@ -795,7 +790,6 @@ footer p{
   position: absolute;
   right:15vw;
   opacity: .5;
-  /* margin-top: -36vw; */
   top:0;
   margin-right:-15.1vw;
   z-index: 0;
@@ -808,13 +802,11 @@ footer p{
 }
 
 #metalStampingSection h2{
-  /* padding-top: 2vw; */
   text-align: left;
   margin-left: 42vw;
 }
 
 #metalStampingSection p{
-
   text-align: left;
   margin-left:42vw;
   padding-right: 3vw;
@@ -856,7 +848,6 @@ footer p{
   position: absolute;
   right:15vw;
   opacity: .5;
-  /* margin-top: -6.5vw; */
   top:0;
   left: 0;
   z-index: 0;
@@ -976,7 +967,6 @@ footer p{
   right:15vw;
   opacity: .5;
   top:0;
-  /* margin-top: -6.5vw; */
   left: 0;
   z-index: 0;
 }
@@ -1036,7 +1026,6 @@ footer p{
   right:15vw;
   opacity: .5;
   top:0;
-  /* margin-top: -24.5vw; */
   margin-right:-15.1vw;
   z-index: 0;
 }
@@ -1093,7 +1082,6 @@ footer p{
   position: absolute;
   right: 15vw;
   opacity: .5;
-  /* margin-top: -33vw; */
   margin-right: -15.1vw;
   z-index: 0;
   top: 0;
@@ -1112,7 +1100,6 @@ footer p{
 }
 
 #qualitySection p{
-  /* width: 56vw; */
   margin-left: 42vw;
   text-align: left;
   padding: 1vw;
@@ -1155,7 +1142,6 @@ footer p{
   position: absolute;
   right:15vw;
   opacity: .5;
-  /* margin-top: -6.5vw; */
   top:0;
   left:0;
   z-index: 0;
@@ -1215,7 +1201,6 @@ footer p{
   position: absolute;
   right:15vw;
   opacity: .5;
-  /* margin-top: -6.5vw; */
   top:0;
   left:0;
   z-index: 0;
@@ -1275,7 +1260,6 @@ footer p{
   position: absolute;
   right:15vw;
   opacity: .5;
-  /* margin-top: -7vw; */
   top:0;
   margin-right:-15.1vw;
   z-index: 0;
@@ -1368,8 +1352,9 @@ footer p{
 }
 
 #reduce img{
-  margin-top: 3vw;
+  margin-top: 1.5vw;
 }
+
 
 #repurpose{
   margin-left: 15vw;
@@ -1381,10 +1366,7 @@ footer p{
 
 /* ---------------------------------------- Equipment Page --------------------------- */
 
-#equipPage{
-  position: relative;
-}
-
+/* Top Portion of the page */
 #equipmentSelection{
   height: 50vw;
   overflow: hidden;
@@ -1401,6 +1383,7 @@ footer p{
   color: #e3eeaa;
   position:relative;
   z-index: 1;
+  text-decoration: none;
 }
 
 #equipmentSelection:hover{
@@ -1474,8 +1457,7 @@ footer p{
   height: 49.5vw;
   padding:0;
   margin:0;
-  padding: 0;
-  margin: 0;
+  margin-top: 2vw;
   transition: transform 1s; /* Animation */
   -webkit-transition: 1s ease;
   overflow: hidden;
@@ -1483,21 +1465,10 @@ footer p{
 
 #brakePressWord{
   text-align: center;
-  margin-top: -28vw;
+  margin-top: -30vw;
   margin-left: 6vw;
   position: absolute;
   line-height: 4vw;
-}
-
-#arrow{
-  margin-top: -10vw;
-  margin-left: 46vw;
-  position: absolute;
-  width: 4.5vw;
-}
-
-#arrowDiv{
-  margin-top: -5vw;
 }
 
 #laserEquipContainer{
@@ -1545,10 +1516,10 @@ footer p{
   height:auto;
   padding: 1vw;
   margin: 1vw;
-  margin-top: 6vw;
+  top:0;
   z-index:0;
   background-image: url("images/metal.png");
-  height:100%;
+  height:auto;
   background-size: cover;
   /* Makes the background image fixed to the div */
   background-attachment: fixed;
@@ -1556,11 +1527,19 @@ footer p{
   width: 98%;
 }
 
+#equipmentInfo h2{
+  clear:both;
+  z-index: 2;
+  padding-top: 1vw;
+  font-size:2.5vw;
+}
+
 #LookAtMeContainer{
   padding-bottom: 4vw;
   margin-bottom: 1vw;
+  top:0;
+  height:42vw;
   position: relative;
-  height: 41vw;
 }
 
 #LookAtMeContainer a{
@@ -1571,22 +1550,34 @@ footer p{
   display: block;
 }
 
-#equipmentInfo h2{
-  clear:both;
-  z-index: 2;
-  padding-top: 1vw;
-  font-size:2.5vw;
+/* used for the anchors above 3 separate Divs
+needed for location in smaller viewports */
+#LocationDivStamp{
+  visibility: none;
+  position: absolute;
+  margin-top: -7vw;
+}
+#LocationDivBrake{
+  visibility: none;
+  position: absolute;
+  margin-top: -7vw;
+}
+#LocationDivLaser{
+  visibility: none;
+  position: absolute;
+  margin-top: -7vw;
 }
 
-/* #equipmentContainer{
-  width: 90%;
-} */
 
 /* #stampList and brakeList is orginally hidden
 on-click javascript will display list */
 
 #brakelist .LookAtMe, #stampList .LookAtMe{
   display: none;
+}
+
+.LookAtMe a:hover{
+  color: #e3eeaa !important;
 }
 
 #stampList p:hover, #brakelist p:hover, #lookAtMeLaserCutting p:hover, #lookAtMeMisc p:hover{
@@ -1640,7 +1631,6 @@ on-click javascript will display list */
 #laserCuttingContainer .thumbnails{
   margin-top: 20vw;
   display: inline-block;
-  /* position: relative; */
   clear: left;
   width:35vw;
 }
@@ -1710,8 +1700,13 @@ most bullet points */
 
 #equipmentContainer p{
   visibility: hidden;
+  display: none;
   font-size: 5vw;
   font-weight: bold;
+}
+
+#equipmentContainer p:hover{
+  color: #e3eeaa;
 }
 
 /* Hiding all of the .equip class except
@@ -1725,15 +1720,15 @@ Will be redisplayed on-click through JavaScript */
   display: block;
 }
 
-
-
 /* ---------------------------------------------------CONTACT PAGE ----------------------------------- */
 #headerContact{
   top: 0;
 }
 
 #lookingForward{
+  position: relative;
   padding-top: 10vw;
+  margin-top: 2vw;
   color: #e3eeaa;
   text-align: center;
   padding-bottom: 1vw;
@@ -1793,17 +1788,22 @@ Will be redisplayed on-click through JavaScript */
 /* --------------------------------------------------------------------ABOUT PAGE---------------------------------------------------------- */
     #aboutSlide{
       padding-top: 10vw;
-      position:relative;
-      z-index:0;
+      /* position:relative; */
+      /* z-index:0; */
       background-image: url("images/metal.png");
-      height:100%;
+      /* height:100%; */
       background-size: cover;
       /* Makes the background image fixed to the div */
       background-attachment: fixed;
       background-repeat: no-repeat;
-      width: 100%;
-      margin: 1vw;
+      width: 99%;
       padding-bottom: 2vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #aboutPageWrapper{
+      padding-top: 2vw;
     }
 
     #aboutNav{
@@ -1823,6 +1823,11 @@ Will be redisplayed on-click through JavaScript */
 
     #about{
       border:none;
+    }
+
+    #aboutPageWrapper img{
+      width: auto;
+      height: 25vw;
     }
 
     #history{
@@ -1856,18 +1861,24 @@ Will be redisplayed on-click through JavaScript */
     max-width: none !important;
   }
 
-  header .shrink{
+  .shrink{
     display: none;
   }
 
   header{
     top:0;
     position: relative;
+    padding-bottom: 1vw;
+    margin-bottom: 1vw;
   }
 
   #logo{
     width: 26vw;
-    margin-top: -3vw;
+    margin-top: 0vw;
+  }
+
+  #logoDiv:hover #goldLogo{
+    display: none;
   }
 
   .btn{
@@ -1877,7 +1888,7 @@ Will be redisplayed on-click through JavaScript */
   #promise{
     width: 55%;
     float: right;
-    margin-top: -25vw;
+    margin-top: -20vw;
   }
 
  /* Index Page */
@@ -1892,13 +1903,81 @@ Will be redisplayed on-click through JavaScript */
     background-image: url(images/sparks.png) !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    padding-top: 5vw;
+    margin-top: 2vw;
     height: auto;
+  }
+
+  #mission{
+    margin-top: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  #mission h1{
+    margin-right: auto;
+    text-align: center;
+    font-size: 6vw;
+  }
+
+  #mission h2{
+    text-align: center;
+  }
+
+  #stampingContainer #stamping{
+    opacity: .5;
+  }
+
+  #stampingContainer:hover #stamping{
+    opacity: .5;
+  }
+
+  #laserContainer:hover #laser{
+    opacity: .5;
+  }
+
+  #weldingContainer #welding{
+    opacity: .5;
+  }
+
+  #weldingContainer:hover #welding{
+    opacity: .5;
+  }
+
+  #toolingContainer:hover #tooling{
+    opacity: .5;
+  }
+
+  #facilityContainer #facility{
+    opacity: .5;
+  }
+
+  #facilityContainer:hover #facility{
+    opacity: .5;
+  }
+
+  #qualityIndexContainer:hover #qualityIndex{
+    opacity: .5;
+  }
+
+  #fabContainer:hover #fab{
+    opacity: .5;
+  }
+
+  #paintContainer:hover #paint{
+    opacity: .5;
+  }
+
+  #logisticsContainer #logistics{
+    opacity: .5;
+  }
+
+  #logisticsContainer:hover #logistics{
+    opacity: .5;
   }
 
   #NIFB{
     display: none;
-    visibility: none;
+    visibility: hidden;
   }
 
   #NIFBlack{
@@ -1912,23 +1991,23 @@ Will be redisplayed on-click through JavaScript */
   /* Capabilites Page */
   #ourTeam{
     margin-top: 2vw;
-    height: auto;
-  }
-
-  #ourTeam img{
-    width: 60vw;
-    margin-left: 5vw;
+    height: 40vw;
+    background-image: url("images/team4.jpg") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 100% !important;
   }
 
   #ourTeam h1{
      /* margin-left: 10vw; */
-     margin-top: -25vw;
-     color: white !important;
-     font-size: 3vw;
+     margin-top: -15vw;
+     color: black !important;
+     font-size: 5vw;
      margin-left: 3vw;
   }
+
   #capabilitiesContainer{
-    margin-top: -5vw;
+    margin-top: 2vw;
   }
 
   #lookAtMeMetalStamping{
@@ -1938,6 +2017,7 @@ Will be redisplayed on-click through JavaScript */
   .printPics{
     display: block;
     width: 40vw;
+    break-inside: avoid;
   }
 
   #metalStampingSection p{
@@ -1961,6 +2041,10 @@ Will be redisplayed on-click through JavaScript */
     margin-top: -27vw;
   }
 
+  #toolingService{
+    margin-top: -5vw;
+  }
+
   #toolingSection .printPics{
     float: right;
     margin-top: -25vw;
@@ -1980,11 +2064,19 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #fabSection p{
-    padding-right: 4vw;
+    padding-right: 10vw;
   }
 
-  #qualitySection p{
-    margin-top: -28vw;
+  #fabShop{
+    break-inside: avoid;
+  }
+
+  #qualityInner{
+    margin-top: -25vw;
+  }
+
+  #isoLogo{
+    width: 15vw !important;
   }
 
   #paintSection .printPics{
@@ -1996,12 +2088,13 @@ Will be redisplayed on-click through JavaScript */
     padding-right: 4vw;
   }
 
-  #delivery{
-    margin-bottom: 2vw;
+  #paintService{
+    margin-bottom: -1vw;
   }
 
   #deliverySection .printPics{
     width: 40vw;
+    margin-left: 2vw;
   }
 
   #deliverySection p{
@@ -2009,14 +2102,41 @@ Will be redisplayed on-click through JavaScript */
     padding-left: 4vw;
   }
 
+  #deliverySection ul{
+    margin-top: -15vw !important;
+    margin-left: 2vw;
+    position: absolute;
+  }
+
   /* Equip Page */
   #equipmentSelection .col-xs-12 {
     width: 33%;
   }
 
+  #equipmentSelection{
+    margin-top: -2vw;
+  }
+
+  #stampContainer:hover #stampPress{
+    opacity: .5;
+    transform: none;
+    -webkit-transform: none;
+  }
+
+  #brakePressContainer:hover #brakePress{
+    opacity: .5;
+    transform: none;
+    -webkit-transform: none;
+  }
+
+  #laserEquipContainer:hover #laserEquip{
+    opacity: .5;
+    transform: none;
+    -webkit-transform: none;
+  }
+
   #LookAtMeContainer{
-    padding-bottom: 15vw;
-    margin-bottom: 30vw;
+    display: none;
   }
 
   #stampingPressContainer ul{
@@ -2024,14 +2144,46 @@ Will be redisplayed on-click through JavaScript */
     margin-top: -30vw;
   }
 
+  .equip{
+    display: block;
+    position: relative;
+    break-inside: avoid;
+    margin-bottom: 2vw;
+  }
+
+  #stampingPressContainer li, #brakePressExpand li, #laserCuttingContainer li, #miscEquip li{
+    font-size: 2vw !important;
+    padding-right: 2vw;
+  }
+
   /* GreenInit Page */
   #intro{
     padding-top:0vw !important;
   }
 
+  #reduce img{
+    width: 33.33333% !important;
+  }
+
+  #reduceP{
+    width: 58.33333% !important;
+  }
+
+  #repurpose img{
+    width: 33.33333% !important;
+  }
+
+  #repurposeP{
+    width: 50%;
+  }
+
   /* Contact Page */
   #lookingForward {
     padding-top: 0 !important;
+  }
+
+  #contactSlide{
+    margin-left: 27vw !important;
   }
 
   #contactSlide{
@@ -2046,11 +2198,16 @@ Will be redisplayed on-click through JavaScript */
     height: auto;
     width:100% !important;
     text-align: center;
-    margin-left: auto;
+    margin-left: 11vw;
+    padding-top: 2vw;
   }
 
   #greeting{
     width: 100%;
+    margin-bottom: 2vw;
+    margin-left: -10vw;
+    margin-right: auto;
+    float: none;
   }
 
   #printCol1{
@@ -2063,6 +2220,75 @@ Will be redisplayed on-click through JavaScript */
     width: 45vw;
     float: right;
   }
+
+  .name{
+    font-size: 2.5vw !important;
+  }
+  .position{
+    font-size: 2vw !important;
+  }
+  .email a{
+    font-size: 2vw !important;
+  }
+
+  /* About Page */
+  #aboutSlide{
+    padding-top: 0vw;
+  }
+
+  #aboutNav{
+    display: none;
+  }
+
+  #about .row{
+    width: 100%;
+  }
+
+  #about div{
+    width: 50%;
+  }
+
+  #facilitySection{
+    display: block;
+    position: relative;
+  }
+
+  #facilitySection .row{
+    width: 100%;
+  }
+
+  #facilitySection div{
+    width: 50%;
+  }
+
+  #history{
+    display: block;
+    position: relative;
+    break-inside: avoid;
+  }
+
+  #history .row{
+    width: 100%;
+  }
+
+  #history div{
+    width: 50%;
+  }
+
+  #TheBliss{
+    display: block;
+    position: relative;
+    break-inside: avoid;
+  }
+
+  #TheBliss .row{
+    width: 100%;
+  }
+
+  #TheBliss div{
+    width: 50%;
+  }
+
 }
 
 
@@ -2090,12 +2316,10 @@ Will be redisplayed on-click through JavaScript */
 }
 
 @media only screen and (max-width: 1286px){
-  #logo{
+  #logo, #goldLogo{
     width: 25vw;
-  }
-
-  #goldLogo{
-    width: 25vw;
+    top:0;
+    margin-top: -2vw;
   }
 
   .shrink #logoDiv img{
@@ -2128,17 +2352,31 @@ Will be redisplayed on-click through JavaScript */
   #stampingPressContainer{
     padding-bottom: 15vw;
   }
+
+  #quality{
+    height:45vw;
+  }
+
+  #qualityBox::after{
+    height:47vw;
+  }
+
+  #isoLogo{
+    margin-left: -22vw;
+    margin-top: 13vw;
+    width: 20vw;
+    position: absolute;
+  }
 }
 
 @media only screen and (max-width: 1037px){
   /* Capbilities */
   #ourTeam{
     height: 59vw;
+    background-attachment: local;
+    background-position: 70% 50%;
   }
 
-  #ourTeam img{
-    margin-top: -22vw;
-  }
 
   /* Equipment Page */
   #equipSideNav{
@@ -2162,15 +2400,15 @@ Will be redisplayed on-click through JavaScript */
     width: 25vw;
   }
 
-  /* Equipment Page */
-  #arrow{
-    margin-left: 45.5vw;
+  /* About Page */
+  #aboutNav{
+    margin-top: 2vw;
   }
 }
 
 @media only screen and (max-width: 990px){
   footer p{
-    font-size: 2.25vw;
+    font-size: 2vw;
   }
 
   footer a{
@@ -2178,7 +2416,7 @@ Will be redisplayed on-click through JavaScript */
   }
 
   footer h3{
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .hours{
@@ -2212,6 +2450,27 @@ Will be redisplayed on-click through JavaScript */
 
   #fabSection p{
     padding-right: 2vw;
+  }
+
+  /* Contact Page */
+  #contactList li{
+    line-height: .5;
+  }
+
+  #contactList .name{
+    font-size: 2.5vw;
+  }
+
+  #contactList .position{
+    font-size: 2.25vw;
+  }
+
+  #contactList .email a{
+    font-size: 2.25vw !important;
+  }
+
+  #contactList .email{
+    padding-bottom: 2vw;
   }
 }
 
@@ -2329,27 +2588,27 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #laserCutting{
-    height: 45vw;
+    height: 35vw;
   }
 
   #laserBox::after{
-    height: 46vw;
+    height: 36vw;
   }
 
   #customWelding{
-    height: 50vw;
+    height: 40vw;
   }
 
   #weldingBox::after{
-    height: 51vw;
+    height: 41vw;
   }
 
   #toolingService{
-    height: 45vw;
+    height: 40vw;
   }
 
   #toolingBox::after{
-    height: 46vw;
+    height: 41vw;
   }
 
   #metalForming{
@@ -2369,19 +2628,27 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #fabShop{
-    height: 45vw;
+    height: 35vw;
   }
 
   #fabBox::after{
-    height: 46vw;
+    height: 36vw;
   }
 
   #delivery{
-    height: 45vw;
+    height: 35vw;
   }
 
   #deliveryBox::after{
-    height: 46vw;
+    height: 36vw;
+  }
+
+  #paintService{
+    height: 32vw;
+  }
+
+  #paintBox::after{
+    height: 33vw;
   }
 }
 
@@ -2475,6 +2742,7 @@ Will be redisplayed on-click through JavaScript */
   #logoDiv{
     clear: both;
     margin-left: 34vw;
+    margin-top: 0;
     padding: 1vw;
   }
 
@@ -2506,25 +2774,12 @@ Will be redisplayed on-click through JavaScript */
     text-align: center;
   }
 
-  .separators{
-    font-size: bold;
-  }
-
   #box::before{
     top: 2.5vw;
   }
 
   #mission{
     margin-top: 8vw;
-  }
-
-  /* Capabilities Page */
-  #ourTeam{
-    height: 62vw;
-  }
-
-  #ourTeam img{
-    margin-top: -20vw;
   }
 
   /* Equipment Page */
@@ -2558,11 +2813,38 @@ Will be redisplayed on-click through JavaScript */
   #intro{
     padding-top: 15vw;
   }
+
+
+  /* About Page */
+  #aboutSlide{
+    padding-top: 15vw;
+  }
+
+  #aboutNav a{
+    font-size: 2vw;
+  }
 }
 
 @media only screen and (max-width: 767px){
+  footer h4{
+    font-size: 3vw;
+  }
+
+  /*Index Page  */
   #about h2{
   font-size: 4.5vw;
+  }
+
+  #certificates img{
+    width: 25vw;
+  }
+
+  #membership img{
+    width: 30vw;
+  }
+
+  #sponsers #goCaps{
+    width: 30vw;
   }
 
   #bottom p{
@@ -2571,27 +2853,20 @@ Will be redisplayed on-click through JavaScript */
 
   /* Capbilities Page */
   #stampingBox::after{
-    height: 52vw;
+    height: 47vw;
   }
 
   #metalStamping{
-    height: 50vw;
-  }
-
-  #customWelding{
-    height: 51vw;
-  }
-
-  #weldingBox::after{
-    height: 53vw;
-  }
-
-  #toolingService{
     height: 45vw;
   }
 
+
+  #toolingService{
+    height: 40vw;
+  }
+
   #toolingBox::after{
-    height: 46vw;
+    height: 41vw;
   }
 
   #metalForming{
@@ -2603,19 +2878,15 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #fabShop{
-    height: 45vw;
+    height: 35vw;
   }
 
   #fabBox::after{
-    height: 46vw;
+    height: 36vw;
   }
 
   /* Equipment Page */
   /* equipmentSelection divides into 3 separate lines */
-  #arrow{
-    visibility: hidden;
-  }
-
   #equipmentSelection{
     height: 120vw;
     margin-top: 15vw;
@@ -2636,7 +2907,7 @@ Will be redisplayed on-click through JavaScript */
     opacity: .5;
     background-color: black;
     height:45vw;
-    margin-top: -1vw;
+    margin-top: -2vw;
   }
 
   #stampContainer:hover #stampBlackBox{
@@ -2647,11 +2918,11 @@ Will be redisplayed on-click through JavaScript */
     z-index: 10;
     display: block;
     margin-top: -85vw;
-    margin-left: 30vw;
+    margin-left: 22vw;
   }
 
   #stampPressWord a{
-    font-size: 6vw;
+    font-size: 10vw;
   }
 
   #stampPress{
@@ -2663,7 +2934,7 @@ Will be redisplayed on-click through JavaScript */
     height: 40vw;
     clear:both;
     width: 100%;
-    background-image: url("images/equip/amada/IMG_0616.jpg");
+    background-image: url("images/equip/amada/IMG_0815.jpg");
     background-position: center center;
     background-size: cover;
   }
@@ -2684,7 +2955,7 @@ Will be redisplayed on-click through JavaScript */
     z-index: 10;
     display: block;
     margin-top: -85vw;
-    margin-left: 30vw;
+    margin-left: 22vw;
   }
 
   #brakePress{
@@ -2692,7 +2963,7 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #brakePressWord a {
-    font-size: 6vw;
+    font-size: 10vw;
   }
 
   #laserEquipContainer{
@@ -2721,15 +2992,20 @@ Will be redisplayed on-click through JavaScript */
     z-index: 10;
     display: block;
     margin-top: -85vw;
-    margin-left: 30vw;
+    margin-left: 22vw;
   }
 
   #laserEquipWord a{
-    font-size: 6vw;
+    font-size: 10vw;
   }
 
   #laserEquip{
     visibility: hidden;
+  }
+
+  /* Location for a elements above */
+  #LocationDivStamp{
+    margin-top: -10vw;
   }
 
 /* Meat and Potatos of Equip Page */
@@ -2761,6 +3037,7 @@ Will be redisplayed on-click through JavaScript */
   Laser Cutting, and Misc Equip */
   #equipmentContainer p{
     visibility: visible;
+    display: block;
     clear:both;
   }
 
@@ -2849,12 +3126,14 @@ Will be redisplayed on-click through JavaScript */
     margin-top: 4vw;
   }
 
-  #procedures ul{
+  #procedures p{
     width: 100%;
+    clear: both;
   }
 
-  #procedures li{
+  #procedures p{
     text-align: left;
+    clear: both;
   }
 
   #reduce{
@@ -2955,16 +3234,16 @@ Will be redisplayed on-click through JavaScript */
     width: 95%;
     overflow-y: initial;
     overflow-x: visible;
-    height: 195vw;
+    height: auto;
     margin-top: -10vw;
     margin-left: 1vw;
     margin-right: 1vw;
-    padding-bottom: 2vw;
+    padding-bottom: 4vw;
     position: relative;
   }
 
   #contactList ul{
-    padding-bottom: 2vw;
+    padding-bottom: 1vw;
   }
 
   #contactList .name{
@@ -2972,20 +3251,16 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #contactList li{
-    font-size: 3vw;
     line-height: 2vw;
     float:none;
   }
 
-  #contactList a{
+  #contactList .position{
     font-size: 3vw;
   }
-}
 
-@media only screen and (max-width: 645px){
-  /* Equipment Page */
-  #arrow{
-    margin-left: 44.25vw;
+  #contactList .email a{
+    font-size: 3vw !important;
   }
 }
 
@@ -3034,7 +3309,6 @@ Will be redisplayed on-click through JavaScript */
     text-align: right;
     padding: 8px 8px 8px 20px;
     text-decoration: none;
-    color: #e0e0e0;
     transition: 0.3s;
     text-align: right;
     clear:both;
@@ -3048,7 +3322,6 @@ Will be redisplayed on-click through JavaScript */
     padding-left: 0;
     float: right;
     clear:both;
-
   }
 
   #hamburger{
@@ -3072,6 +3345,10 @@ Will be redisplayed on-click through JavaScript */
     font-size: 4vw;
   }
 
+  footer h4{
+    font-size: 4vw;
+  }
+
   .hours{
     float: none;
     margin-top: 2vw;
@@ -3083,17 +3360,18 @@ Will be redisplayed on-click through JavaScript */
     width:97vw;
   }
 
-  #customWelding{
+  /* #customWelding{
     height: 55vw;
   }
 
   #weldingBox::after{
     height: 56vw;
-  }
+  } */
 
   /* Equipment Page */
   #equipmentSelection{
     margin-top: 12vw;
+    height: 110vw;
   }
 
   #stampContainer{
@@ -3102,9 +3380,6 @@ Will be redisplayed on-click through JavaScript */
 
   #stampBlackBox{
     height: 35vw;
-  }
-
-  #stampBlackBox {
     margin-top: -2vw;
   }
 
@@ -3176,7 +3451,6 @@ Will be redisplayed on-click through JavaScript */
     margin-left: -45vw;
   }
 
-
   /* Contact Page */
   #lookingForward{
     margin-top: 5vw;
@@ -3189,6 +3463,7 @@ Will be redisplayed on-click through JavaScript */
     font-size: 4vw;
     width:auto;
     margin-right: 0;
+    padding-bottom: 2vw;
   }
 
   #contactSlide{
@@ -3205,11 +3480,9 @@ Will be redisplayed on-click through JavaScript */
     width: 95%;
     overflow-y: initial;
     overflow-x: visible;
-    height: 210vw;
     margin-top: -10vw;
     margin-left: 1vw;
     margin-right: 1vw;
-    padding-bottom: 2vw;
     position: relative;
   }
 
@@ -3218,17 +3491,17 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #contactList .name{
-    font-size: 5vw;
+    font-size: 5vw !important;
   }
 
   #contactList li{
-    font-size: 4vw;
+    font-size: 4vw !important;
     line-height: 2vw;
     float:none;
   }
 
-  #contactList a{
-    font-size: 4vw;
+  #contactList .email a{
+    font-size: 4vw !important;
   }
 
   /* GreenInit Page */
@@ -3252,12 +3525,30 @@ Will be redisplayed on-click through JavaScript */
     width: 100%;
   }
 
-  #procedures li{
+  #reduce p{
     text-align: center;
   }
 
-  #reduce p{
-    text-align: center;
+  /* About Page */
+  #aboutNav{
+    margin-right: 0;
+    float:none;
+    margin-left: 5vw;
+  }
+  #aboutNav a{
+    font-size: 4vw;
+  }
+
+  #aboutPageWrapper img{
+    height: 35vw;
+  }
+
+  #aboutPageWrapper p{
+    font-size: 4vw;
+  }
+
+  #aboutPageWrapper h2{
+    font-size: 5vw;
   }
 }
 
@@ -3327,13 +3618,11 @@ Will be redisplayed on-click through JavaScript */
     margin-top: -16vw;
   }
 
-
   /* Equipment Page */
   #equipmentInfo li{
     font-size: 4vw;
     line-height: normal;
   }
-
 }
 
 @media only screen and (max-width: 575px){
@@ -3350,19 +3639,19 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #laserCutting{
-    height: 48vw;
+    height: 40vw;
   }
 
   #laserBox::after{
-    height: 50vw;
+    height: 42vw;
   }
 
   #customWelding{
-    height: 55vw;
+    height: 45vw;
   }
 
   #weldingBox::after{
-    height: 57vw;
+    height: 47vw;
   }
 
   #toolingService{
@@ -3382,11 +3671,17 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #quality{
-    height: 48vw;
+    height: 63vw;
   }
 
   #qualityBox::after{
-    height: 50vw;
+    height: 65vw;
+  }
+
+  #isoLogo{
+    margin-left: -33vw;
+    margin-top: 20vw;
+    width: 25vw;
   }
 
   #fabShop{
@@ -3395,6 +3690,22 @@ Will be redisplayed on-click through JavaScript */
 
   #fabBox::after{
     height:50vw;
+  }
+
+  #delivery{
+    height: 45vw;
+  }
+
+  #deliveryBox::after{
+    height: 47vw;
+  }
+
+  #paintService{
+    height: 40vw;
+  }
+
+  #paintBox::after{
+    height: 41vw;
   }
 }
 
@@ -3407,7 +3718,7 @@ Will be redisplayed on-click through JavaScript */
   }
   /* TRANSPARENT RECTANGLE */
   #box::after{
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
   }
 
@@ -3436,11 +3747,6 @@ Will be redisplayed on-click through JavaScript */
   #stampingBox::after{
     height:62vw;
   }
-
-  /* Contact Page */
-  #contactList {
-    height: 220vw;
-  }
 }
 
 @media only screen and (max-width: 500px){
@@ -3463,12 +3769,12 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #metalStamping{
-    height: 70vw;
+    height: 65vw;
   }
 
   #stampingBox::after{
     width: 100%;
-    height:72vw;
+    height:67vw;
   }
 
   #metalStampingSection{
@@ -3494,12 +3800,14 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #laserCutting{
-    height: 60vw;
+    height: 55vw;
+    background-attachment:local;
+    background-position: 80% 50%;
   }
 
   #laserBox::after{
     width: 100%;
-    height: 61vw;
+    height: 56vw;
   }
 
   #laserSection{
@@ -3525,12 +3833,12 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #customWelding{
-    height:70vw;
+    height: 50vw;
   }
 
   #weldingBox::after{
     width: 100%;
-    height:71vw;
+    height: 52vw;
   }
 
   #weldingSection{
@@ -3557,6 +3865,8 @@ Will be redisplayed on-click through JavaScript */
 
   #toolingService{
     height: 60vw;
+    background-attachment: local;
+    background-position: 50% 50%;
   }
 
   #toolingBox::after{
@@ -3586,36 +3896,6 @@ Will be redisplayed on-click through JavaScript */
     margin-right: 2vw;
   }
 
-  #metalForming{
-    height:65vw;
-  }
-
-  #formingBox::after{
-    width: 100%;
-    height: 67vw;
-  }
-
-  #formingSection{
-    padding-right: 0vw;
-  }
-
-  #formingSection h2{
-    padding-top: 2vw;
-    margin-left: 4vw;
-  }
-
-  #formingSection p{
-    width: 80vw;
-    margin-left: 4vw;
-  }
-
-  #formingSection li{
-    margin-left: 4vw;
-  }
-
-  #formingSection a{
-    margin-right: 2vw;
-  }
 
   #quality{
     height:60vw;
@@ -3648,13 +3928,18 @@ Will be redisplayed on-click through JavaScript */
     margin-right: 2vw;
   }
 
+  #isoLogo{
+    margin-top: 15vw;
+    width:30vw;
+  }
+
   #fabShop{
-    height: 60vw;
+    background-attachment: local;
+    background-position: 70% 50%;
   }
 
   #fabBox::after{
     width: 100%;
-    height: 62vw;
   }
 
   #fabSection{
@@ -3680,12 +3965,12 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #paintService{
-    height: 50vw;
+    height: 45vw;
   }
 
   #paintBox::after{
     width: 100%;
-    height: 51vw;
+    height: 46vw;
   }
 
   #paintSection{
@@ -3742,11 +4027,6 @@ Will be redisplayed on-click through JavaScript */
   #deliverySection a{
     margin-right: 4vw;
   }
-
-  /* Contact Page */
-  #contactList {
-    height: 225vw;
-  }
 }
 
 @media only screen and (max-width: 480px){
@@ -3768,9 +4048,9 @@ Will be redisplayed on-click through JavaScript */
 
 @media only screen and (max-width: 474px){
   /* Contact Page */
-  #contactList {
+  /* #contactList {
     height: 235vw;
-  }
+  } */
 }
 
 @media only screen and (max-width: 448px){
@@ -3789,6 +4069,10 @@ Will be redisplayed on-click through JavaScript */
 
   #recycle li{
     font-size: 4vw;
+  }
+
+  #procedures h3{
+    font-size: 5vw;
   }
 }
 
@@ -3817,54 +4101,13 @@ Will be redisplayed on-click through JavaScript */
   }
 
   /* Contact Page */
-  #contactList {
+  /* #contactList {
     height: 240vw;
-  }
+  } */
 }
 
 @media only screen and (max-width: 429px){
   /* Capabilities page */
-  #metalStamping{
-    height: 75vw;
-  }
-
-  #stampingBox::after{
-    height:77vw;
-  }
-
-  #laserCutting{
-    height: 65vw;
-  }
-
-  #laserBox::after{
-    height: 66vw;
-  }
-
-  #customWelding{
-    height:78vw;
-  }
-
-  #weldingBox::after{
-    height:79vw;
-  }
-
-  #toolingService{
-    height: 67vw;
-  }
-
-  #toolingBox::after{
-    width: 100%;
-    height: 68vw;
-  }
-
-  #metalForming{
-    height:70vw;
-  }
-
-  #formingBox::after{
-    height: 71vw;
-  }
-
   #quality{
     height:67vw;
   }
@@ -3873,35 +4116,9 @@ Will be redisplayed on-click through JavaScript */
     height: 68vw;
   }
 
-  #fabShop{
-    height: 70vw;
-  }
-
-  #fabBox::after{
-    height: 71vw;
-  }
-
-  #paintService{
-    height: 58vw;
-  }
-
-  #paintBox::after{
-    height: 59vw;
-  }
-
-  #delivery{
-    height: 60vw;
-  }
-
-  #deliveryBox::after{
-    height: 61vw;
-  }
-}
-
-@media only screen and (max-width: 421px){
-  /* Contact Page */
-  #contactList {
-    height: 245vw;
+  #isoLogo{
+    margin-top: 15vw;
+    width:35vw;
   }
 }
 
@@ -3988,9 +4205,11 @@ Will be redisplayed on-click through JavaScript */
     padding-bottom: 5vw;
   }
 
-  /* Contact Page */
-  #contactList {
-    height: 250vw;
+}
+
+@media only screen and (max-width: 403px){
+  #aboutNav a{
+    font-size: 3.75vw;
   }
 }
 
@@ -4009,26 +4228,14 @@ Will be redisplayed on-click through JavaScript */
   }
 }
 
-@media only screen and (max-width: 377px){
-  /* Contact Page */
-  #contactList {
-    height: 260vw;
-  }
-}
-
-@media only screen and (max-width: 365px){
-  /* Contact Page */
-  #contactList {
-    height: 265vw;
+@media only screen and (max-width: 380px){
+  /* About Page */
+  #aboutNav{
+    margin-left: 1vw;
   }
 }
 
 @media only screen and (max-width: 357px){
-  /* Contact Page */
-  #contactList {
-    height: 270vw;
-  }
-
   /* Equip Page */
   #equipmentInfo ul{
     width: 77%;
@@ -4050,9 +4257,9 @@ Will be redisplayed on-click through JavaScript */
 
 @media only screen and (max-width: 350px){
   #box::after{
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
-    margin-top: -45vw;
+    margin-top: -40vw;
   }
 
   #stampingWord{
@@ -4092,24 +4299,28 @@ Will be redisplayed on-click through JavaScript */
   }
 
   /* Capabilities Page */
+#capabilitiesContainer h2{
+  font-size: 6vw;
+}
+
   #capabilitiesContainer p {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   #capabilitiesContainer li {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   .btn-primary{
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   #metalStamping{
-    height: 105vw;
+    height: 125vw;
   }
 
   #stampingBox::after{
-    height:107vw;
+    height:127vw;
   }
 
   #laserCutting{
@@ -4132,12 +4343,12 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #toolingService{
-    height:95vw;
+    height:110vw;
     background-position: center;
   }
 
   #toolingBox:after{
-    height: 97vw;
+    height: 112vw;
   }
 
   #metalForming{
@@ -4149,16 +4360,24 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #quality{
-    height: 110vw;
+    height: 130vw;
+    background-position: 30% 50%;
   }
 
   #qualityBox::after{
-    height: 112vw;
+    height: 132vw;
+  }
+
+  #isoLogo{
+    margin-top: 45vw;
+    float: left;
+    margin-left: -66vw;
+    width:45vw;
   }
 
   #fabShop{
     height:110vw;
-    background-position: center;
+    /* background-position: center; */
   }
 
   #fabBox:after{
@@ -4189,24 +4408,33 @@ Will be redisplayed on-click through JavaScript */
   }
 }
 
-
-@media only screen and (max-width: 332px){
-  /* Contact Page */
-  #contactList {
-    height: 280vw;
-  }
-}
-
 @media only screen and (max-width: 324px){
   #mySidenav a {
     font-size: 4vw;
   }
+
+  /* Contact Page*/
+  #contactList .name{
+    font-size: 6vw !important;
+  }
+  #contactList .position{
+    font-size: 5.5vw !important;
+  }
+  #contactList .email a{
+    font-size: 5.5vw !important;
+  }
 }
 
-@media only screen and (max-width: 320px){
-  /* Contact Page */
-  #contactList {
-    height: 295vw;
+@media only screen and (max-width: 336px) {
+  /* About Page */
+  #aboutNav {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 322px){
+  #aboutNav a{
+    font-size: 3.5vw;
   }
 }
 

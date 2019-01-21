@@ -1,6 +1,6 @@
 var ninjaPictures = [
-  "images/equip/ninja/IMG_0663.jpg",
-  "images/equip/ninja/IMG_0664.jpg",
+  "images/equip/ninja/IMG_0807.jpg",
+  "images/equip/ninja/IMG_0808.jpg",
   "images/equip/ninja/ninja.jpg"
 ];
 
@@ -35,7 +35,7 @@ var aida150Pictures = [
 ];
 
 var aida160Pictures = [
-  "images/equip/aida160/IMG_0679.jpg",
+  "images/equip/aida160/IMG_0798.jpg",
   "images/equip/aida160/IMG_0686.jpg",
   "images/equip/aida160/IMG_0503.jpg"
 ];
@@ -53,9 +53,9 @@ var E110Pictures = [
 ];
 
 var spiritPictures = [
-  "images/equip/spirit/IMG_0682.jpg",
-  "images/equip/spirit/IMG_0652.jpg",
-  "images/equip/spirit/IMG_0680.jpg"
+  "images/equip/spirit/IMG_0799.jpg",
+  "images/equip/spirit/IMG_0800.jpg",
+  "images/equip/spirit/IMG_0801.jpg"
 ];
 
 var verson300Pictures = [
@@ -65,8 +65,8 @@ var verson300Pictures = [
 ];
 
 var niagara400Pictures = [
-  "images/equip/Niagara400/IMG_0703.jpg",
-  "images/equip/Niagara400/IMG_0692.jpg",
+  "images/equip/Niagara400/IMG_0795.jpg",
+  "images/equip/Niagara400/IMG_0797.jpg",
   "images/equip/Niagara400/IMG_0704.jpg"
 ];
 
@@ -77,7 +77,7 @@ var verson200Pictures = [
 ];
 
 var minster5Pictures = [
-  "images/equip/minster5/IMG_0737.jpg",
+  "images/equip/minster5/IMG_0802.jpg",
   "images/equip/minster5/IMG_0739.jpg",
   "images/equip/minster5/IMG_0738.jpg"
 ]
@@ -95,32 +95,32 @@ var OBIWanPictures = [
 ];
 
 var amadaPictures = [
-  "images/equip/amada/IMG_0600.jpg",
-  "images/equip/amada/IMG_0616.jpg",
-  "images/equip/amada/IMG_0625.jpg"
+  "images/equip/amada/IMG_0814.jpg",
+  "images/equip/amada/IMG_0816.jpg",
+  "images/equip/amada/IMG_0817.jpg"
 ];
 
 var pacific110Pictures = [
-  "images/equip/pacific110/IMG_0770.jpg" ,
-  "images/equip/pacific110/IMG_0598.jpg",
-  "images/equip/pacific110/IMG_0619.jpg"
+  "images/equip/pacific110/IMG_0809.jpg" ,
+  "images/equip/pacific110/IMG_0810.jpg",
+  "images/equip/pacific110/IMG_0770.jpg"
 ];
 
 var pacific55Pictures = [
-  "images/equip/pacific55/IMG_0777.jpg",
-  "images/equip/pacific55/IMG_0776.jpg",
-  "images/equip/pacific55/IMG_0597.jpg"
+  "images/equip/pacific55/IMG_0811.jpg",
+  "images/equip/pacific55/IMG_0813.jpg",
+  "images/equip/pacific55/IMG_0812.jpg"
 ];
 
 var bigPacificPictures = [
-  "images/equip/bigPacific/IMG_0622.jpg",
-  "images/equip/bigPacific/IMG_0623.jpg",
+  "images/equip/bigPacific/IMG_0818.jpg",
+  "images/equip/bigPacific/IMG_0819.jpg",
   "images/equip/bigPacific/bigpacific.jpg"
 ];
 
 var bliss45Pictures = [
-  "images/equip/bliss45/IMG_0740.jpg",
-  "images/equip/bliss45/IMG_0742.jpg",
+  "images/equip/bliss45/IMG_0803.jpg",
+  "images/equip/bliss45/IMG_0804.jpg",
   "images/equip/bliss45/IMG_0741.jpg"
 ];
 

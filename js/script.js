@@ -7,7 +7,7 @@ var oldAboutColor = 'AboutChoice';
 var oldDivEquip = '';
 var oldList = '';
 
-var viewportWidth ;
+var viewportWidth;
 
 //Shrinking Header function
 $(document).on("scroll", function(){
@@ -18,70 +18,69 @@ $(document).on("scroll", function(){
     else {
       $("header").removeClass("shrink");
     }//end else
-  }
+  }//end if
 });
 
-//used on the equipPage
+//used on the equipPage and The header on every page
+//at smaller viewports
 function toggleSideBar(id){
   $(id).toggle(1000);
 }
 
+// Used on the smaller viewports on equipment page
+//toggles the stamp, brake lists
 function toggleEquipList(list){
   if(oldList === list){
     $(list).toggle(1000);
     $(oldList + '.equip').css({'display': 'none'});
-  }
+  }//end if
   else{
     $(list).toggle(1000);
     if(oldList != null){
       $(oldList).toggle(1000);
       $(oldList + '.equip').css({'display': 'none'});
-    }
-  }
+    }//end if
+  }//end else
 }
 
 //JQuery Function that Controls what
 //Div will be shown on the equip page
-var call = function ShowHideDivChangeColor(id, linkColor){
-  if (id === oldDiv){
-    $(id).show();
-
-    $(linkColor).css({'color': '#e3eeaa'});
+var call = function ShowHideDivChangeColor(id, linkColor, list){
+  if( $(window).width() <= 767){
+    toggleEquipList(list);
+    toggleTheDiv(id);
   }//end if
+
   else{
-    $(id).show();//showing new div
+    if (id === oldDiv){
+      $(id).show();
+      $(linkColor).css({'color': '#e3eeaa'});
+    }//end if
+    else{
+      $(id).show();//showing new div
 
-    $(oldDiv).hide();//hiding previous div
-    $(linkColor).css({'color': '#e3eeaa'});//changing current link to gold
-    $(oldLinkColor).css({'color': '#bababa'});//changing previous link back to silver
+      $(oldDiv).hide();//hiding previous div
+      $(linkColor).css({'color': '#e3eeaa'});//changing current link to gold
+      $(oldLinkColor).css({'color': '#bababa'});//changing previous link back to silver
+    }//end else
+  }//end first else
+  //setting the id to the variable old ID
+  //this way when the next element is selected
+  //the styles will change
+  oldDiv = id;
+  oldLinkColor = linkColor;
+}//End ShowHideDivChangeColor
 
-    //resetting previous link to old css style
-    //on hover turn gold if not silver
-    $(oldLinkColor).hover(function(){
-      $(this).css({'color': '#e3eeaa'});
-    },function(){
-      $(this).css({'color': '#bababa'});
-    });//end hover css change for oldLinkColor
-
-    //setting the id to the variable old ID
-    //this way when the next element is selected
-    //the styles will change
-    oldDiv = id;
-    oldLinkColor = linkColor;
-  }//end else
-}//end toggleTheDiv
-
+// Used on smaller viewport on equip page
+//to toggle image of equipment
 function toggleTheDiv(id){
   if (id === oldDiv){
     $(id).toggle(1000);
-
-
   }//end if
   else{
     $(id).toggle(1000);//showing new div
 
     $(oldDiv).hide();//hiding previous div
-
 
     //setting the id to the variable old ID
     //this way when the next element is selected
@@ -127,8 +126,8 @@ var callabout = function toggleTheAbout(aboutId, aboutLinkColor){
 }//end toggleTheDiv
 
 
-//Directs page to the about page and then switches the slides
-//to the TheBliss SECTION
+//Used on EQUIP page to Direct user to the ABOUT page
+//and then switches the slides to the TheBliss SECTION
 function GoToBliss(){
   window.location = 'about.html#DisplayBliss';
 }
