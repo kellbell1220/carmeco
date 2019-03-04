@@ -1,3 +1,6 @@
+// Author: Kelli Stasiak
+//Updated:03/01/2019
+
 var oldDiv = '#theBoss';
 var oldLinkColor = '#LookAtMeTheBoss a:first';
 
@@ -97,9 +100,9 @@ var callabout = function toggleTheAbout(aboutId, aboutLinkColor){
     $(aboutId).show();
 
     //using animate.css to switch divs
-    $(aboutId).addClass('animated slideInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        $(this).removeClass('animated slideInRight');
-    });
+    // $(aboutId).addClass('animated slideInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+    //     $(this).removeClass('animated slideInRight');
+    // });
 
     $(aboutLinkColor).addClass("highlight");
   }//end if
@@ -107,9 +110,9 @@ var callabout = function toggleTheAbout(aboutId, aboutLinkColor){
     $(aboutId).show();//showing new div
 
     //using animate.css to switch divs
-    $(aboutId).addClass('animated slideInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        $(this).removeClass('animated slideInRight');
-    });
+    // $(aboutId).addClass('animated slideInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+    //     $(this).removeClass('animated slideInRight');
+    // });
 
     $(oldAboutDiv).hide();//hiding previous div
 
@@ -125,9 +128,14 @@ var callabout = function toggleTheAbout(aboutId, aboutLinkColor){
   }//end else
 }//end toggleTheDiv
 
-
 //Used on EQUIP page to Direct user to the ABOUT page
 //and then switches the slides to the TheBliss SECTION
 function GoToBliss(){
   window.location = 'about.html#DisplayBliss';
+}
+
+//Copyright Date Function
+function Copyright(){
+  var d = new Date();
+  document.getElementById("bottom").innerHTML = "Copyright &copy; " + d.getFullYear() + " Carmeco Inc";
 }

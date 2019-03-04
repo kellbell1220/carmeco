@@ -1,5 +1,7 @@
 /* CSS for Carmeco.com
-Author: Kelli Stasiak */
+Author: Kelli Stasiak
+Updated:03/01/2019*/
+
 html, body, button, a, div, h1, h2, h3, h4, img, li, p, ul{
   margin:0;
   padding:0;
@@ -70,7 +72,6 @@ ul {
   padding-left: 0;
 }
 
-
 li{
   display:inline-block;
   float: left;
@@ -78,8 +79,6 @@ li{
   position: relative;
   font-size: 2vw;
 }
-
-
 
 /* HEADER SECTION */
 header {
@@ -179,7 +178,6 @@ nav {
   font-family: 'Oswald', sans-serif;
 }
 
-
 /* Hides the close button on the lager viewports */
 .closebtn{
   visibility: hidden;
@@ -210,7 +208,6 @@ nav {
 }
 
 /* FOOTER SECTION */
-
 footer{
   position: static;
   margin-top: 1vw;
@@ -219,6 +216,10 @@ footer{
 
 footer p{
   font-size: 1.5vw;
+}
+
+footer a:visited{
+  color: #bababa;
 }
 
 /* Used on index and contact page */
@@ -244,17 +245,13 @@ footer p{
   margin-top: -10.75vw;
 }
 
-
-
 #bottom{
   border-top: 1px solid #e1e1e1;
   clear:both;
-}
-
-#bottom p{
   text-align: center;
   color:#e3eeaa;
   font-size: 1.25vw;
+  font-family: 'Oswald', sans-serif;
 }
 
 .scrollbarclass::-webkit-scrollbar-track
@@ -647,7 +644,6 @@ footer p{
 }
 
 /* ABOUT SECTION */
-
 #about {
   border-top: 1px solid #e1e1e1;
   position: static;
@@ -694,9 +690,7 @@ footer p{
   width: 18vw;
 }
 
-
 /* ---------------------------------------------------------------CAPABILITIES PAGE CSS -------------------------------------------------- */
-
  .btn-primary{
   background-color: inherit;
   border-radius: 30px;
@@ -779,7 +773,6 @@ footer p{
   width: 100%;
   position: relative;
   margin-bottom:1vw;
-  /* overflow-x: none; */
 }
 
 #stampingBox::after{
@@ -1355,7 +1348,6 @@ footer p{
   margin-top: 1.5vw;
 }
 
-
 #repurpose{
   margin-left: 15vw;
 }
@@ -1365,7 +1357,6 @@ footer p{
 }
 
 /* ---------------------------------------- Equipment Page --------------------------- */
-
 /* Top Portion of the page */
 #equipmentSelection{
   height: 50vw;
@@ -1571,7 +1562,6 @@ needed for location in smaller viewports */
 
 /* #stampList and brakeList is orginally hidden
 on-click javascript will display list */
-
 #brakelist .LookAtMe, #stampList .LookAtMe{
   display: none;
 }
@@ -1725,6 +1715,12 @@ Will be redisplayed on-click through JavaScript */
   top: 0;
 }
 
+#contactDiv{
+  background-image: url("images/metal.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
 #lookingForward{
   position: relative;
   padding-top: 10vw;
@@ -1735,8 +1731,9 @@ Will be redisplayed on-click through JavaScript */
 }
 
 #greeting{
-  width:30vw;
-  text-align: center;
+  padding-top: 1vw;
+  padding-bottom: 2vw;
+  top: 8vw;
 }
 
 #contactSlide {
@@ -1754,44 +1751,21 @@ Will be redisplayed on-click through JavaScript */
   margin-left: 5vw;
   padding-top: 1vw;
   top: 8vw;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-#contactList ul{
-  margin-bottom: 2vw;
-  padding-bottom: 8vw;
-}
-
-#contactList li{
-  color: #bababa;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5vw;
-  display: block;
-  clear: both;
   text-align: center;
-  line-height: 1.5vw;
 }
 
 #contactList a{
-  color: #e3eeaa;
-  font-size: 1.5vw;
-  text-align: center;
+  font-size: 3vw !important;
 }
 
-#contactList .name{
+#contactList p{
   font-size: 2vw;
-  text-decoration: underline;
-  color:#e3eeaa;
 }
 
 /* --------------------------------------------------------------------ABOUT PAGE---------------------------------------------------------- */
     #aboutSlide{
       padding-top: 10vw;
-      /* position:relative; */
-      /* z-index:0; */
       background-image: url("images/metal.png");
-      /* height:100%; */
       background-size: cover;
       /* Makes the background image fixed to the div */
       background-attachment: fixed;
@@ -1999,7 +1973,6 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #ourTeam h1{
-     /* margin-left: 10vw; */
      margin-top: -15vw;
      color: black !important;
      font-size: 5vw;
@@ -2193,8 +2166,6 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #contactList{
-    overflow-y: visible;
-    overflow-x: visible;
     height: auto;
     width:100% !important;
     text-align: center;
@@ -2208,27 +2179,6 @@ Will be redisplayed on-click through JavaScript */
     margin-left: -10vw;
     margin-right: auto;
     float: none;
-  }
-
-  #printCol1{
-    width: 45vw;
-    float: left;
-    margin-left: 1vw;
-  }
-
-  #printCol2{
-    width: 45vw;
-    float: right;
-  }
-
-  .name{
-    font-size: 2.5vw !important;
-  }
-  .position{
-    font-size: 2vw !important;
-  }
-  .email a{
-    font-size: 2vw !important;
   }
 
   /* About Page */
@@ -2288,7 +2238,6 @@ Will be redisplayed on-click through JavaScript */
   #TheBliss div{
     width: 50%;
   }
-
 }
 
 
@@ -2377,7 +2326,6 @@ Will be redisplayed on-click through JavaScript */
     background-position: 70% 50%;
   }
 
-
   /* Equipment Page */
   #equipSideNav{
     height: 52vw;
@@ -2385,7 +2333,6 @@ Will be redisplayed on-click through JavaScript */
 }
 
 @media only screen and (max-width: 1005px){
-
   #certificates img{
     margin: 1vw;
     width:19vw;
@@ -2456,22 +2403,6 @@ Will be redisplayed on-click through JavaScript */
   #contactList li{
     line-height: .5;
   }
-
-  #contactList .name{
-    font-size: 2.5vw;
-  }
-
-  #contactList .position{
-    font-size: 2.25vw;
-  }
-
-  #contactList .email a{
-    font-size: 2.25vw !important;
-  }
-
-  #contactList .email{
-    padding-bottom: 2vw;
-  }
 }
 
 @media only screen and (max-width: 964px){
@@ -2534,11 +2465,6 @@ Will be redisplayed on-click through JavaScript */
     padding-bottom: 5vw;
   }
 
-  /* Contact Page */
-  #contactList li{
-    line-height: .5vw;
-  }
-
   #laserCuttingContainer ul{
     position: relative;
     margin-top: 0vw;
@@ -2558,7 +2484,6 @@ Will be redisplayed on-click through JavaScript */
     position: absolute;
   }
 }
-
 
 @media only screen and (max-width: 879px){
 
@@ -2814,7 +2739,6 @@ Will be redisplayed on-click through JavaScript */
     padding-top: 15vw;
   }
 
-
   /* About Page */
   #aboutSlide{
     padding-top: 15vw;
@@ -2847,7 +2771,7 @@ Will be redisplayed on-click through JavaScript */
     width: 30vw;
   }
 
-  #bottom p{
+  #bottom {
     font-size: 2vw;
   }
 
@@ -2859,7 +2783,6 @@ Will be redisplayed on-click through JavaScript */
   #metalStamping{
     height: 45vw;
   }
-
 
   #toolingService{
     height: 40vw;
@@ -3225,7 +3148,6 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #greeting{
-    font-size: 3vw;
     width:auto;
     margin-right: 0;
   }
@@ -3238,31 +3160,17 @@ Will be redisplayed on-click through JavaScript */
     margin-top: -10vw;
     margin-left: 1vw;
     margin-right: 1vw;
-    padding-bottom: 4vw;
+    padding-bottom: 8vw;
     position: relative;
   }
 
-  #contactList ul{
-    padding-bottom: 1vw;
-  }
-
-  #contactList .name{
+  #contactList p{
     font-size: 4vw;
   }
-
-  #contactList li{
-    line-height: 2vw;
-    float:none;
+  #contactList a{
+    font-size: 5vw !important;
   }
 
-  #contactList .position{
-    font-size: 3vw;
-  }
-
-  #contactList .email a{
-    font-size: 3vw !important;
-  }
-}
 
 /* MENU BUTTON!!!! */
 @media only screen and (max-width: 609px){
@@ -3359,14 +3267,6 @@ Will be redisplayed on-click through JavaScript */
   #ourTeam img{
     width:97vw;
   }
-
-  /* #customWelding{
-    height: 55vw;
-  }
-
-  #weldingBox::after{
-    height: 56vw;
-  } */
 
   /* Equipment Page */
   #equipmentSelection{
@@ -3484,24 +3384,6 @@ Will be redisplayed on-click through JavaScript */
     margin-left: 1vw;
     margin-right: 1vw;
     position: relative;
-  }
-
-  #contactList ul{
-    padding-bottom: 2vw;
-  }
-
-  #contactList .name{
-    font-size: 5vw !important;
-  }
-
-  #contactList li{
-    font-size: 4vw !important;
-    line-height: 2vw;
-    float:none;
-  }
-
-  #contactList .email a{
-    font-size: 4vw !important;
   }
 
   /* GreenInit Page */
@@ -3718,7 +3600,6 @@ Will be redisplayed on-click through JavaScript */
   }
   /* TRANSPARENT RECTANGLE */
   #box::after{
-    /* height: 100%; */
     width: 100%;
   }
 
@@ -3896,7 +3777,6 @@ Will be redisplayed on-click through JavaScript */
     margin-right: 2vw;
   }
 
-
   #quality{
     height:60vw;
   }
@@ -4043,14 +3923,6 @@ Will be redisplayed on-click through JavaScript */
   .navigation-menu-button{
     margin-top: -2vw;
   }
-
-}
-
-@media only screen and (max-width: 474px){
-  /* Contact Page */
-  /* #contactList {
-    height: 235vw;
-  } */
 }
 
 @media only screen and (max-width: 448px){
@@ -4091,7 +3963,7 @@ Will be redisplayed on-click through JavaScript */
     white-space: nowrap;
   }
 
-  #bottom p{
+  #bottom{
     font-size: 3vw;
   }
 
@@ -4099,11 +3971,6 @@ Will be redisplayed on-click through JavaScript */
     font-weight: 500;
     font-size: 5vw;
   }
-
-  /* Contact Page */
-  /* #contactList {
-    height: 240vw;
-  } */
 }
 
 @media only screen and (max-width: 429px){
@@ -4204,7 +4071,6 @@ Will be redisplayed on-click through JavaScript */
   #miscEquip{
     padding-bottom: 5vw;
   }
-
 }
 
 @media only screen and (max-width: 403px){
@@ -4256,8 +4122,14 @@ Will be redisplayed on-click through JavaScript */
 }
 
 @media only screen and (max-width: 350px){
+  a{
+    font-size: 5vw;
+  }
+  p{
+    font-size: 5vw;
+  }
+
   #box::after{
-    /* height: 100%; */
     width: 100%;
     margin-top: -40vw;
   }
@@ -4299,9 +4171,9 @@ Will be redisplayed on-click through JavaScript */
   }
 
   /* Capabilities Page */
-#capabilitiesContainer h2{
-  font-size: 6vw;
-}
+  #capabilitiesContainer h2{
+    font-size: 6vw;
+  }
 
   #capabilitiesContainer p {
     font-size: 5vw;
@@ -4377,7 +4249,6 @@ Will be redisplayed on-click through JavaScript */
 
   #fabShop{
     height:110vw;
-    /* background-position: center; */
   }
 
   #fabBox:after{
@@ -4402,7 +4273,6 @@ Will be redisplayed on-click through JavaScript */
 }
 
 @media only screen and (max-width: 340px){
-
   #ourTeam h1{
     font-size: 5vw;
   }
@@ -4411,17 +4281,6 @@ Will be redisplayed on-click through JavaScript */
 @media only screen and (max-width: 324px){
   #mySidenav a {
     font-size: 4vw;
-  }
-
-  /* Contact Page*/
-  #contactList .name{
-    font-size: 6vw !important;
-  }
-  #contactList .position{
-    font-size: 5.5vw !important;
-  }
-  #contactList .email a{
-    font-size: 5.5vw !important;
   }
 }
 
@@ -4436,9 +4295,4 @@ Will be redisplayed on-click through JavaScript */
   #aboutNav a{
     font-size: 3.5vw;
   }
-}
-
-@media only screen and (max-width: 300px){
-
-
 }

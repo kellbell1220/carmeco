@@ -1,3 +1,6 @@
+// Author: Kelli Stasiak
+//Updated:03/01/2019
+
 //Contact Page -- Pic for the Bins
 var pictures = ["images/Ariel3.jpg", "images/team2.jpg"];
 
@@ -15,7 +18,6 @@ function changeImage() {
 	if (imageIndex>=pictures.length){
 		imageIndex=0;
 	}
-
 }
 
 //Product Page -- Timer that controls the Change Image Function

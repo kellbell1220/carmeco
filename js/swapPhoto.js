@@ -1,3 +1,6 @@
+// Author: Kelli Stasiak
+//Updated:03/04/2019
+
 var ninjaPictures = [
   "images/equip/ninja/IMG_0807.jpg",
   "images/equip/ninja/IMG_0808.jpg",
@@ -89,8 +92,8 @@ var minsterPictures = [
 ];
 
 var OBIWanPictures = [
-  "images/equip/OBIWan/IMG_0705.jpg",
-  "images/equip/OBIWan/IMG_0706.jpg",
+  "images/equip/OBIWan/IMG_0705-1.jpg",
+  "images/equip/OBIWan/IMG_0706-1.jpg",
   "images/equip/OBIWan/IMG_0632.jpg"
 ];
 
@@ -137,9 +140,6 @@ var miscEquipPictures = [
   "images/equip/miscEquip/IMG_0654.jpg",
   "images/equip/miscEquip/IMG_0643.jpg"
 ];
-
-
-
 
 // THIS IS THE FUNCTIONS THAT CONTROL THE IMAGE GALLERY
 function swapPhotos(i, mainImage, imageArray) {

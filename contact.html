@@ -8,6 +8,7 @@
 
 			Author: Kelli Stasiak
 			Date:08/03/2018
+			Updated:03/01/2019
       -->
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,7 +49,7 @@
 			<link rel="stylesheet" href="styles.css">
 
 	</head>
-  <body>
+  <body onload = "Copyright();">
 		<header id = "headerContact">
 			<div id="headerContainer" class ="container-fluid">
 				<p><a id="phone" href="tel:14175326133">Call Us Today: (417) 532-6133</a></p>
@@ -85,65 +86,16 @@
 			</div>
 		</header>
 
-		<h1 id ="lookingForward">We Look Forward To Working With You!</h1>
+		<div id="contactDiv">
+			<h1 id ="lookingForward">We Look Forward To Working With You!</h1>
 
-		<img id="contactSlide" src = "images/Ariel3.jpg" width="600" alt="Carmeco">
+			<img id="contactSlide" src = "images/Ariel3.jpg" width="600" alt="Carmeco">
 
-		<div id="contactList" class ="scrollbarclass">
-			<p id = "greeting">Call or e-mail us today to see how we can help you with your metal fabrication needs! <br><i style = "color:#e3eeaa;">Thank you for visiting Carmeco.com!</i></p>
-			<div id = "printCol1">
-				<ul>
-					<li class ="name">Jeff Carr</li>
-					<li class ="position">President / Chief Executive Officer</li>
-					<li class = "email"><a href="mailto:jeff@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Jeff@carmeco.com </a></li>
-				</ul>
-				<ul>
-					<li class ="name">John Carr</li>
-					<li class ="position">Vice President of Manufacturing</li>
-					<li class = "email"><a href="mailto:john@carmeco.com?subject=Mail%20From%20Carmeco%20Website">John@carmeco.com</a></li>
-				</ul>
-				<ul>
-					<li class ="name">Jared Carr</li>
-					<li class ="position">Chief Financial Officer</li>
-					<li class = "email"><a href="mailto:jared@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Jared@carmeco.com</a></li>
-				</ul>
-				<ul>
-					<li class ="name">Joe Carr</li>
-					<li class ="position">Vice President</li>
-					<li class = "email"><a href="mailto:joe@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Joe@carmeco.com</a></li>
-				</ul>
-				<ul>
-					<li class ="name">Donti Hawkins</li>
-					<li class ="position">Vice President of Operations</li>
-					<li class = "email"><a href="mailto:donti@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Donti@carmeco.com</a></li>
-				</ul>
-			</div>
-			<div id="printCol2">
-				<ul>
-					<li class ="name">Becky Bollig</li>
-					<li class ="position">Accounting Manager</li>
-					<li class = "email"><a href="mailto:becky@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Becky@carmeco.com</a></li>
-				</ul>
-				<ul>
-					<li class ="name">Kris Deitz</li>
-					<li class ="position">Purchasing Manager</li>
-					<li class = "email"><a href="mailto:kris@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Kris@carmeco.com</a></li>
-				</ul>
-				<ul>
-					<li class ="name">Tracy Bledsoe</li>
-					<li class ="position">Logistics Manager</li>
-					<li class = "email"><a href="mailto:tracy@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Tracy@carmeco.com</a></li>
-				</ul>
-				<ul>
-					<li class ="name">Heath McBride</li>
-					<li class ="position">Specialist</li>
-					<li class = "email"><a href="mailto:heath@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Heath@carmeco.com</a></li>
-				</ul>
-				<ul>
-					<li class ="name">Josh Hay</li>
-					<li class ="position">Customer Relations</li>
-					<li class = "email"><a href="mailto:josh@carmeco.com?subject=Mail%20From%20Carmeco%20Website">Josh@carmeco.com</a></li>
-				</ul>
+			<div id ="contactList">
+				<p id = "greeting">Call or E-mail us today to see how we can help you with your metal fabrication needs! <br><i style = "color:#e3eeaa;">Thank you for visiting Carmeco.com!</i></p>
+
+				<p><a href="tel:14175326133">Phone: (417) 532-6133</a></p>
+				<p><a href="mailto:info@carmeco.com?subject=Mail%20From%20Carmeco%20Website">E-mail: info@Carmeco.com</a></p>
 			</div>
 		</div>
 
@@ -169,9 +121,7 @@
 				</p>
 			</div>
 
-			<div id ="bottom">
-				<p>Copyright &copy; 2018 Carmeco Inc</p>
-			</div>
+			<div id ="bottom"></div>
     </footer>
 		<!-- Side Show -->
 		<script src = "js/contactSlideShow.js"></script>
