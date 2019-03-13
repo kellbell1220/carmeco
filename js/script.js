@@ -10,19 +10,19 @@ var oldAboutColor = 'AboutChoice';
 var oldDivEquip = '';
 var oldList = '';
 
-var viewportWidth;
+// var viewportWidth;
 
 //Shrinking Header function
-$(document).on("scroll", function(){
-  if( $(window).width() >= 609){
-    if ($(document).scrollTop() > 100){
-      $("header").addClass("shrink");
-    } //end if
-    else {
-      $("header").removeClass("shrink");
-    }//end else
-  }//end if
-});
+// $(document).on("scroll", function(){
+//   if( $(window).width() >= 609){
+//     if ($(document).scrollTop() > 100){
+//       $("header").addClass("shrink");
+//     } //end if
+//     else {
+//       $("header").removeClass("shrink");
+//     }//end else
+//   }//end if
+// });
 
 //used on the equipPage and The header on every page
 //at smaller viewports

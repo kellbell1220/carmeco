@@ -103,6 +103,11 @@ header img{
   margin-left: 2vw;
 }
 
+.row{
+  margin-right: 0;
+  margin-left: 0;
+}
+
 /* This Section Makes the Carmeco logo change to gold
  on hover */
 #logoDiv{
@@ -184,24 +189,24 @@ nav {
 }
 
 /* SHRINKING HEADER class happens when the user scrolls the page the class is added to the header via JavaScript */
-.shrink {
+header {
   padding: 0px 0;
 }
 
-.shrink img{
+header img{
   width: 17vw;
   margin-top:-1vw;
 }
 
-.shrink nav{
+header nav{
   margin-top: 3vw;
 }
 
-.shrink #mySidenav{
+header #mySidenav{
   right: 0vw;
 }
 
-.shrink #phone{
+header #phone{
   margin-top: -.5vw;
   padding: 0;
   padding-top: .5vw;
@@ -1559,7 +1564,6 @@ needed for location in smaller viewports */
   margin-top: -7vw;
 }
 
-
 /* #stampList and brakeList is orginally hidden
 on-click javascript will display list */
 #brakelist .LookAtMe, #stampList .LookAtMe{
@@ -1821,6 +1825,7 @@ Will be redisplayed on-click through JavaScript */
       text-decoration: underline;
       font-weight: bold;
     }
+
 /* ------------------------------------------------------------------MEDIA QUERIES--------------------------------------------------------- */
 @media print{
   a[href]::after{
@@ -1835,9 +1840,9 @@ Will be redisplayed on-click through JavaScript */
     max-width: none !important;
   }
 
-  .shrink{
+  /* .shrink{
     display: none;
-  }
+  } */
 
   header{
     top:0;
@@ -2266,14 +2271,14 @@ Will be redisplayed on-click through JavaScript */
 
 @media only screen and (max-width: 1286px){
   #logo, #goldLogo{
-    width: 25vw;
+    width: 19vw;
     top:0;
     margin-top: -2vw;
   }
 
-  .shrink #logoDiv img{
+  /* .shrink #logoDiv img{
     width: 19vw;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1235px){
@@ -2667,25 +2672,26 @@ Will be redisplayed on-click through JavaScript */
   #logoDiv{
     clear: both;
     margin-left: 34vw;
+    /* margin-left: 6vw; */
     margin-top: 0;
     padding: 1vw;
   }
 
-  .shrink  #logoDiv img{
-    margin-top: 0;
+  #logoDiv img{
+    margin-top: -2vw;
     margin-left: 6vw;
   }
 
-  .shrink #mySidenav{
+  #mySidenav{
     margin-right: 15vw;
-    margin-top: 0;
+    margin-top: 2vw;
   }
 
-  .shrink a{
+  header a{
     font-size: 2vw;
   }
 
-  .shrink #phone a{
+  #phone a{
     font-size: 2vw;
   }
 
@@ -2749,7 +2755,7 @@ Will be redisplayed on-click through JavaScript */
   }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
   footer h4{
     font-size: 3vw;
   }
@@ -3204,7 +3210,7 @@ Will be redisplayed on-click through JavaScript */
 
   #mySidenav{
     display: none;
-    margin-right: -3vw;
+    margin-right: 0vw;
     right:3vw;
     position: absolute;
     z-index: 1;
@@ -3319,12 +3325,20 @@ Will be redisplayed on-click through JavaScript */
     padding-top:2vw;
   }
 
+  .pressMainImage{
+    height: 60vw !important;
+  }
+
   #bliss h3{
     font-size: 3.5vw;
   }
 
   #bliss a{
     font-size: 3vw;
+  }
+
+  .brakeMainImage{
+    height: 45vw !important;
   }
 
   #brakePressExpand ul{
@@ -3923,6 +3937,10 @@ Will be redisplayed on-click through JavaScript */
   .navigation-menu-button{
     margin-top: -2vw;
   }
+
+  #mySidenav{
+    margin-top: 3vw;
+  }
 }
 
 @media only screen and (max-width: 448px){
@@ -3989,24 +4007,54 @@ Will be redisplayed on-click through JavaScript */
   }
 }
 
-@media only screen and (max-width: 410px){
+@media only screen and (max-width: 414px){
   /* Equipment Page */
+  #equipmentContainer{
+    padding-bottom: 2vw;
+  }
+
+  #equipmentContainer p{
+    font-size: 8vw;
+  }
+
+  #LookAtMeHeading  a{
+    font-size: 6vw;
+  }
+
   .thumbnails img{
-    height: 20vw !important;
+    height: 30vw !important;
+  }
+
+  .pressMainImage{
+    height: 95vw !important;
   }
 
   #stampingPressContainer .thumbnails{
-    margin-left: -20vw;
+    margin-left: -25vw;
+  }
+
+  .equip{
+    margin-left: 4vw;
   }
 
   #stampingPressContainer .equip{
-    margin-left: 10vw !important;
+    padding-left: 2vw;
+    padding-right: 2vw;
     padding-bottom: 10vw;
   }
+
+
   #stampingPressContainer .thumbnails{
     top: 13vw;
   }
 
+  #stampingPressContainer ul{
+    margin-left: 1vw;
+  }
+
+  #equipmentInfo li{
+    font-size: 4vw !important;
+  }
   /* Individual Adjustments
    Descriptions are longer and don't need
    the larger margin*/
@@ -4034,19 +4082,37 @@ Will be redisplayed on-click through JavaScript */
     padding-bottom: 2vw !important;
   }
 
+  .brakeMainImage{
+    height: 55vw !important;
+    margin-left: 2vw;
+  }
 
   #brakePressExpand .thumbnails img, #laserCuttingContainer .thumbnails img, #miscEquip .thumbnails img{
     height: 15vw !important;
   }
 
+  #brakePressExpand .thumbnails img{
+    display: inline-block;
+  }
+
   #brakePressExpand .thumbnails{
-    margin-left: -12vw;
-    margin-top: 2vw;
+    margin-left: 10vw;
+    margin-top: 60vw;
   }
 
   #brakePressExpand ul{
-    margin-top: 2vw;
-    margin-left: 12vw;
+    margin-left: 2vw !important;
+    margin-top: 18vw !important;
+  }
+
+  #brakePressExpand .equip{
+    padding-bottom: 2vw;
+    margin-bottom: 5vw;
+  }
+
+  #AmadaBrake{
+    padding-bottom: 12vw !important;
+    margin-bottom: 7vw !important;
   }
 
   #laserCuttingContainer{
@@ -4055,17 +4121,27 @@ Will be redisplayed on-click through JavaScript */
 
   #laserCuttingContainer ul{
     padding-bottom: 50vw;
-    margin-left: 30vw;
+    padding-left: 2vw;
+    margin-top: 32vw;
   }
 
   #laserCuttingContainer .thumbnails{
-    margin-left: 2vw;
-    margin-top: 0;
-    top: 2vw;
+    margin-left: 0;
+    margin-top: 2vw;
+    left: 15vw;
+    top: 58vw;
+    display: inline-block;
+    width: 72vw;
+  }
+
+  #laserCuttingContainer .thumbnails img{
+    clear: none;
+    display: inline-block;
   }
 
   #laserMainImage{
-    margin-left: 25vw;
+    margin-left: 5vw;
+    position: relative;
   }
 
   #miscEquip{
@@ -4099,13 +4175,19 @@ Will be redisplayed on-click through JavaScript */
   #aboutNav{
     margin-left: 1vw;
   }
+
 }
 
 @media only screen and (max-width: 357px){
   /* Equip Page */
   #equipmentInfo ul{
-    width: 77%;
+    width: 98%;
     padding-right: 0;
+  }
+
+  #stampingPressContainer ul{
+    /* margin-left: 3vw; */
+    padding-left: 0;
   }
 
   #equipmentInfo li{
@@ -4113,11 +4195,19 @@ Will be redisplayed on-click through JavaScript */
     white-space: pre-wrap;
   }
 
+  #brakePressExpand .equip{
+    margin-bottom: 6vw;
+  }
+
   #equipmentInfo li a{
     font-family: Tahoma, Geneva, sans-serif;
     white-space: pre-wrap;
     text-align: center;
     text-decoration: underline;
+  }
+
+  #laserCuttingContainer ul{
+    margin-left: 3vw;
   }
 }
 

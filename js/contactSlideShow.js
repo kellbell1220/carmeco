@@ -2,7 +2,7 @@
 //Updated:03/01/2019
 
 //Contact Page -- Pic for the Bins
-var pictures = ["images/Ariel3.jpg", "images/team2.jpg"];
+var pictures = ["images/Ariel3.jpg", "images/team4.jpg"];
 
 //Product Page -- Indexes for changeImage function
 var imageIndex = 0;
