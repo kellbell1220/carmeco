@@ -158,9 +158,9 @@ header img{
   padding-right: 2vw;
 }
 
-.navigation-menu-button p:hover{
+/* .navigation-menu-button p:hover{
   color: #e3eeaa;
-}
+} */
 
 nav {
   font-size: 1.5vw;
@@ -1614,7 +1614,7 @@ on-click javascript will display list */
 }
 
 #stampingPressContainer .thumbnails{
-  padding-left: 21vw;
+  padding-left: 23vw;
   margin-top: -11vw;
 }
 
@@ -1847,13 +1847,13 @@ Will be redisplayed on-click through JavaScript */
   header{
     top:0;
     position: relative;
-    padding-bottom: 1vw;
-    margin-bottom: 1vw;
+    padding-bottom: 2vw;
+    margin-bottom: 3vw;
   }
 
   #logo{
     width: 26vw;
-    margin-top: 0vw;
+    margin-top: -2vw;
   }
 
   #logoDiv:hover #goldLogo{
@@ -2231,7 +2231,7 @@ Will be redisplayed on-click through JavaScript */
   }
 
   #TheBliss{
-    display: block;
+    display: block !important;
     position: relative;
     break-inside: avoid;
   }
@@ -3323,6 +3323,7 @@ Will be redisplayed on-click through JavaScript */
 
   #stampingPressContainer ul{
     padding-top:2vw;
+    margin-left: 12vw;
   }
 
   .pressMainImage{
@@ -3363,6 +3364,7 @@ Will be redisplayed on-click through JavaScript */
 
   #laserCuttingContainer .thumbnails{
     margin-left: -45vw;
+    margin-top: -75vw;
   }
 
   /* Contact Page */
