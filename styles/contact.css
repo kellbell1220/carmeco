@@ -1,0 +1,183 @@
+/* CSS for Carmeco.com/contact.html
+Author: Kelli Stasiak
+Updated:12/02/2019*/
+#headerContact
+{
+  top: 0;
+}
+#contactDiv
+{
+  background-image: url("/images/metal.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#lookingForward
+{
+  position: relative;
+  padding-top: 10vw;
+  margin-top: 2vw;
+  color: #e3eeaa;
+  text-align: center;
+  padding-bottom: 1vw;
+}
+#greeting
+{
+  padding-top: 1vw;
+  padding-bottom: 2vw;
+  top: 8vw;
+}
+#contactSlide
+{
+  float: right;
+  margin-top: 3vw;
+  margin-right: 6vw;
+  padding-left: 2vw;
+  width:50%;
+  position: relative;
+}
+#contactList
+{
+  height: 33vw;
+  width:35%;
+  margin-left: 5vw;
+  padding-top: 1vw;
+  top: 8vw;
+  text-align: center;
+}
+#contactList a
+{
+  font-size: 3vw !important;
+}
+#contactList p
+{
+  font-size: 2vw;
+}
+@media print
+{
+  #lookingForward
+  {
+    padding-top: 0 !important;
+  }
+  #contactSlide
+  {
+    margin-left: 27vw !important;
+  }
+  #contactSlide
+  {
+    float: none;
+    margin-left: 22vw;
+    margin-top: 0vw;
+  }
+  #contactList
+  {
+    height: auto;
+    width:100% !important;
+    text-align: center;
+    margin-left: 11vw;
+    padding-top: 2vw;
+  }
+  #greeting
+  {
+    width: 100%;
+    margin-bottom: 2vw;
+    margin-left: -10vw;
+    margin-right: auto;
+    float: none;
+  }
+}
+@media only screen and (max-width: 1366px)
+{
+  #contactList li
+  {
+    line-height: 1vw;
+  }
+}
+@media only screen and (max-width: 990px)
+{
+  #contactList li
+  {
+    line-height: .5;
+  }
+}
+@media only screen and (max-width: 780px)
+{
+  #lookingForward
+  {
+    margin-top: 10vw;
+  }
+}
+
+@media only screen and (max-width: 659px)
+{
+  #contactSlide
+  {
+    float:none;
+    width: 75vw;
+    margin-left: 10vw;
+    margin-top: 2vw;
+    padding-top: 0;
+    margin-bottom: 2vw;
+    position: static;
+  }
+  #greeting
+  {
+    width:auto;
+    margin-right: 0;
+  }
+  #contactList
+  {
+    width: 95%;
+    overflow-y: initial;
+    overflow-x: visible;
+    height: auto;
+    margin-top: -10vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding-bottom: 8vw;
+    position: relative;
+  }
+  #contactList p
+  {
+    font-size: 4vw;
+  }
+  #contactList a
+  {
+    font-size: 5vw !important;
+  }
+}
+@media only screen and (max-width: 609px){
+  #lookingForward
+  {
+    margin-top: 5vw;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 6vw;
+  }
+  #greeting
+  {
+    font-size: 4vw;
+    width:auto;
+    margin-right: 0;
+    padding-bottom: 2vw;
+  }
+  #contactSlide
+  {
+    float:none;
+    width: 75vw;
+    margin-left: 10vw;
+    margin-top: 2vw;
+    padding-top: 0;
+    margin-bottom: 2vw;
+    position: static;
+  }
+  #contactList
+  {
+    width: 95%;
+    overflow-y: initial;
+    overflow-x: visible;
+    margin-top: -10vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    position: relative;
+  }
+}

@@ -1,0 +1,199 @@
+/* CSS for Carmeco.com/about.html
+Author: Kelli Stasiak
+Updated:12/02/2019*/
+  #aboutSlide
+  {
+    padding-top: 10vw;
+    background-image: url("/images/metal.png");
+    background-size: cover;
+    /* Makes the background image fixed to the div */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 99%;
+    padding-bottom: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #aboutPageWrapper
+  {
+    padding-top: 2vw;
+  }
+  #aboutNav
+  {
+    margin-top: 0vw;
+    margin-right: 2vw;
+  }
+  #aboutNav p:hover
+  {
+    color:#e3eeaa;
+  }
+  #aboutPageWrapper
+  {
+    padding-left: 5vw;
+    padding-bottom:1vw;
+    margin-right: 2vw;
+  }
+  #about
+  {
+    border:none;
+  }
+  #aboutPageWrapper img
+  {
+    width: auto;
+    height: 25vw;
+  }
+  #history
+  {
+    display: none;
+  }
+  #facilitySection
+  {
+    display: none;
+  }
+  #TheBliss
+  {
+    display: none;
+  }
+  .highlight
+  {
+    color: #e3eeaa;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  @media print{
+    #aboutSlide
+    {
+      padding-top: 0vw;
+    }
+    #aboutNav
+    {
+      display: none;
+    }
+    #about .row
+    {
+      width: 100%;
+    }
+    #about div
+    {
+      width: 50%;
+    }
+    #facilitySection
+    {
+      display: block;
+      position: relative;
+    }
+    #facilitySection .row
+    {
+      width: 100%;
+    }
+    #facilitySection div
+    {
+      width: 50%;
+    }
+    #history
+    {
+      display: block;
+      position: relative;
+      break-inside: avoid;
+    }
+    #history .row
+    {
+      width: 100%;
+    }
+    #history div
+    {
+      width: 50%;
+    }
+    #TheBliss
+    {
+      display: block !important;
+      position: relative;
+      break-inside: avoid;
+    }
+    #TheBliss .row
+    {
+      width: 100%;
+    }
+    #TheBliss div
+    {
+      width: 50%;
+    }
+  }
+  @media only screen and (max-width: 1005px)
+  {
+    #aboutNav
+    {
+      margin-top: 2vw;
+    }
+  }
+  @media only screen and (max-width: 780px)
+  {
+    #aboutSlide
+    {
+      padding-top: 15vw;
+    }
+    #aboutNav a
+    {
+      font-size: 2vw;
+    }
+  }
+@media only screen and (max-width: 609px)
+{
+  #aboutNav
+  {
+    margin-right: 0;
+    float:none;
+    margin-left: 5vw;
+  }
+  #aboutNav a
+  {
+    font-size: 4vw;
+  }
+  #aboutPageWrapper img
+  {
+    height: 35vw;
+  }
+  #aboutPageWrapper p
+  {
+    font-size: 4vw;
+  }
+  #aboutPageWrapper h2
+  {
+    font-size: 5vw;
+  }
+}
+@media only screen and (max-width: 403px)
+{
+  #aboutNav a
+  {
+    font-size: 3.75vw;
+  }
+}
+@media only screen and (max-width: 380px)
+{
+  #aboutNav
+  {
+    margin-left: 1vw;
+  }
+}
+@media only screen and (max-width: 350px)
+{
+  #about h2
+  {
+    font-size: 6vw;
+  }
+}
+@media only screen and (max-width: 336px)
+{
+  #aboutNav
+  {
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 322px)
+{
+  #aboutNav a
+  {
+    font-size: 3.5vw;
+  }
+}

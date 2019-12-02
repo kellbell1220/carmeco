@@ -1,0 +1,1051 @@
+/* CSS for Carmeco.com/equipment.html
+Author: Kelli Stasiak
+Updated:12/02/2019*/
+/* Top Portion of the page */
+#equipmentSelection
+{
+  height: 50vw;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 9999;
+}
+#equipmentSelection a
+{
+  font-size: 4vw;
+  font-weight: bold;
+  color: #e3eeaa;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+#equipmentSelection:hover
+{
+  text-shadow: 2px 2px 10px black;
+}
+#stampContainer
+{
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+  padding-top: 2vw;
+  left: 0;
+  margin: 0;
+}
+/* While the stampContainer is hovered the stapPress will changeImage this includes the text also if it is hovered on */
+#stampContainer:hover #stampPress
+{
+  opacity: 1;
+  transform: scale(1.25); /* (125% zoom) */
+  -webkit-transform: scale(1.25);
+  overflow: hidden;
+}
+#stampBlackBox
+{
+  visibility: hidden;
+}
+#stampPress
+{
+  line-height: 25vw;
+  position: relative;
+  opacity: .5;
+  height: 49.5vw;
+  padding: 0;
+  margin: 0;
+  transition: transform 1s; /* Animation */
+  -webkit-transition: 1s ease;
+}
+#stampPressWord
+{
+  text-align: center;
+  margin-top: -28vw;
+  margin-left: 5vw;
+  position: absolute;
+  line-height: 4vw;
+}
+#brakePressContainer
+{
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+  padding-top: 2vw;
+  margin: 0;
+}
+#brakePressContainer:hover #brakePress
+{
+  opacity: 1;
+  transform: scale(1.25); /* (125% zoom) */
+  -webkit-transform: scale(1.25);
+  overflow: hidden;
+  opacity: 1;
+}
+#brakePressBlackBox
+{
+  visibility: hidden;
+}
+#brakePress
+{
+  line-height: 25vw;
+  position: relative;
+  opacity: .6;
+  height: 49.5vw;
+  padding: 0;
+  margin: 0;
+  margin-top: 2vw;
+  transition: transform 1s; /* Animation */
+  -webkit-transition: 1s ease;
+  overflow: hidden;
+}
+#brakePressWord
+{
+  text-align: center;
+  margin-top: -30vw;
+  margin-left: 6vw;
+  position: absolute;
+  line-height: 4vw;
+}
+#laserEquipContainer
+{
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+  padding-top: 2vw;
+  right: 0;
+  margin: 0;
+}
+#laserEquipBlackBox
+{
+  visibility: hidden;
+}
+#laserEquip
+{
+  height: 49.5vw;
+  opacity: .7;
+  padding: 0;
+  margin: 0;
+  transition: transform 1s; /* Animation */
+  -webkit-transition: 1s ease;
+  overflow: hidden;
+}
+#laserEquipContainer:hover #laserEquip
+{
+  opacity: 1;
+  transform: scale(1.25); /* (125% zoom) */
+  -webkit-transform: scale(1.25);
+  overflow: hidden;
+  opacity: 1;
+}
+#laserEquipWord
+{
+  text-align: center;
+  margin-top: -28vw;
+  margin-left: 7vw;
+  position: absolute;
+  line-height: 4vw;
+}
+/* ^^^Start of the equipment section^^^ */
+#equipmentInfo
+{
+  position: relative;
+  height: auto;
+  padding: 1vw;
+  margin: 1vw;
+  top: 0;
+  z-index: 0;
+  background-image: url("/images/metal.png");
+  height: auto;
+  background-size: cover;
+  /* Makes the background image fixed to the div */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 98%;
+}
+#equipmentInfo h2
+{
+  clear:both;
+  z-index: 2;
+  padding-top: 1vw;
+  font-size:2.5vw;
+}
+#LookAtMeContainer
+{
+  padding-bottom: 4vw;
+  margin-bottom: 1vw;
+  top:0;
+  height:42vw;
+  position: relative;
+}
+#LookAtMeContainer a
+{
+  font-size: 1vw;
+}
+#lookAtMeLaserCutting
+{
+  display: block;
+}
+/* used for the anchors above 3 separate Divs
+needed for location in smaller viewports */
+#LocationDivStamp, #LocationDivBrake, #LocationDivLaser
+{
+  visibility: hidden;
+  position: absolute;
+  margin-top: -7vw;
+}
+/* #stampList and brakeList is orginally hidden
+on-click javascript will display list */
+#brakelist .LookAtMe, #stampList .LookAtMe
+{
+  display: none;
+}
+.LookAtMe a:hover
+{
+  color: #e3eeaa !important;
+}
+#stampList p:hover, #brakelist p:hover,
+#lookAtMeLaserCutting p:hover, #lookAtMeMisc p:hover
+{
+  color: #e3eeaa;
+  cursor: pointer;
+}
+.equip
+{
+  margin-left: 27vw;
+  top:0vw;
+  position: absolute;
+}
+/* MAIN IMAGES FOR THE EQUIPMENT */
+.pressMainImage
+{
+  height: 30vw;
+  z-index: 2;
+}
+
+.brakeMainImage{
+  height: 20vw;
+  z-index: 2;
+}
+
+/* THUMBNAILS FOR EQUIPMENT */
+.thumbnails
+{
+  z-index: 2;
+}
+.thumbnails img
+{
+  height: 12vw;
+  display: inline-block;
+  padding-left: 0vw;
+  padding-right: 1vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+#brakePressExpand .thumbnails img, #laserCuttingContainer .thumbnails img,
+#misEquip .thumbnails img
+{
+  height: 8.15vw !important;
+}
+#stampingPressContainer .thumbnails
+{
+  padding-left: 23vw;
+  margin-top: -11vw;
+}
+#brakePressExpand .thumbnails
+{
+  margin-top: 20vw;
+}
+#laserCuttingContainer .thumbnails
+{
+  margin-top:-10vw;
+  display: inline-block;
+  clear: left;
+  width:35vw;
+}
+#miscEquip .thumbnails
+{
+  margin-top: 5vw;
+  display: inline-block;
+  clear: left;
+  width:35vw;
+}
+/* MESSING WITH THE ALIGNMENT OF THE UL AND LI */
+#stampingPressContainer li, #brakePressExpand li,
+#laserCuttingContainer li, #miscEquip li
+{
+  color: #bababa;
+  font-family: 'Oswald', sans-serif;
+  padding-top: 0vw;
+  padding-bottom: 0vw;
+  margin-top: 0vw;
+  margin-bottom: 0vw;
+  clear:both;
+  line-height: 3vw;
+  font-size: 1.25vw !important;
+  white-space: nowrap;
+}
+#stampingPressContainer ul
+{
+  margin-left: 5vw;
+}
+/* I had to adjust this section due to it is the on with the
+most bullet points */
+#theBoss ul
+{
+  margin-top:-1vw;
+}
+#bliss h3{
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+}
+#laserCuttingContainer ul, #miscEquip ul, #brakePressExpand ul
+{
+  margin-left: 31vw;
+  margin-top: -20vw;
+}
+#laserCuttingContainer li, #miscEquip li
+{
+  padding: .5vw;
+}
+/* Hiding these Elements They will
+ be used in a smaller viewport */
+.LookAtMeHeading
+{
+  visibility: hidden;
+  display: none;
+  position: relative;
+}
+.LookAtMeHeading a
+{
+  font-size: 4vw;
+  font-weight: bold;
+}
+#equipmentContainer p
+{
+  visibility: hidden;
+  display: none;
+  font-size: 5vw;
+  font-weight: bold;
+}
+#equipmentContainer p:hover
+{
+  color: #e3eeaa;
+}
+/* Hiding all of the .equip class except
+The Boss which is the first one in the list
+Will be redisplayed on-click through JavaScript */
+.equip
+{
+  display: none;
+}
+#theBoss
+{
+  display: block;
+}
+@media print
+{
+  #equipmentSelection .col-xs-12
+  {
+    width: 33%;
+  }
+  #equipmentSelection
+  {
+    margin-top: -2vw;
+  }
+  #stampContainer:hover #stampPress,#brakePressContainer:hover #brakePress,
+  #laserEquipContainer:hover #laserEquip
+  {
+    opacity: .5;
+    transform: none;
+    -webkit-transform: none;
+  }
+  #LookAtMeContainer
+  {
+    display: none;
+  }
+  #stampingPressContainer ul
+  {
+    margin-left: 20vw;
+    margin-top: -30vw;
+  }
+  .equip
+  {
+    display: block;
+    position: relative;
+    break-inside: avoid;
+    margin-bottom: 2vw;
+  }
+  #stampingPressContainer li, #brakePressExpand li, #laserCuttingContainer li, #miscEquip li
+  {
+    font-size: 2vw !important;
+    padding-right: 2vw;
+  }
+}
+@media only screen and (max-width: 1508px)
+{
+  #equipSideNav
+  {
+    height: 44vw;
+  }
+  #stampingPressContainer
+  {
+    margin-bottom: 5vw;
+  }
+}
+@media only screen and (max-width: 1235px)
+{
+  #stampingPressContainer
+  {
+    padding-bottom: 5vw;
+  }
+}
+@media only screen and (max-width: 1130px)
+{
+  #equipSideNav
+  {
+    height: 47vw;
+    top:9vw;
+  }
+}
+@media only screen and (max-width: 1047px)
+{
+  #stampingPressContainer
+  {
+    padding-bottom: 15vw;
+  }
+}
+@media only screen and (max-width: 1037px)
+{
+  #equipSideNav{
+    height: 52vw;
+  }
+}
+@media only screen and (max-width: 964px)
+{
+  #equipSideNav
+  {
+    height: 57vw;
+  }
+  #LookAtMeContainer a
+  {
+    font-size: 1.5vw;
+  }
+  .equip
+  {
+    margin-left: 35vw;
+  }
+  #stampingPressContainer li, #brakePressExpand li, #laserCuttingContainer li, #miscEquip li
+  {
+    font-size: 1.5vw !important;
+  }
+  #brakePressExpand li, #laserCuttingContainer li, #miscEquip li
+  {
+    white-space: inherit;
+    word-wrap: break-word;
+  }
+  #stampingPressContainer ul
+  {
+    margin-left: 3vw;
+    margin-top: 1vw;
+  }
+  #laserCuttingContainer h2, #miscEquip h2, .brakeMainImage
+  {
+    margin-left: 10vw;
+  }
+  #laserCuttingContainer ul, #brakePressExpand ul, #miscEquip ul
+  {
+    margin-top: 2vw;
+    margin-left: 10vw;
+  }
+  #laserCuttingContainer li, #brakePressExpand li, #miscEquip li
+  {
+    line-height: 2vw;
+  }
+  #miscEquip .thumbnails
+  {
+    margin-top: 0vw;
+    margin-left: 10vw;
+    position: relative;
+  }
+  #brakePressExpand .thumbnails
+  {
+    margin-top: 12vw;
+    margin-left: 10vw;
+  }
+  #equipmentInfo
+  {
+    padding-bottom: 5vw;
+  }
+  #laserCuttingContainer ul
+  {
+    position: relative;
+    margin-top: 0vw;
+    padding-bottom: 30vw;
+  }
+  #laserCuttingContainer .thumbnails img
+  {
+    display: block;
+    clear:both;
+  }
+  #laserCuttingContainer .thumbnails
+  {
+    margin-top: -51vw;
+    margin-left: 0vw;
+    clear:none;
+    width: auto;
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 879px)
+{
+  #equipSideNav
+  {
+    height: 62vw;
+    top:10vw;
+  }
+}
+@media only screen and (max-width: 790px)
+{
+  .pressMainImage
+  {
+    height: 40vw !important;
+  }
+  .brakeMainImage
+  {
+    height: 30vw !important;
+  }
+  .thumbnails img
+  {
+    height: 15vw;
+  }
+  .pressMainImage
+  {
+    margin-left: 15vw;
+  }
+  #stampingPressContainer
+  {
+    padding-left: 1vw;
+  }
+  #stampingPressContainer h2, #bliss h3
+  {
+    text-align: center;
+  }
+  #stampingPressContainer ul
+  {
+    margin-left: 14vw;
+    position: relative;
+    margin-top: 0vw;
+    padding-bottom: 30vw;
+  }
+  #stampingPressContainer .thumbnails img
+  {
+    display: block;
+    clear:both;
+  }
+  #stampingPressContainer .thumbnails
+  {
+    margin-left: -17vw;
+    top: 15vw;
+    width: auto;
+    position: absolute;
+  }
+  #brakePressExpand .thumbnails
+  {
+    position: absolute;
+    margin-top: -10vw;
+  }
+  #brakePressExpand ul
+  {
+    margin-left: 10vw;
+    margin-top: 10vw;
+    padding-bottom: 2vw;
+  }
+  #stampingPressContainer li, #brakePressExpand li, #laserCuttingContainer li, #miscEquip li
+  {
+    font-size: 2vw !important;
+    line-height: 3vw;
+  }
+  #laserCuttingContainer ul, #brakePressExpand ul
+  {
+    margin-left: 12vw;
+    position: relative;
+    margin-top: 0vw;
+    padding-bottom: 30vw;
+  }
+  #laserCuttingContainer .thumbnails img, #brakePressExpand .thumbnails img
+  {
+    display: block;
+    clear:both;
+  }
+  #laserCuttingContainer .thumbnails, #brakePressExpand .thumbnails
+  {
+    margin-top: -61vw;
+    margin-left: 0vw;
+    clear:none;
+    width: auto;
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 780px)
+{
+  #equipmentSelection
+  {
+    height: 60vw;
+  }
+  #stampPress, #brakepress, #laserEquip
+  {
+    height: 59.5vw;
+  }
+  #equipSideNav
+  {
+    height: 62vw;
+    top:15vw;
+  }
+}
+@media only screen and (max-width: 768px)
+{
+  /* equipmentSelection divides into 3 separate lines */
+  #equipmentSelection
+  {
+    height: 120vw;
+    margin-top: 15vw;
+  }
+  #stampContainer
+  {
+    display: block;
+    height: 40vw;
+    clear:both;
+    width: 100%;
+    background-image: url("/images/equip/ninja/ninjaLandscape.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  #stampBlackBox
+  {
+    visibility: visible;
+    opacity: .5;
+    background-color: black;
+    height:45vw;
+    margin-top: -2vw;
+  }
+  #stampContainer:hover #stampBlackBox, #brakePressContainer:hover #brakePressBlackBox, #laserEquipContainer:hover #laserEquipBlackBox
+  {
+    opacity: 0;
+  }
+  #stampPressWord
+  {
+    z-index: 10;
+    display: block;
+    margin-top: -85vw;
+    margin-left: 22vw;
+  }
+  #stampPressWord a, #brakePressWord a, #laserEquipWord a
+  {
+    font-size: 10vw;
+  }
+  #stampPress, #brakePress, #laserEquip
+  {
+    visibility: hidden;
+  }
+  #brakePressContainer
+  {
+    display: block;
+    height: 40vw;
+    clear:both;
+    width: 100%;
+    background-image: url("/images/equip/amada/IMG_0815.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  #brakePressBlackBox
+  {
+    visibility: visible;
+    opacity: .5;
+    background-color: black;
+    height:45vw;
+    margin-top: -2vw;
+  }
+  #brakePressWord
+  {
+    z-index: 10;
+    display: block;
+    margin-top: -85vw;
+    margin-left: 22vw;
+  }
+
+  #laserEquipContainer
+  {
+    display: block;
+    height: 40vw;
+    clear: both;
+    width: 100%;
+    background-image: url("/images/equip/laser/IMG_0762.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  #laserEquipBlackBox
+  {
+    visibility: visible;
+    opacity: .5;
+    background-color: black;
+    height:45vw;
+    margin-top: -2vw;
+  }
+  #laserEquipWord
+  {
+    z-index: 10;
+    display: block;
+    margin-top: -85vw;
+    margin-left: 22vw;
+  }
+  /* Location for a elements above */
+  #LocationDivStamp
+  {
+    margin-top: -10vw;
+  }
+/* Meat and Potatos of Equip Page */
+  #equipmentInfo
+  {
+    height: 75vw;
+  }
+  #equipmentInfo li
+  {
+    font-size: 3vw;
+    margin-left: -4vw;
+  }
+  /* LookAtMeContainer on the Equip Page
+  which is the side bar nav for equip*/
+  #LookAtMeContainer
+  {
+    display: none;
+  }
+  /* Hiding H2 elements that are replaced
+  by the .LookAtMeHeading*/
+  #equipmentInfo h2
+  {
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  /* Showing the main subjects headers
+  Stamp Press, Brake Press,
+  Laser Cutting, and Misc Equip */
+  #equipmentContainer p
+  {
+    visibility: visible;
+    display: block;
+    clear:both;
+  }
+  #equipmentContainer p:hover
+  {
+    cursor: pointer;
+  }
+  /* Making LookAtMeVisable
+  but display will remain none
+  until ativated by JavaScript*/
+  .LookAtMeHeading
+  {
+    visibility: visible;
+    padding-left: 1vw;
+    margin-left: 0;
+  }
+  .equip
+  {
+    margin-left: 15vw;
+    position: relative;
+  }
+  #theBoss
+  {
+    display: none;
+  }
+  /* Adjustments to the Divs */
+  #stampingPressContainer
+  {
+    margin-bottom: auto;
+    padding-bottom: 0 !important;
+    padding-left: 0;
+  }
+  #stampingPressContainer ul
+  {
+    padding-bottom: 2vw;
+    margin-left: 17vw;
+  }
+  #bliss h3
+  {
+    margin-left: -15vw;
+  }
+  #brakePressExpand ul
+  {
+    padding-bottom: 7vw;
+  }
+  #brakePressExpand .thumbnails
+  {
+    margin-top: 2vw;
+    top: 0;
+  }
+  #brakePressExpand .equip
+  {
+    padding-bottom: 2vw;
+  }
+  #equipmentInfo
+  {
+    height: auto;
+  }
+  #laserCuttingContainer ul
+  {
+    margin-left: 17vw;
+  }
+}
+@media only screen and (max-width: 609px)
+{
+  #equipmentSelection
+  {
+    margin-top: 12vw;
+    height: 110vw;
+  }
+  #stampContainer
+  {
+    height: 35vw;
+  }
+  #stampBlackBox
+  {
+    height: 35vw;
+    margin-top: -2vw;
+  }
+  #stampPressWord a
+  {
+    font-size: 10vw;
+  }
+  #stampPressWord
+  {
+    margin-left: 20vw;
+    margin-top: -80vw;
+  }
+  #brakePressWord a, #laserEquipWord a
+  {
+    font-size: 10vw;
+  }
+  #brakePressWord, #laserEquipWord
+  {
+    margin-left: 20vw;
+    margin-top: -90vw;
+  }
+  #stampingPressContainer li, #brakePressExpand li, #laserCuttingContainer li, #miscEquip li
+  {
+    font-size: 3vw !important;
+    line-height: normal;
+  }
+  #stampingPressContainer ul
+  {
+    padding-top:2vw;
+    margin-left: 12vw;
+  }
+  .pressMainImage
+  {
+    height: 60vw !important;
+  }
+  #bliss h3
+  {
+    font-size: 3.5vw;
+  }
+  #bliss a
+  {
+    font-size: 3vw;
+  }
+  .brakeMainImage
+  {
+    height: 45vw !important;
+  }
+  #brakePressExpand ul
+  {
+    margin-left: auto;
+  }
+  #brakePressExpand .equip
+  {
+    padding-bottom: 7vw;
+  }
+  #laserCuttingContainer
+  {
+    margin-left: 0vw;
+  }
+  #laserCuttingContainer ul, #laserMainImage
+  {
+    margin-left: 20vw;
+  }
+  #laserCuttingContainer .thumbnails
+  {
+    margin-left: -67vw;
+    margin-top: -75vw;
+  }
+}
+
+@media only screen and (max-width: 580px)
+{
+  #equipmentInfo li
+  {
+    font-size: 4vw;
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 435px)
+{
+  #brakePressExpand .equip
+  {
+    padding-bottom: 10vw;
+    margin-bottom: 2vw;
+    clear: both;
+  }
+}
+@media only screen and (max-width: 414px)
+{
+  #equipmentContainer
+  {
+    padding-bottom: 2vw;
+  }
+  #equipmentContainer p
+  {
+    font-size: 8vw;
+  }
+  #LookAtMeHeading  a
+  {
+    font-size: 6vw;
+  }
+  .thumbnails img
+  {
+    height: 30vw !important;
+  }
+  .pressMainImage
+  {
+    height: 95vw !important;
+  }
+  #stampingPressContainer .thumbnails
+  {
+    margin-left: -25vw;
+  }
+  .equip
+  {
+    margin-left: 4vw;
+  }
+  #stampingPressContainer .equip
+  {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 10vw;
+  }
+  #stampingPressContainer .thumbnails
+  {
+    top: 13vw;
+  }
+  #stampingPressContainer ul
+  {
+    margin-left: 1vw;
+  }
+  #equipmentInfo li
+  {
+    font-size: 4vw !important;
+  }
+  /* Individual Adjustments
+   Descriptions are longer and don't need
+   the larger margin*/
+  #theBoss, #ninja, #chief, #verson300Ton, #bliss, #brave
+  {
+    padding-bottom: 2vw !important;
+  }
+  .brakeMainImage
+  {
+    height: 55vw !important;
+    margin-left: 2vw;
+  }
+  #brakePressExpand .thumbnails img, #laserCuttingContainer .thumbnails img, #miscEquip .thumbnails img
+  {
+    height: 15vw !important;
+  }
+  #brakePressExpand .thumbnails img
+  {
+    display: inline-block;
+  }
+  #brakePressExpand .thumbnails
+  {
+    margin-left: 10vw;
+    margin-top: 60vw;
+  }
+  #brakePressExpand ul
+  {
+    margin-left: 2vw !important;
+    margin-top: 18vw !important;
+  }
+  #brakePressExpand .equip
+  {
+    padding-bottom: 2vw;
+    margin-bottom: 5vw;
+  }
+  #AmadaBrake
+  {
+    padding-bottom: 12vw !important;
+    margin-bottom: 7vw !important;
+  }
+  #laserCuttingContainer
+  {
+    padding-bottom: 10vw;
+  }
+  #laserCuttingContainer ul
+  {
+    padding-bottom: 50vw;
+    padding-left: 2vw;
+    margin-top: 32vw;
+  }
+  #laserCuttingContainer .thumbnails
+  {
+    margin-left: 0;
+    margin-top: 2vw;
+    left: 15vw;
+    top: 58vw;
+    display: inline-block;
+    width: 72vw;
+  }
+  #laserCuttingContainer .thumbnails img
+  {
+    clear: none;
+    display: inline-block;
+  }
+  #laserMainImage
+  {
+    margin-left: 5vw;
+    position: relative;
+  }
+  #miscEquip{
+    padding-bottom: 5vw;
+  }
+}
+@media only screen and (max-width: 357px)
+{
+  #equipmentInfo ul
+  {
+    width: 98%;
+    padding-right: 0;
+  }
+  #stampingPressContainer ul
+  {
+    padding-left: 0;
+  }
+  #equipmentInfo li
+  {
+    font-family: Tahoma, Geneva, sans-serif;
+    white-space: pre-wrap;
+  }
+  #brakePressExpand .equip
+  {
+    margin-bottom: 6vw;
+  }
+  #equipmentInfo li a
+  {
+    font-family: Tahoma, Geneva, sans-serif;
+    white-space: pre-wrap;
+    text-align: center;
+    text-decoration: underline;
+  }
+  #laserCuttingContainer ul
+  {
+    margin-left: 3vw;
+  }
+}
