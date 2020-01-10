@@ -1,0 +1,256 @@
+/* CSS for Carmeco.com/quality.html
+Author: Kelli Stasiak
+Updated:12/03/2019*/
+
+h3
+{
+  text-decoration: underline;
+}
+
+#headerQuality
+{
+  top: 0;
+}
+
+/* Quality Headline Section */
+#QualityContainer
+{
+  background-image: url("/images/sparks.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:25vw;
+  padding-top: 15vw;
+  padding-bottom: 15vw;
+  width: 100%;
+}
+
+/* TRANSPARENT RECTANGLE */
+#box::after
+{
+  content: "";
+  background-color: black;
+  height:25vw;
+  width: 100vw;
+  position: absolute;
+  right:0;
+  opacity: .5;
+  margin-top: -18vw;
+  z-index: 0;
+}
+
+#QualityEquals
+{
+  z-index:5;
+  position: relative;
+  text-align: center;
+}
+
+#QualityEquals h1
+{
+  font-size: 6vw;
+}
+
+#QualityRoomDiv, #QualityPressDiv
+{
+  overflow: auto;
+  padding:2vw;
+}
+
+.QualityStatement
+{
+  position: relative;
+  color: #e3eeaa;
+  text-align: center;
+  padding-bottom: 1vw;
+  clear:both;
+}
+
+#qualityRoomSlide, #qualityPressDivMainImage
+{
+  float: right;
+  margin-right: 6vw;
+  padding-left: 2vw;
+  width:40%;
+  position: relative;
+}
+
+
+#QualityToolsDiv{
+  padding:2vw;
+  position: relative;
+  overflow: auto;
+}
+
+#QualityDescriptions li
+{
+  clear:both;
+  line-height: 3vw;
+  white-space: nowrap;
+}
+
+#QualityToolsDiv ul
+{
+  float: right;
+}
+
+#QualityToolingMainImage
+{
+  position: relative;
+  width: 40%;
+}
+
+/* THUMBNAILS FOR QUALITY EQUIPMENT */
+.thumbnails
+{
+  float: left;
+  position: relative;
+  clear:both;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+.thumbnails img
+{
+  height: 8.15vw;
+  display: inline-block;
+  padding-right: 1vw;
+
+}
+
+@media print
+{
+  #headerQuality
+  {
+    margin-bottom: 1vw;
+  }
+  #QualityContainer
+  {
+    height:10vw;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+  }
+  #qualityRoomSlide, #qualityPressDivMainImage
+  {
+    float:none;
+    margin-left: 27vw;
+  }
+   .col-lg-6
+   {
+     margin-left: 27vw;
+     float:none;
+     width: auto;
+   }
+}
+
+@media only screen and (max-width: 991px){
+  #qualityRoomSlide, #qualityPressDivMainImage, #QualityToolingMainImage
+  {
+    float: none;
+    width: 65vw;
+  }
+
+  #QualityRoomDiv img, #QualityPressDiv img
+  {
+    margin-left: 12vw;
+    margin-right: 12vw;
+    overflow: hidden;
+  }
+  #QualityToolingMainImage
+  {
+    float: right;
+  }
+  li
+  {
+    float: left;
+    font-size: 3vw;
+  }
+  h3, h2
+  {
+    float: none;
+    font-size: 3.5vw;
+    margin-top: 2vw;
+    text-align: center;
+  }
+  #QualityHeader
+  {
+    font-size: 3.5vw;
+  }
+  .thumbnails
+  {
+    margin-top: -2vw;
+    margin-left: 5vw;
+    float: left;
+    position: absolute;
+  }
+  .thumbnails img
+  {
+    padding-top: 2vw;
+    height: 12vw;
+    clear: right;
+    display: block;
+  }
+  #QualityDescriptions li
+  {
+      line-height: 2vw;
+      margin-left: 12vw;
+      margin-top: 2vw;
+  }
+}
+
+@media only screen and (max-width: 768px)
+{
+  #qualityRoomSlide, #qualityPressDivMainImage, #QualityToolingMainImage
+  {
+    width: 65vw;
+  }
+}
+
+@media only screen and (max-width: 500px)
+{
+  .QualityStatement
+  {
+    font-size: 5vw;
+  }
+  .col-xs-12 h3, li
+  {
+    font-size: 4vw;
+    letter-spacing: .25vw;
+  }
+
+  #QualityHeader{
+    font-size: 6vw;
+  }
+
+  #QualityDescriptions li{
+    margin-left: 25vw;
+  }
+
+  .thumbnails{
+    margin-left: 2vw;
+    padding-left: 0vw;
+  }
+
+  .thumbnails img{
+    height: 17vw;
+  }
+}
+
+@media only screen and (max-width: 345px)
+{
+  .QualityStatement
+  {
+    font-size: 6vw;
+  }
+
+  p, li, h3
+  {
+    font-size: 6vw !important;
+  }
+
+  #QualityToolsDiv{
+    overflow: hidden;
+  }
+
+  #QualityDescriptions li{
+    padding:1vw;
+  }
+}
