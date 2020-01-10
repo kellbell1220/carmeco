@@ -23,7 +23,7 @@ Updated:12/02/2019*/
   border-right: 23vw solid black;
   border-bottom: 23vw solid transparent;
   opacity: .5;
-  margin-top: 7.25vw;
+  margin-top: 7vw;
   display: inherit;
 }
 /* TRANSPARENT RECTANGLE */
@@ -36,7 +36,7 @@ Updated:12/02/2019*/
   position: absolute;
   right:0;
   opacity: .5;
-  margin-top: -35.25vw;
+  margin-top: -34.5vw;
   z-index: 0;
 }
 #mission
@@ -48,15 +48,11 @@ Updated:12/02/2019*/
   vertical-align: bottom;
   position: relative;
 }
-#mission h1
-{
-  margin-right:11vw;
-}
+
 /* CAPABILITIES SECTION */
 #capabilities
 {
   border-top: 1px solid #e1e1e1;
-  position: static;
   overflow: hidden;
   width: 100%;
 }
@@ -65,11 +61,18 @@ Updated:12/02/2019*/
   margin: 0;
   padding: 0;
 }
-#indexRow
-{
-  margin:0;
+
+#capabilities a{
+  padding:0;
 }
-#indexRow a
+
+.col-lg-4, .col-md-4, .col-sm-4, .col-xs-4{
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+#capabilities p
 {
   font-size: 3vw;
   font-weight: bold;
@@ -77,227 +80,42 @@ Updated:12/02/2019*/
   position:relative;
   z-index: 2;
 }
-#stampingContainer
-{
-  display: inline-block;
-  overflow: hidden;
-  padding-left: 0;
+
+#capabilities p:hover{
+  color:#e3eeaa;
 }
-#stamping
-{
-  line-height: 25vw;
-  height: 22vw;
-  position: relative;
-  opacity: .7;
-  margin: 0;
-}
+
 #stampingContainer:hover #stamping, #qualityIndexContainer:hover #qualityIndex, #laserContainer:hover #laser,
 #weldingContainer:hover #welding, #toolingContainer:hover #tooling, #facilityContainer:hover #facility,
 #fabContainer:hover #fab, #paintContainer:hover #paint, #logisticsContainer:hover #logistics
 {
   opacity: 1;
 }
-#stampingContainer:hover #stampingWord a, #logisticsContainer:hover #logisticsWord a, #laserContainer:hover #laserWord a,
-#weldingContainer:hover #weldingWord a, #toolingContainer:hover #toolingWord a, #facilityContainer:hover #facilityWord a,
-#qualityIndexContainer:hover #qualityIndexWord a, #fabContainer:hover #fabWord a, #paintContainer:hover #paintWord a
+
+.CapabilitiesDescContainer
 {
-  color: #e3eeaa;
-}
-#stampingWord
-{
-  text-align: center;
-  margin-top: -14vw;
-  margin-left: 8vw;
+  margin-top: -12vw;
   position: absolute;
   line-height: 4vw;
+  width: 100%;
+  margin-bottom: -12vw;
 }
-#laserContainer, #weldingContainer
-{
-  display: inline-block;
-  overflow: hidden;
-  padding-left: 0;
-}
-#laser
-{
-  line-height: 25vw;
-  height: 22vw;
-  position: relative;
-  opacity: .5;
-  margin: 0;
-}
-#laserWord
+
+.CapabilitiesDescContainer p
 {
   text-align: center;
-  margin-top: -14vw;
-  margin-left: 10vw;
-  position: absolute;
-  line-height: 4vw;
 }
-#welding
+
+#capabilities img
 {
-  line-height: 25vw;
   height: 22vw;
   position: relative;
   opacity: .7;
   margin: 0;
+  width:auto;
+  display: block;
 }
-#weldingWord
-{
-  text-align: center;
-  margin-top: -14vw;
-  margin-left: 8vw;
-  position: absolute;
-  line-height: 4vw;
-}
-#indexRow2
-{
-  margin:0;
-}
-#indexRow2 a
-{
-  font-size: 3vw;
-  font-weight: bold;
-  color: white;
-  position:relative;
-  z-index: 1;
-}
-#toolingContainer
-{
-  overflow: hidden;
-  padding-left: 0;
-}
-#tooling
-{
-  line-height: 25vw;
-  height: 22vw;
-  position: relative;
-  opacity: .5;
-  margin: 0;
-}
-#toolingWord
-{
-  text-align: center;
-  margin-top: -14vw;
-  margin-left: 11vw;
-  position: absolute;
-}
-#facility
-{
-  line-height: 25vw;
-  height: 22vw;
-  position: relative;
-  opacity: .6;
-  margin: 0;
-}
-#facilityContainer
-{
-  overflow: hidden;
-  padding-left: 0;
-}
-#facilityWord
-{
-  text-align: center;
-  margin-top: -14vw;
-  margin-left: 10.5vw;
-  position: absolute;
-  line-height: 4vw;
-}
-#qualityIndex
-{
-  line-height: 25vw;
-  height: 22vw;
-  position: relative;
-  opacity: .5;
-  margin: 0;
-}
-#qualityIndexContainer
-{
-  overflow: hidden;
-  padding-left: 0;
-}
-#qualityIndexWord
-{
-  text-align: center;
-  margin-top: -14vw;
-  margin-left: 9vw;
-  position: absolute;
-  line-height: 4vw;
-}
-#indexRow3
-{
-  margin:0;
-}
-#indexRow3 a
-{
-  font-size: 3vw;
-  font-weight: bold;
-  color: white;
-  position:relative;
-  z-index: 1;
-}
-#fabContainer
-{
-  overflow: hidden;
-  padding-left: 0;
-}
-#fab
-{
-  line-height: 25vw;
-  height: 22vw;
-  position: relative;
-  opacity: .5;
-  margin: 0;
-}
-#fabWord
-{
-  text-align: center;
-  margin-top: -14vw;
-  margin-left: 10vw;
-  position: absolute;
-  line-height: 4vw;
-}
-#paint
-{
-  line-height: 25vw;
-  height: 22vw;
-  position: relative;
-  opacity: .5;
-  margin: 0;
-}
-#paintContainer
-{
-  overflow: hidden;
-  padding-left: 0;
-}
-#paintWord
-{
-  text-align: center;
-  margin-top: -14vw;
-  margin-left: 10vw;
-  position: absolute;
-  line-height: 4vw;
-}
-#logistics
-{
-  line-height: 25vw;
-  height: 22vw;
-  position: relative;
-  opacity: .7;
-  margin: 0;
-}
-#logisticsContainer
-{
-  overflow: hidden;
-  padding-left: 0;
-}
-#logisticsWord
-{
-  text-align: center;
-  margin-top: -14vw;
-  margin-left: 11vw;
-  position: absolute;
-  line-height: 4vw;
-}
+
 /* ABOUT SECTION */
 #about
 {
@@ -325,7 +143,7 @@ Updated:12/02/2019*/
 }
 #membership img
 {
-  width:18vw;
+  width:25vw;
   margin: .5vw;
 }
 #sponsers
@@ -336,10 +154,7 @@ Updated:12/02/2019*/
 #sponsers img
 {
   margin: .5vw;
-}
-#sponsers #goCaps
-{
-  width: 18vw;
+  width: 25vw;
 }
 /* ------------------------------------------------------------------MEDIA QUERIES--------------------------------------------------------- */
 @media print
@@ -381,49 +196,16 @@ Updated:12/02/2019*/
     opacity: .5;
   }
 }
-@media only screen and (max-width: 1005px)
-{
-  #certificates img, #membership img
-  {
-    margin: 1vw;
-    width:19vw;
-  }
-  #sponsers #goCaps
-  {
-    width: 25vw;
-  }
-}
 
 @media only screen and (max-width: 780px){
   #box::before{
     top: 2.5vw;
   }
+
   #mission{
     margin-top: 8vw;
   }
-}
 
-@media only screen and (max-width: 768px)
-{
-  #about h2
-  {
-  font-size: 4.5vw;
-  }
-  #certificates img
-  {
-    width: 25vw;
-  }
-  #membership img, #sponsers #goCaps
-  {
-    width: 30vw;
-  }
-  #bottom
-  {
-    font-size: 2vw;
-  }
-}
-@media only screen and (max-width: 551px)
-{
   /* TRANSPARENT TRIANGLE */
   #box:before
   {
@@ -436,30 +218,60 @@ Updated:12/02/2019*/
   {
     width: 100%;
   }
+
+  #whoWeAre{
+    height: 45vw;
+  }
+
   #mission
   {
-    margin-top: 7vw;
+    margin-top: 6vw;
     margin-left: auto;
     margin-right: auto;
   }
+
   #mission h1
   {
     font-size: 7vw;
     text-align: center;
     margin-right: auto;
   }
-  #mission h2
+  #mission h3
   {
     font-size: 4vw;
-    font-weight: normal;
     margin-right: auto;
     text-align: center;
   }
+
+  #capabilities p{
+    font-size: 4vw;
+  }
 }
+
+@media only screen and (max-width: 767px)
+{
+  #certificates img
+  {
+    width: 25vw;
+  }
+  #membership img, #sponsers #goCaps
+  {
+    width: 30vw;
+  }
+  #bottom
+  {
+    font-size: 2vw;
+  }
+
+  #capabilities a{
+    font-size: 5vw;
+  }
+}
+
 
 @media only screen and (max-width: 580px)
 {
-  #indexRow a, #indexRow3 a
+  #capabilities a
   {
     font-size: 6vw;
     font-weight: 500;
@@ -481,11 +293,7 @@ Updated:12/02/2019*/
     margin-left: 3vw;
     margin-top: -16vw;
   }
-  #indexRow2 a
-  {
-    font-size: 6vw;
-    font-weight: 500;
-  }
+
   #toolingWord
   {
     margin-left: 8vw;
@@ -508,6 +316,13 @@ Updated:12/02/2019*/
     margin-top: -16vw;
   }
 }
+
+@media only screen and (max-width: 551px)
+{
+
+
+}
+
 @media only screen and (max-width: 448px)
 {
   #metalStamping h2

@@ -1,6 +1,6 @@
 /* CSS for Carmeco.com/capabilities.html
 Author: Kelli Stasiak
-Updated:12/02/2019*/
+Updated:01/10/2020*/
  .btn-primary
  {
   background-color: inherit;
@@ -33,7 +33,6 @@ Updated:12/02/2019*/
 {
   margin-top: -5vw;
   text-align: center;
-  font-size: 5.5vw;
   clear: both;
   color:#e6dd80;
   text-transform: uppercase;
@@ -44,12 +43,16 @@ Updated:12/02/2019*/
   margin-top: 2vw;
   padding-left: 1vw;
   padding-right: 1vw;
+  position: relative;
 }
+
+#capabilitiesContainer ul{
+  padding-top: 2vw;
+}
+
 #capabilitiesContainer li
 {
   color: white;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5vw;
   display: block;
   clear:both;
   margin-top: -1.5vw;
@@ -67,6 +70,7 @@ Updated:12/02/2019*/
 {
   display: none;
 }
+/* METAL STAMPING SECTION */
 /* This does the linking/mapping from the index page */
 #lookAtMeMetalStamping
 {
@@ -80,23 +84,21 @@ Updated:12/02/2019*/
   background-image: url("/images/parts.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  height:37vw;
   width: 100%;
   position: relative;
   margin-bottom:1vw;
 }
+
 #stampingBox::after
 {
   content: "";
   background-color: black;
-  height: 38vw;
+  height: 100%;
   width: 60vw;
   position: absolute;
-  right:15vw;
+  right:0;
   opacity: .5;
   top:0;
-  margin-right:-15.1vw;
-  z-index: 0;
 }
 #metalStampingSection
 {
@@ -112,7 +114,7 @@ Updated:12/02/2019*/
 #metalStampingSection p
 {
   text-align: left;
-  margin-left:42vw;
+  margin-left: 42vw;
   padding-right: 3vw;
 }
 #metalStampingSection li
@@ -122,9 +124,12 @@ Updated:12/02/2019*/
 }
 #metalStampingSection a
 {
-  float:right;
-  clear:both;
+  float: right;
+  clear: both;
+  margin-bottom: 2vw;
 }
+
+/* LASER SECTION */
 /* This does the linking/mapping from the index page */
 #lookAtMeLaser
 {
@@ -136,33 +141,33 @@ Updated:12/02/2019*/
 #laserCutting
 {
   background-image: url("/images/equip/laser/laser2.jpg");
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  height:37vw;
   width: 100%;
   margin-bottom: 1vw;
   position: relative;
+  height: auto;
+  overflow:hidden;
+  padding-bottom: 2vw;
 }
+
 #laserBox::after
 {
   content: "";
   background-color: black;
-  height: 38vw;
+  height: 100%;
   width: 60vw;
   position: absolute;
-  right:15vw;
   opacity: .5;
   top:0;
   left: 0;
-  z-index: 0;
 }
 #laserSection
 {
-  margin-left: -1vw;
   padding-left: 2vw;
   z-index: 5;
+  height: auto;
   position: relative;
-  text-align: left;
 }
 #laserSection h2
 {
@@ -184,6 +189,8 @@ Updated:12/02/2019*/
   float:left;
   clear:both;
 }
+
+/* WELDING SECTION */
 /* This does the linking/mapping from the index page */
 #lookAtMeWelding
 {
@@ -197,16 +204,18 @@ Updated:12/02/2019*/
   background-image: url("/images/welder1Landscape.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  height:40vw;
   width: 100%;
   margin-bottom: 1vw;
   position: relative;
+  height: auto;
+  overflow:hidden;
+  padding-bottom: 2vw;
 }
 #weldingBox::after
 {
   content: "";
   background-color: black;
-  height: 41vw;
+  height: 100%;
   width: 60vw;
   position: absolute;
   right:15vw;
@@ -256,16 +265,18 @@ Updated:12/02/2019*/
   background-image: url("/images/dieLandscape.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  height:37vw;
   width: 100%;
   margin-bottom: 1vw;
   position: relative;
+  height: auto;
+  overflow:hidden;
+  padding-bottom: 2vw;
 }
 #toolingBox::after
 {
   content: "";
   background-color: black;
-  height: 38vw;
+  height: 100%;
   width: 60vw;
   position: absolute;
   right:15vw;
@@ -302,63 +313,7 @@ Updated:12/02/2019*/
   float:left;
   clear:both;
 }
-/* This does the linking/mapping from the index page */
-#lookAtMeFab
-{
-  display: block;
-  height: 10vw;
-  margin-top: -10vw;
-  visibility: hidden;
-}
-#fabShop
-{
-  background-image: url("/images/weld2Landscape.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-  height:37vw;
-  width: 100%;
-  margin-bottom: 1vw;
-  position: relative;
-}
-#fabBox::after
-{
-  content: "";
-  background-color: black;
-  height: 38vw;
-  width: 60vw;
-  position: absolute;
-  right:15vw;
-  opacity: .5;
-  top:0;
-  margin-right:-15.1vw;
-  z-index: 0;
-}
-#fabSection
-{
-  padding-right: 2vw;
-  z-index: 5;
-  position: relative;
-}
-#fabSection h2
-{
-  padding-top: 2vw;
-  text-align: left;
-}
-#fabSection p
-{
-  width: 56vw;
-  text-align: left;
-  padding-right: 3vw;
-}
-#fabSection li
-{
-  text-align: left;
-}
-#fabSection a
-{
-  float:right;
-  clear:both;
-}
+
 /* This does the linking/mapping from the index page */
 #lookAtMeQuality
 {
@@ -372,16 +327,18 @@ Updated:12/02/2019*/
   background-image: url("/images/randyLandscape.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  height:39vw;
   width: 100%;
   margin-bottom: 1vw;
   position: relative;
+  height: auto;
+  overflow:hidden;
+  padding-bottom: 2vw;
 }
 #qualityBox::after
 {
   content: "";
   background-color: black;
-  height: 40vw;
+  height: 100%;
   width: 60vw;
   position: absolute;
   right: 15vw;
@@ -432,16 +389,18 @@ Updated:12/02/2019*/
   background-image: url("/images/weld2Landscape.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  height:37vw;
   width: 100%;
   margin-bottom: 1vw;
   position: relative;
+  height: auto;
+  overflow:hidden;
+  padding-bottom: 2vw;
 }
 #fabBox::after
 {
   content: "";
   background-color: black;
-  height: 38vw;
+  height: 100%;
   width: 60vw;
   position: absolute;
   right:15vw;
@@ -491,16 +450,18 @@ Updated:12/02/2019*/
   background-image: url("/images/paintLandscape.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  height:37vw;
   width: 100%;
   margin-bottom: 1vw;
   position: relative;
+  height: auto;
+  overflow:hidden;
+  padding-bottom: 2vw;
 }
 #paintBox::after
 {
   content: "";
   background-color: black;
-  height: 38vw;
+  height: 100%;
   width: 60vw;
   position: absolute;
   right:15vw;
@@ -550,16 +511,18 @@ Updated:12/02/2019*/
   background-image: url("/images/truckLandscape.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  height:37vw;
   width: 100%;
   margin-bottom: 1vw;
   position: relative;
+  height: auto;
+  overflow:hidden;
+  padding-bottom: 2vw;
 }
 #deliveryBox::after
 {
   content: "";
   background-color: black;
-  height: 38vw;
+  height: 100%;
   width: 60vw;
   position: absolute;
   right:15vw;
@@ -614,7 +577,6 @@ Updated:12/02/2019*/
   {
      margin-top: -15vw;
      color: black !important;
-     font-size: 5vw;
      margin-left: 3vw;
   }
   #capabilitiesContainer
@@ -738,14 +700,6 @@ Updated:12/02/2019*/
 
 @media only screen and (max-width: 1047px)
 {
-  #quality
-  {
-    height:45vw;
-  }
-  #qualityBox::after
-  {
-    height:47vw;
-  }
   #isoLogo
   {
     margin-left: -22vw;
@@ -767,25 +721,9 @@ Updated:12/02/2019*/
 
 @media only screen and (max-width: 990px)
 {
-  #metalStamping
-  {
-    height: 40vw;
-  }
-  #stampingBox::after
-  {
-    height: 42vw;
-  }
   #metalStampingSection p
   {
     padding-right: 2vw;
-  }
-  #customWelding
-  {
-    height: 40vw;
-  }
-  #weldingBox::after
-  {
-    height: 41vw;
   }
   #weldingSection p
   {
@@ -799,134 +737,14 @@ Updated:12/02/2019*/
 
 @media only screen and (max-width: 810px)
 {
-  #capabilitiesContainer li
-  {
-    font-size: 2vw;
-  }
   .btn-primary
   {
     font-size: 2vw;
-  }
-  #metalStamping
-  {
-    height: 50vw;
-  }
-  #stampingBox::after
-  {
-    height: 52vw;
-  }
-  #laserCutting
-  {
-    height: 35vw;
-  }
-  #laserBox::after
-  {
-    height: 36vw;
-  }
-  #customWelding
-  {
-    height: 40vw;
-  }
-  #weldingBox::after
-  {
-    height: 41vw;
-  }
-  #toolingService
-  {
-    height: 40vw;
-  }
-  #toolingBox::after
-  {
-    height: 41vw;
-  }
-  #metalForming
-  {
-    height: 45vw;
-  }
-  #formingBox::after
-  {
-    height: 46vw;
-  }
-  #quality
-  {
-    height: 45vw;
-  }
-  #qualityBox::after
-  {
-    height: 46vw;
-  }
-  #fabShop
-  {
-    height: 35vw;
-  }
-  #fabBox::after
-  {
-    height: 36vw;
-  }
-  #delivery
-  {
-    height: 35vw;
-  }
-  #deliveryBox::after
-  {
-    height: 36vw;
-  }
-  #paintService
-  {
-    height: 32vw;
-  }
-  #paintBox::after
-  {
-    height: 33vw;
-  }
-}
-
-@media only screen and (max-width: 768px)
-{
-  #stampingBox::after
-  {
-    height: 47vw;
-  }
-  #metalStamping
-  {
-    height: 45vw;
-  }
-  #toolingService
-  {
-    height: 40vw;
-  }
-  #toolingBox::after
-  {
-    height: 41vw;
-  }
-  #metalForming
-  {
-    height: 45vw;
-  }
-  #formingBox::after
-  {
-    height: 46vw;
-  }
-  #fabShop
-  {
-    height: 35vw;
-  }
-  #fabBox::after
-  {
-    height: 36vw;
   }
 }
 
 @media only screen and (max-width: 659px)
 {
-  #metalStamping
-  {
-    height: 55vw;
-  }
-  #stampingBox::after
-  {
-    height: 57vw;
-  }
   #metalStamping p
   {
     padding-right: 4vw;
@@ -947,121 +765,27 @@ Updated:12/02/2019*/
 
 @media only screen and (max-width: 575px)
 {
-  #metalStamping
-  {
-    height: 58vw;
-  }
-  #stampingBox::after
-  {
-    height: 60vw;
-  }
-  #laserCutting
-  {
-    height: 40vw;
-  }
-  #laserBox::after
-  {
-    height: 42vw;
-  }
-  #customWelding
-  {
-    height: 45vw;
-  }
-  #weldingBox::after
-  {
-    height: 47vw;
-  }
-  #toolingService
-  {
-    height: 48vw;
-  }
-  #toolingBox::after
-  {
-    height: 50vw;
-  }
-  #metalForming
-  {
-    height: 48vw;
-  }
-  #formingBox::after
-  {
-    height:50vw;
-  }
-  #quality
-  {
-    height: 63vw;
-  }
-  #qualityBox::after
-  {
-    height: 65vw;
-  }
   #isoLogo
   {
     margin-left: -33vw;
     margin-top: 20vw;
     width: 25vw;
   }
-  #fabShop
-  {
-    height:48vw;
-  }
-  #fabBox::after
-  {
-    height:50vw;
-  }
-  #delivery
-  {
-    height: 45vw;
-  }
-  #deliveryBox::after
-  {
-    height: 47vw;
-  }
-  #paintService
-  {
-    height: 40vw;
-  }
-  #paintBox::after
-  {
-    height: 41vw;
-  }
-}
-
-@media only screen and (max-width: 531px)
-{
-  #stampingBox::after
-  {
-    height:62vw;
-  }
 }
 
 @media only screen and (max-width: 500px)
 {
-  #capabilitiesContainer h2
-  {
-    font-size: 5vw;
-  }
-  #capabilitiesContainer p
-  {
-    font-size: 3vw;
-  }
   #capabilitiesContainer li
   {
     margin-top: -2vw;
-    font-size: 3vw;
   }
   .btn-primary
   {
     font-size: 3vw;
   }
-  #metalStamping
-  {
-    height: 65vw;
-  }
   #stampingBox::after
   {
     width: 100%;
-    height:67vw;
   }
   #metalStampingSection
   {
@@ -1087,14 +811,12 @@ Updated:12/02/2019*/
   }
   #laserCutting
   {
-    height: 55vw;
     background-attachment:local;
     background-position: 80% 50%;
   }
   #laserBox::after
   {
     width: 100%;
-    height: 56vw;
   }
   #laserSection
   {
@@ -1118,14 +840,9 @@ Updated:12/02/2019*/
   {
     margin-right: 2vw;
   }
-  #customWelding
-  {
-    height: 50vw;
-  }
   #weldingBox::after
   {
     width: 100%;
-    height: 52vw;
   }
   #weldingSection
   {
@@ -1151,14 +868,12 @@ Updated:12/02/2019*/
   }
   #toolingService
   {
-    height: 60vw;
     background-attachment: local;
     background-position: 50% 50%;
   }
   #toolingBox::after
   {
     width: 100%;
-    height: 61vw;
   }
   #toolingSection
   {
@@ -1182,14 +897,9 @@ Updated:12/02/2019*/
   {
     margin-right: 2vw;
   }
-  #quality
-  {
-    height:60vw;
-  }
   #qualityBox::after
   {
     width: 100%;
-    height: 62vw;
   }
   #qualitySection
   {
@@ -1249,14 +959,9 @@ Updated:12/02/2019*/
   {
     margin-right: 2vw;
   }
-  #paintService
-  {
-    height: 45vw;
-  }
   #paintBox::after
   {
     width: 100%;
-    height: 46vw;
   }
   #paintSection
   {
@@ -1280,14 +985,9 @@ Updated:12/02/2019*/
   {
     margin-right: 2vw;
   }
-  #delivery
-  {
-    height: 55vw;
-  }
   #deliveryBox::after
   {
     width: 100%;
-    height: 56vw;
   }
   #deliverySection
   {
@@ -1316,14 +1016,6 @@ Updated:12/02/2019*/
 }
 @media only screen and (max-width: 429px)
 {
-  #quality
-  {
-    height:67vw;
-  }
-  #qualityBox::after
-  {
-    height: 68vw;
-  }
   #isoLogo
   {
     margin-top: 15vw;
@@ -1333,74 +1025,22 @@ Updated:12/02/2019*/
 
 @media only screen and (max-width: 350px)
 {
-  #capabilitiesContainer h2
-  {
-    font-size: 6vw;
-  }
-  #capabilitiesContainer p
-  {
-    font-size: 5vw;
-  }
-  #capabilitiesContainer li
-  {
-    font-size: 5vw;
-  }
-  .btn-primary
-  {
-    font-size: 5vw;
-  }
-  #metalStamping
-  {
-    height: 125vw;
-  }
-  #stampingBox::after
-  {
-    height:127vw;
-  }
   #laserCutting
   {
-    height: 85vw;
     background-position: right;
-  }
-  #laserBox::after
-  {
-    height: 87vw;
   }
   #customWelding
   {
-    height:115vw;
     background-position: bottom;
     background-image: url("/images/welderPortrait.jpg");
   }
-  #weldingBox::after
-  {
-    height: 117vw;
-  }
   #toolingService
   {
-    height:110vw;
     background-position: center;
-  }
-  #toolingBox:after
-  {
-    height: 112vw;
-  }
-  #metalForming
-  {
-    height: 110vw;
-  }
-  #formingBox::after
-  {
-    height: 112vw;
   }
   #quality
   {
-    height: 130vw;
     background-position: 30% 50%;
-  }
-  #qualityBox::after
-  {
-    height: 132vw;
   }
   #isoLogo
   {
@@ -1408,36 +1048,5 @@ Updated:12/02/2019*/
     float: left;
     margin-left: -66vw;
     width:45vw;
-  }
-  #fabShop
-  {
-    height:110vw;
-  }
-  #fabBox:after
-  {
-    height: 112vw;
-  }
-  #paintService
-  {
-    height: 100vw;
-  }
-  #paintBox::after
-  {
-    height: 102vw;
-  }
-  #delivery
-  {
-    height: 95vw;
-  }
-  #deliveryBox::after
-  {
-    height: 96vw;
-  }
-}
-@media only screen and (max-width: 340px)
-{
-  #ourTeam h1
-  {
-    font-size: 5vw;
   }
 }
