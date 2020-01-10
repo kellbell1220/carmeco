@@ -141,7 +141,63 @@ var miscEquipPictures = [
   "images/equip/miscEquip/IMG_0643.jpg"
 ];
 
+var qualityEquipmentPictures = [
+  "images/quality/IMG_9032.jpg",
+  "images/quality/IMG_9031.jpg",
+  "images/quality/IMG_9020.jpg"
+];
+var qualityEquipmentHeaders =[
+  "Mitutoyo",
+  "Second Equipment",
+  "Third Equip"
+];
+
+var mitutoyoDescription =[
+  "Mitutoyo first desc",
+  "Mitutoyo second desc",
+  "Mitutoyo third desc"
+];
+
+var secondDescription =[
+  "second Sample Description",
+  "Second Description",
+];
+
+var thirdDescription =[
+  "third Sample Description",
+  "third Description",
+];
+
+function swapPhotoHeaderLi(i, mainImage, imageArray, headerElement, headerArray, ulContainerElement, ulDescriptionArray){
+  swapPhotos(i, mainImage, imageArray);
+  swapHeader(i, headerElement, headerArray);
+  deleteExsistingChildElements(ulContainerElement);
+  createLI(ulContainerElement, ulDescriptionArray);
+}
+
 // THIS IS THE FUNCTIONS THAT CONTROL THE IMAGE GALLERY
 function swapPhotos(i, mainImage, imageArray) {
   document.getElementById(mainImage).src= imageArray[i];
+}
+
+//ChangeHeader
+function swapHeader(i, headerElement, headerArray){
+  document.getElementById(headerElement).innerHTML = headerArray[i];
+}
+
+// Delete old li Elements
+function deleteExsistingChildElements(parentContainer){
+  var parentID = document.getElementById(parentContainer);
+  parentID.querySelectorAll('*').forEach(x => x.remove());
+}
+
+//Create New LI elements
+function createLI(ulContainerElement, ulDescriptionArray){
+  var ul = document.getElementById(ulContainerElement);
+  for(j = 0; j < ulDescriptionArray.length; j++){
+    var description = ulDescriptionArray[j];
+    var li = document.createElement('li');
+    li.appendChild(document.createTextNode(description));
+    ul.appendChild(li);
+  }
 }
