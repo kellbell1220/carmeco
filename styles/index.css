@@ -263,6 +263,12 @@ Updated:01/13/2020*/
   }
 }
 
+@media only screen and (max-width: 609px)
+{
+  h3{
+    font-size: 4vw;
+  }
+}
 
 @media only screen and (max-width: 575px)
 {

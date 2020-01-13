@@ -1,25 +1,28 @@
 /* CSS for Carmeco.com/contact.html
 Author: Kelli Stasiak
-Updated:12/02/2019*/
-#headerContact
-{
-  top: 0;
-}
+Updated:01/13/2020*/
+
 #contactDiv
 {
   background-image: url("/images/metal.png");
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
+  width: 99%;
+  padding-top: 7vw;
+  padding-bottom: 2vw;
 }
 #lookingForward
 {
-  position: relative;
-  padding-top: 10vw;
-  margin-top: 2vw;
   color: #e3eeaa;
   text-align: center;
   padding-bottom: 1vw;
 }
+
+h2 a{
+  font-size: 3vw;
+  font-weight: normal;
+}
+
 #greeting
 {
   padding-top: 1vw;
@@ -29,29 +32,19 @@ Updated:12/02/2019*/
 #contactSlide
 {
   float: right;
-  margin-top: 3vw;
   margin-right: 6vw;
   padding-left: 2vw;
   width:50%;
-  position: relative;
 }
 #contactList
 {
-  height: 33vw;
   width:35%;
   margin-left: 5vw;
   padding-top: 1vw;
-  top: 8vw;
   text-align: center;
+  float: left;
 }
-#contactList a
-{
-  font-size: 3vw !important;
-}
-#contactList p
-{
-  font-size: 2vw;
-}
+
 @media print
 {
   #lookingForward
@@ -101,9 +94,8 @@ Updated:12/02/2019*/
 }
 @media only screen and (max-width: 780px)
 {
-  #lookingForward
-  {
-    margin-top: 10vw;
+  #contactDiv{
+    padding-top: 16vw;
   }
 }
 
@@ -117,23 +109,13 @@ Updated:12/02/2019*/
     margin-top: 2vw;
     padding-top: 0;
     margin-bottom: 2vw;
-    position: static;
-  }
-  #greeting
-  {
-    width:auto;
-    margin-right: 0;
+    position: relative;
   }
   #contactList
   {
     width: 95%;
-    overflow-y: initial;
-    overflow-x: visible;
-    height: auto;
-    margin-top: -10vw;
     margin-left: 1vw;
     margin-right: 1vw;
-    padding-bottom: 8vw;
     position: relative;
   }
   #contactList p
@@ -148,10 +130,9 @@ Updated:12/02/2019*/
 @media only screen and (max-width: 609px){
   #lookingForward
   {
-    margin-top: 5vw;
     padding-bottom: 0;
     margin-bottom: 0;
-    font-size: 6vw;
+    font-size: 6.5vw;
   }
   #greeting
   {
@@ -175,7 +156,6 @@ Updated:12/02/2019*/
     width: 95%;
     overflow-y: initial;
     overflow-x: visible;
-    margin-top: -10vw;
     margin-left: 1vw;
     margin-right: 1vw;
     position: relative;

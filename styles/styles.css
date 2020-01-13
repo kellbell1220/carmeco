@@ -21,7 +21,7 @@ h1, h2{
   padding:1vw;
 }
 h3{
-  color:white;
+  color:#fff;
   font-weight: bold;
 }
 h4
@@ -256,13 +256,13 @@ footer a:visited
 .contactInfo
 {
   margin-left: 2vw;
+  float:left;
 }
 /* Used on Capabilites, Equip, GreenInit, and About Pages */
 .hours
 {
-  float: right;
+  float:right;
   margin-right: 2vw;
-  margin-top: -10.75vw;
 }
 #bottom
 {
@@ -366,10 +366,6 @@ footer a:visited
   {
     font-size: 3vw;
   }
-  .hours
-  {
-    margin-top: -14.75vw;
-  }
 }
 @media only screen and (max-width: 780px)
 {
@@ -443,7 +439,9 @@ footer a:visited
   h2{
     font-size: 7vw;
   }
-
+  h3{
+    font-size: 5vw;
+  }
   header
   {
     height: 12vw;
@@ -534,6 +532,7 @@ footer a:visited
     float: none;
     margin-top: 2vw;
     margin-left: 2vw;
+    clear:both;
   }
   #bottom{
     font-size: 3vw !important;
@@ -612,5 +611,8 @@ footer a:visited
   h1{
     font-size: 8vw;
   }
-
+  h3{
+    font-size: 6vw;
+    font-weight: normal;
+  }
 }
