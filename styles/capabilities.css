@@ -1,6 +1,6 @@
 /* CSS for Carmeco.com/capabilities.html
 Author: Kelli Stasiak
-Updated:01/10/2020*/
+Updated:01/13/2020*/
  .btn-primary
  {
   background-color: inherit;
@@ -22,7 +22,6 @@ Updated:01/10/2020*/
 #ourTeam
 {
   height:56vw;
-  padding: 15vw;
   overflow: hidden;
   background-image: url("/images/team4.jpg");
   background-size:cover;
@@ -31,7 +30,7 @@ Updated:01/10/2020*/
 }
 #ourTeam h1
 {
-  margin-top: -5vw;
+  margin-top: 15vw;
   text-align: center;
   clear: both;
   color:#e6dd80;
@@ -45,6 +44,11 @@ Updated:01/10/2020*/
   padding-right: 1vw;
   position: relative;
 }
+
+#capabilitiesContainer ul{
+  padding-top: 2vw;
+}
+
 #capabilitiesContainer li
 {
   color: white;
@@ -121,7 +125,7 @@ Updated:01/10/2020*/
 {
   float: right;
   clear: both;
-  margin: 2vw;
+  margin-bottom: 2vw;
 }
 
 /* LASER SECTION */
@@ -145,9 +149,6 @@ Updated:01/10/2020*/
   overflow:hidden;
   padding-bottom: 2vw;
 }
-/* #laserBox{
-  height: 100%;
-} */
 
 #laserBox::after
 {
@@ -688,24 +689,6 @@ Updated:01/10/2020*/
   }
 }
 
-@media only screen and (max-width: 1120px)
-{
-  #ourTeam h1
-  {
-    margin-top: 0vw;
-  }
-}
-
-@media only screen and (max-width: 1047px)
-{
-  #isoLogo
-  {
-    margin-left: -22vw;
-    margin-top: 13vw;
-    width: 20vw;
-    position: absolute;
-  }
-}
 
 @media only screen and (max-width: 1037px)
 {
@@ -741,50 +724,17 @@ Updated:01/10/2020*/
   }
 }
 
-@media only screen and (max-width: 659px)
+@media only screen and (max-width: 780px)
 {
-  #metalStamping p
-  {
-    padding-right: 4vw;
+  #ourTeam h1{
+    margin-top: 15vw;
   }
-  #metalForming p
-  {
-    padding-right: 4vw;
-  }
-}
 
-@media only screen and (max-width: 609px)
-{
-  #ourTeam img
-  {
-    width:97vw;
-  }
-}
-
-@media only screen and (max-width: 575px)
-{
-  #isoLogo
-  {
-    margin-left: -33vw;
-    margin-top: 20vw;
-    width: 25vw;
-  }
-}
-
-@media only screen and (max-width: 500px)
-{
-  #capabilitiesContainer li
-  {
-    margin-top: -2vw;
-  }
-  .btn-primary
-  {
-    font-size: 3vw;
-  }
   #stampingBox::after
   {
     width: 100%;
   }
+
   #metalStampingSection
   {
     padding-right: 0vw;
@@ -807,11 +757,7 @@ Updated:01/10/2020*/
   {
     margin-right: 2vw;
   }
-  #laserCutting
-  {
-    background-attachment:local;
-    background-position: 80% 50%;
-  }
+
   #laserBox::after
   {
     width: 100%;
@@ -863,11 +809,6 @@ Updated:01/10/2020*/
   #weldingSection a
   {
     margin-right: 2vw;
-  }
-  #toolingService
-  {
-    background-attachment: local;
-    background-position: 50% 50%;
   }
   #toolingBox::after
   {
@@ -923,14 +864,12 @@ Updated:01/10/2020*/
   }
   #isoLogo
   {
+    margin-left: -33vw;
     margin-top: 15vw;
-    width:30vw;
+    width: 23vw;
+    position: static;
   }
-  #fabShop
-  {
-    background-attachment: local;
-    background-position: 70% 50%;
-  }
+
   #fabBox::after
   {
     width: 100%;
@@ -1012,6 +951,71 @@ Updated:01/10/2020*/
     margin-right: 4vw;
   }
 }
+
+@media only screen and (max-width: 659px)
+{
+  #metalStamping p
+  {
+    padding-right: 4vw;
+  }
+  #metalForming p
+  {
+    padding-right: 4vw;
+  }
+}
+
+@media only screen and (max-width: 609px)
+{
+  #ourTeam h1{
+    margin-top: 15vw;
+  }
+  #ourTeam img
+  {
+    width:97vw;
+  }
+
+  .btn-primary{
+    font-size: 4vw;
+  }
+
+  #laserCutting
+  {
+    background-attachment:local;
+    background-position: 80% 50%;
+  }
+
+  #toolingService
+  {
+    background-attachment: local;
+    background-position: 50% 50%;
+  }
+
+  #isoLogo
+  {
+    margin-top: 25vw;
+    width:30vw;
+  }
+
+  #fabShop
+  {
+    background-attachment: local;
+    background-position: 70% 50%;
+  }
+}
+
+@media only screen and (max-width: 575px){
+  #isoLogo{
+    margin-top: 15vw;
+  }
+}
+
+@media only screen and (max-width: 500px)
+{
+  #capabilitiesContainer li
+  {
+    margin-top: -2vw;
+  }
+}
 @media only screen and (max-width: 429px)
 {
   #isoLogo
@@ -1023,6 +1027,9 @@ Updated:01/10/2020*/
 
 @media only screen and (max-width: 350px)
 {
+  #ourTeam h1{
+    margin-top: 14vw;
+  }
   #laserCutting
   {
     background-position: right;

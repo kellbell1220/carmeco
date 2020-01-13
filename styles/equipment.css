@@ -149,7 +149,6 @@ Updated:12/02/2019*/
 #equipmentInfo
 {
   position: relative;
-  height: auto;
   padding: 1vw;
   margin: 1vw;
   top: 0;
@@ -284,6 +283,12 @@ on-click javascript will display list */
   font-size: 1.25vw !important;
   white-space: nowrap;
 }
+
+#laserCuttingContainer ul, #miscEquip ul
+{
+  padding-left: 1.5vw;
+}
+
 #stampingPressContainer ul
 {
   margin-left: 5vw;
@@ -894,6 +899,10 @@ Will be redisplayed on-click through JavaScript */
     padding-bottom: 10vw;
     margin-bottom: 2vw;
     clear: both;
+  }
+
+  .LookAtMeHeading a{
+    font-size: 4vw;
   }
 }
 @media only screen and (max-width: 414px)

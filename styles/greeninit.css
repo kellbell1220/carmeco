@@ -1,6 +1,11 @@
 /* CSS for Carmeco.com/greeninit.html
 Author: Kelli Stasiak
 Updated:12/02/2019*/
+li::before{
+  content: "✓";
+  padding-right: 1vw;
+}
+
 #intro
 {
   padding-top:10vw;

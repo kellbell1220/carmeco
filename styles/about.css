@@ -23,6 +23,11 @@ Updated:12/02/2019*/
     margin-top: 0vw;
     margin-right: 2vw;
   }
+
+  #aboutNav li::before{
+    content: "";
+  }
+
   #aboutNav p:hover
   {
     color:#e3eeaa;
