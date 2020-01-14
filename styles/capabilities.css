@@ -69,14 +69,20 @@ Updated:01/13/2020*/
 {
   display: none;
 }
+/* This does the linking/mapping from the index page */
+.LookAtMe
+{
+  display: block;
+  height: 10vw;
+  margin-top: -10vw;
+  visibility: hidden;
+}
 /* METAL STAMPING SECTION */
 /* This does the linking/mapping from the index page */
 #lookAtMeMetalStamping
 {
-  display: block;
   height: 12vw;
   margin-top: -12vw;
-  visibility: hidden;
 }
 #metalStamping
 {
@@ -129,14 +135,6 @@ Updated:01/13/2020*/
 }
 
 /* LASER SECTION */
-/* This does the linking/mapping from the index page */
-#lookAtMeLaser
-{
-  display: block;
-  height: 10vw;
-  margin-top: -10vw;
-  visibility: hidden;
-}
 #laserCutting
 {
   background-image: url("/images/equip/laser/laser2.jpg");
@@ -191,13 +189,6 @@ Updated:01/13/2020*/
 
 /* WELDING SECTION */
 /* This does the linking/mapping from the index page */
-#lookAtMeWelding
-{
-  display: block;
-  height: 10vw;
-  margin-top: -10vw;
-  visibility: hidden;
-}
 #customWelding
 {
   background-image: url("/images/welder1Landscape.jpg");
@@ -246,19 +237,7 @@ Updated:01/13/2020*/
   text-align: left;
   margin-left:42vw;
 }
-#weldingSection a
-{
-  float:right;
-  clear:both;
-}
-/* This does the linking/mapping from the index page */
-#lookAtMeTooling
-{
-  display: block;
-  height: 10vw;
-  margin-top: -10vw;
-  visibility: hidden;
-}
+/* TOOLING */
 #toolingService
 {
   background-image: url("/images/dieLandscape.jpg");
@@ -307,20 +286,8 @@ Updated:01/13/2020*/
   text-align: left;
   float:left;
 }
-#toolingSection a
-{
-  float:left;
-  clear:both;
-}
 
-/* This does the linking/mapping from the index page */
-#lookAtMeQuality
-{
-  display: block;
-  height: 10vw;
-  margin-top: -10vw;
-  visibility: hidden;
-}
+/* QUALITY */
 #quality
 {
   background-image: url("/images/randyLandscape.jpg");
@@ -375,14 +342,7 @@ Updated:01/13/2020*/
   float:right;
   clear:both;
 }
-/* This does the linking/mapping from the index page */
-#lookAtMeFab
-{
-  display: block;
-  height: 10vw;
-  margin-top: -10vw;
-  visibility: hidden;
-}
+/* FAB */
 #fabShop
 {
   background-image: url("/images/weld2Landscape.jpg");
@@ -431,19 +391,8 @@ Updated:01/13/2020*/
   text-align: left;
   float: left;
 }
-#fabSection a
-{
-  float:left;
-  clear:both;
-}
-/* This does the linking/mapping from the index page */
-#lookAtMePaint
-{
-  display: block;
-  height: 10vw;
-  margin-top: -10vw;
-  visibility: hidden;
-}
+
+/* PAINT */
 #paintService
 {
   background-image: url("/images/paintLandscape.jpg");
@@ -492,19 +441,8 @@ Updated:01/13/2020*/
   text-align: left;
   float:left;
 }
-#paintSection a
-{
-  float:left;
-  clear:both;
-}
-/* This does the linking/mapping from the index page */
-#lookAtMeDelivery
-{
-  display: block;
-  height: 10vw;
-  margin-top: -10vw;
-  visibility: hidden;
-}
+
+/* DELIVERY */
 #delivery
 {
   background-image: url("/images/truckLandscape.jpg");
@@ -556,11 +494,7 @@ Updated:01/13/2020*/
   text-align: left;
   margin-left: 42vw;
 }
-#deliverySection a
-{
-  float:right;
-  clear:both;
-}
+
 @media print
 {
   #ourTeam
@@ -702,15 +636,7 @@ Updated:01/13/2020*/
 
 @media only screen and (max-width: 990px)
 {
-  #metalStampingSection p
-  {
-    padding-right: 2vw;
-  }
-  #weldingSection p
-  {
-    padding-right: 2vw;
-  }
-  #fabSection p
+  #metalStampingSection p, #weldingSection p, #fabSection p
   {
     padding-right: 2vw;
   }
@@ -730,138 +656,41 @@ Updated:01/13/2020*/
     margin-top: 15vw;
   }
 
-  #stampingBox::after
-  {
-    width: 100%;
-  }
-
-  #metalStampingSection
-  {
-    padding-right: 0vw;
-  }
-  #metalStampingSection h2
+  #capabilitiesContainer h2
   {
     padding-top: 2vw;
     margin-left: 2vw;
   }
-  #metalStampingSection p
+
+  #capabilitiesContainer p
   {
     width: 80vw;
-    margin-left:2vw;
+    margin-left:4vw;
   }
-  #metalStampingSection li
+
+  #capabilitiesContainer li
   {
-    margin-left:2vw;
+    margin-left:4vw;
   }
-  #metalStampingSection a
+  #capabilitiesContainer a
   {
     margin-right: 2vw;
   }
 
-  #laserBox::after
+  #stampingBox::after,#laserBox::after,#weldingBox::after,
+  #toolingBox::after, #qualityBox::after, #fabBox::after,
+  #paintBox::after, #deliveryBox::after
   {
     width: 100%;
   }
-  #laserSection
+
+  #metalStampingSection, #laserSection, #weldingSection,
+  #toolingSection, #qualitySection, #fabSection,
+  #paintSection, #deliverySection
   {
     padding-right: 0vw;
   }
-  #laserSection h2
-  {
-    padding-top: 2vw;
-    margin-left: 4vw;
-  }
-  #laserSection p
-  {
-    width: 80vw;
-    margin-left: 4vw;
-  }
-  #laserSection li
-  {
-    margin-left: 4vw;
-  }
-  #laserSection a
-  {
-    margin-right: 2vw;
-  }
-  #weldingBox::after
-  {
-    width: 100%;
-  }
-  #weldingSection
-  {
-    padding-right: 0vw;
-  }
-  #weldingSection h2
-  {
-    padding-top: 2vw;
-    margin-left: 4vw;
-  }
-  #weldingSection p
-  {
-    width: 80vw;
-    margin-left: 4vw;
-  }
-  #weldingSection li
-  {
-    margin-left: 4vw;
-  }
-  #weldingSection a
-  {
-    margin-right: 2vw;
-  }
-  #toolingBox::after
-  {
-    width: 100%;
-  }
-  #toolingSection
-  {
-    padding-right: 0vw;
-  }
-  #toolingSection h2
-  {
-    padding-top: 2vw;
-    margin-left: 4vw;
-  }
-  #toolingSection p
-  {
-    width: 80vw;
-    margin-left: 4vw;
-  }
-  #toolingSection li
-  {
-    margin-left: 4vw;
-  }
-  #toolingSection a
-  {
-    margin-right: 2vw;
-  }
-  #qualityBox::after
-  {
-    width: 100%;
-  }
-  #qualitySection
-  {
-    padding-right: 0vw;
-  }
-  #qualitySection h2
-  {
-    padding-top: 2vw;
-    margin-left: 4vw;
-  }
-  #qualitySection p
-  {
-    width: 80vw;
-    margin-left: 4vw;
-  }
-  #qualitySection li
-  {
-    margin-left: 4vw;
-  }
-  #qualitySection a
-  {
-    margin-right: 2vw;
-  }
+
   #isoLogo
   {
     margin-left: -33vw;
@@ -870,85 +699,9 @@ Updated:01/13/2020*/
     position: static;
   }
 
-  #fabBox::after
-  {
-    width: 100%;
-  }
-  #fabSection
-  {
-    padding-right: 0vw;
-  }
-  #fabSection h2
-  {
-    padding-top: 2vw;
-    margin-left: 4vw;
-  }
-  #fabSection p
-  {
-    width: 80vw;
-    margin-left:4vw;
-  }
-  #fabSection li
-  {
-    margin-left:4vw;
-  }
-  #fabSection a
-  {
-    margin-right: 2vw;
-  }
-  #paintBox::after
-  {
-    width: 100%;
-  }
-  #paintSection
-  {
-    padding-right: 0vw;
-  }
-  #paintSection h2
-  {
-    padding-top: 2vw;
-    margin-left: 4vw;
-  }
-  #paintSection p
-  {
-    width: 80vw;
-    margin-left: 4vw;
-  }
-  #paintSection li
-  {
-    margin-left: 4vw;
-  }
-  #paintSection a
-  {
-    margin-right: 2vw;
-  }
-  #deliveryBox::after
-  {
-    width: 100%;
-  }
-  #deliverySection
-  {
-    padding-right: 0vw;
-  }
-  #deliverySection h2
-  {
-    padding-top: 2vw;
-    margin-left: 4vw;
-  }
   #deliverySection p
   {
-    width: 80vw;
     float: none;
-    text-align: left;
-    margin-left: 4vw;
-  }
-  #deliverySection li
-  {
-    margin-left:4vw;
-  }
-  #deliverySection a
-  {
-    margin-right: 4vw;
   }
 }
 
@@ -1005,7 +758,7 @@ Updated:01/13/2020*/
 
 @media only screen and (max-width: 575px){
   #isoLogo{
-    margin-top: 15vw;
+    margin-top: 45vw;
   }
 }
 
@@ -1020,7 +773,6 @@ Updated:01/13/2020*/
 {
   #isoLogo
   {
-    margin-top: 15vw;
     width:35vw;
   }
 }
